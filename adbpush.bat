@@ -1,2 +1,2 @@
 
-adb push D:\Users\xiaohua\workspace\UiTestGfan\bin\AutoRunner.jar data/local/tmp
+adb push D:\UiautomatorTestGfan\UiTestGfan\bin\AutoRunner.jar data/local/tmp

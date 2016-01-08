@@ -1,4 +1,4 @@
 
 d:
-cd D:\Users\xiaohua\workspace\UiTestGfan
+cd D:\UiautomatorTestGfan\UiTestGfan
 ant build

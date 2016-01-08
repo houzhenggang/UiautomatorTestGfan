@@ -1,3 +1,3 @@
-D:\Users\xiaohua\workspace\UiTestGfan\bin\classes.dex : \
-D:\Users\xiaohua\workspace\UiTestGfan\bin\classes\com\txh\uitestgfan\TestUiautomator.class \
-D:\Users\xiaohua\workspace\UiTestGfan\bin\classes\com\txh\uitestgfan\UiTestGfan.class \
+D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex : \
+D:\UiautomatorTestGfan\UiTestGfan\bin\classes\com\txh\uitestgfan\UiTestGfan$1.class \
+D:\UiautomatorTestGfan\UiTestGfan\bin\classes\com\txh\uitestgfan\UiTestGfan.class \
