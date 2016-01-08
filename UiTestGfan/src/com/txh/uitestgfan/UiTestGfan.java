@@ -34,12 +34,15 @@ public class UiTestGfan extends UiAutomatorTestCase {
 		//clickLoginImedetely();
 		//blankUser();
 		//blankPass();
-		userLogout();
+		//userLogout();
 		// leftPage();
 		// exitGfan();
 		//pullNOtyfied();
 		//screenOnOrOFF();
 		//wakeUp();
+		//getScore();
+		//getTicket();
+		bookIn();
 
 	}
 
@@ -266,8 +269,63 @@ public class UiTestGfan extends UiAutomatorTestCase {
         UiObject waitMesg = new UiObject(new UiSelector().resourceId("android:id/message"));
         Assert.assertEquals(true, waitMesg.exists());
     }
-    
-
+    /**
+     * 获取积分并检查是否正确
+     * @throws UiObjectNotFoundException
+     */
+    public void getScore()throws UiObjectNotFoundException{
+    	//判断积分image控件是否存在
+    	UiObject ima = new UiObject(new UiSelector().className("android.widget.ImageView"));
+    	Assert.assertEquals(true, ima.exists());
+    	//判断文字“积分”是否正确
+    	/*UiObject scoTex = new UiObject(new UiSelector().className("android.widget.TextView"));
+    	String scoreText = scoTex.getText();
+    	Assert.assertEquals("积分：", scoreText);*/
+    	//判断文字积分数值是否正确
+    	UiObject scoNum = new UiObject(new UiSelector().resourceId("com.mappn.gfan:id/tv_credit"));
+    	String scoNumber = scoNum.getText();
+    	Assert.assertEquals("1125", scoNumber);
+    			
+    }
+    /**
+     * 用户已登录-签到
+     * @throws UiObjectNotFoundException
+     */
+    public void bookIn()throws UiObjectNotFoundException{
+    	//判断签到签的image是否存在
+    	UiObject bookIma = new UiObject(new UiSelector().resourceId("com.mappn.gfan:id/iv_icon"));
+    	Assert.assertEquals(true, bookIma.exists());
+    	//获取签到状态
+    	UiObject bookTex = new UiObject(new UiSelector().resourceId("com.mappn.gfan:id/title"));
+    	String bookText = bookTex.getText();
+    	//如果getText()获取到的不是已签到，则点击签到，签到成功后判断状态是否变化
+    	if(!bookText.equals("已签到")){
+    		bookTex.click();
+    		//获取签到状态
+        	UiObject bookedTe = new UiObject(new UiSelector().resourceId("com.mappn.gfan:id/title"));
+        	String bookedTex = bookTex.getText();
+    		Assert.assertEquals("签到", bookedTex);
+    	}
+    			
+    }
+    /**
+     * 获取机锋券并检查是否正确
+     * @throws UiObjectNotFoundException
+     */
+    public void getTicket()throws UiObjectNotFoundException{
+    	//判断机锋券image控件是否存在
+    	UiObject ima = new UiObject(new UiSelector().className("android.widget.ImageView"));
+    	Assert.assertEquals(true, ima.exists());
+    	//判断文字“机锋券”是否正确
+    	/*UiObject scoTex = new UiObject(new UiSelector().className("android.widget.TextView"));
+    	String scoreText = scoTex.getText();
+    	Assert.assertEquals("积分：", scoreText);*/
+    	//判断文字机锋券数值是否正确
+    	UiObject scoNum = new UiObject(new UiSelector().resourceId("com.mappn.gfan:id/tv_quan"));
+    	String scoNumber = scoNum.getText();
+    	Assert.assertEquals("4", scoNumber);
+    			
+    }
     /**
      * 注销-取消-确定,判断注销提示框信息是否正确
      * @throws UiObjectNotFoundException
