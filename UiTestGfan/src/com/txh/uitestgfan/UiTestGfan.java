@@ -24,18 +24,22 @@ public class UiTestGfan extends UiAutomatorTestCase {
 	public void testAppGfan() throws UiObjectNotFoundException, RemoteException {
 		// openGfan();
 		// jumpSplash();
-		// excuteTestSearchDefaultTex();
+		// excuteSearchDefaultTex();
 		// clickSearchTextV();
-		// inPutWord();
+		// setSearchWord();
 		// openMyPage();
-		// clickUserImage();
-		// userLogin();
-		// userLogout();
+		// clickHeadImage();
+		// succLogin();
+		//blankUserNPw();
+		//clickLoginImedetely();
+		//blankUser();
+		//blankPass();
+		userLogout();
 		// leftPage();
-		// exit();
-		// pull();
-		// screenOnOrOFF();
-		// wakeUp();
+		// exitGfan();
+		//pullNOtyfied();
+		//screenOnOrOFF();
+		//wakeUp();
 
 	}
 
@@ -76,7 +80,7 @@ public class UiTestGfan extends UiAutomatorTestCase {
 	 * 
 	 * @throws UiObjectNotFoundException
 	 */
-	public void excuteTestSearchDefaultTex() throws UiObjectNotFoundException {
+	public void excuteSearchDefaultTex() throws UiObjectNotFoundException {
 		UiSelector textView = new UiSelector();
 		textView.index(3);
 		UiObject search = new UiObject(textView);
@@ -101,7 +105,7 @@ public class UiTestGfan extends UiAutomatorTestCase {
 	 * 
 	 * @throws UiObjectNotFoundException
 	 */
-	public void inPutWord() throws UiObjectNotFoundException {
+	public void setSearchWord() throws UiObjectNotFoundException {
 		UiObject textVChild = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/top_main_rl"));
 		textVChild.setText("QQ");
@@ -123,36 +127,38 @@ public class UiTestGfan extends UiAutomatorTestCase {
 	}
 
 	/**
-	 * 注册
-	 * 
+	 * 使用未注册过的手机号注册,如何获取手机短信，自动填写验证码
+	 * 密码大于6位小于15位
 	 * @throws UiObjectNotFoundException
 	 */
-	public void register() throws UiObjectNotFoundException {
+	public void registerScuss() throws UiObjectNotFoundException {
+		//点击注册机锋账号
 		UiObject tvReg = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/tv_register"));
 		tvReg.click();
-		UiObject user = new UiObject(
+		UiObject userN = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/et_username"));
-		user.setText("18701559910");
-		UiObject verify = new UiObject(
+		userN.setText("18701559910");
+		UiObject identifyCode = new UiObject(
 				new UiSelector()
 						.resourceId("com.mappn.gfan:id/rl_get_verify_code"));
-		verify.clickAndWaitForNewWindow(5000);
-		UiObject email = new UiObject(
+		identifyCode.clickAndWaitForNewWindow(5000);
+		UiObject idenCode = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/et_email"));
-		email.setText("");
-		UiObject pass = new UiObject(
+		idenCode.setText("845692");
+		UiObject Pw = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/et_password"));
-		pass.setText("");
-		UiObject conPass = new UiObject(
+		Pw.setText("1234567");
+		UiObject conPw = new UiObject(
 				new UiSelector()
 						.resourceId("com.mappn.gfan:id/et_confirm_password"));
-		conPass.setText("");
+		conPw.setText("1234567");
+		//获取键盘并收起键盘
 		UiDevice keybox = getUiDevice();
 		keybox.pressBack();
-		UiObject reLogin = new UiObject(
+		UiObject regeAndLog = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/rl_register"));
-		reLogin.click();
+		regeAndLog.click();
 	}
 
 	/**
@@ -166,7 +172,11 @@ public class UiTestGfan extends UiAutomatorTestCase {
 
 	}
 
-	public void clickUserImage() throws UiObjectNotFoundException {
+	/**
+	 * 点击用户登录头像
+	 * @throws UiObjectNotFoundException
+	 */
+	public void clickHeadrImage() throws UiObjectNotFoundException {
 		UiObject userLogin = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/iv_user_head"));
 		userLogin.click();
@@ -174,60 +184,121 @@ public class UiTestGfan extends UiAutomatorTestCase {
 	}
 
 	/**
-	 * 输入用户名、密码点击登录
+	 * 输入正确的用户名、密码点击登录
 	 * 
 	 * @throws UiObjectNotFoundException
 	 */
-	public void userLogin() throws UiObjectNotFoundException {
-		UiDevice uide = getUiDevice();
-		uide.registerWatcher("installApp", new UiWatcher() {
-			UiObject install = new UiObject(
-					new UiSelector()
-							.resourceId("com.android.packageinstaller:id/cancel_button"));
-
-			public boolean checkForCondition() {
-				if (install.exists()) {
-					// TODO Auto-generated method stub
-					try {
-						install.click();
-					} catch (UiObjectNotFoundException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
-					return true;
-				}
-				return true;
-			}
-		});
-
+	public void succLogin() throws UiObjectNotFoundException {
 		UiObject userName = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/et_gfan"));
-		// userName.click();
 		userName.setText("imopan88");
-		// Assert.assertEquals(true, userName.setText("imopan88"));
 		UiObject password = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/et_password"));
-		// password.click();
 		password.setText("654321");
 		UiObject login = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/rl_login"));
 		login.clickAndWaitForNewWindow(5000);
+		UiObject afterLogin = new UiObject(new UiSelector().resourceId("com.mappn.gfan:id/tv_user_name"));
+        afterLogin.waitForExists(1000);//等待登录
+        Assert.assertEquals(false, afterLogin.exists()); //如果成功登录，判断是否进入登录后的页面
 
 	}
+	/**
+     * 输入用户名&密码输入空格，点击登录
+     * @throws UiObjectNotFoundException
+     */
+    public void blankUserNPw() throws UiObjectNotFoundException{
+        UiObject blankUser = new UiObject(new UiSelector()
+                        .resourceId("com.mappn.gfan:id/et_gfan"));
+        blankUser.setText(" ");
+        UiObject blankPw = new UiObject(new UiSelector()
+                        .resourceId("com.mappn.gfan:id/et_password"));
+        blankPw.setText(" ");
+        UiObject clicklogin = new UiObject(new UiSelector()
+                        .resourceId("com.mappn.gfan:id/rl_login"));
+        clicklogin.clickAndWaitForNewWindow(2000);
+        //判断是否提示手机号（用户名）不能为空
+        UiObject waitMesg = new UiObject(new UiSelector().resourceId("android:id/message"));
+        Assert.assertEquals(true, waitMesg.exists());
 
+    }
+    /**
+     * 直接点击登录按钮
+     * @throws UiObjectNotFoundException
+     */
+    public void clickLoginImedetely() throws UiObjectNotFoundException{
+        UiObject clicklogin = new UiObject(new UiSelector()
+                        .resourceId("com.mappn.gfan:id/rl_login"));
+        clicklogin.click();
+        //判断是否提示手机号（用户名）不能为空
+        UiObject waitMesg = new UiObject(new UiSelector().resourceId("android:id/message"));
+        Assert.assertEquals(true, waitMesg.exists());
+
+    }
+    /**
+     * 用户名为空，输入密码点击登录
+     * @throws UiObjectNotFoundException
+     */
+    public void blankUser() throws UiObjectNotFoundException{
+        UiObject userName = new UiObject(new UiSelector()
+                        .resourceId("com.mappn.gfan:id/et_gfan"));
+        userName.setText("imopan88");
+        UiObject clicklogin1 = new UiObject(new UiSelector()
+                        .resourceId("com.mappn.gfan:id/rl_login"));
+        clicklogin1.click();
+        //判断是否提示手机号（用户名）不能为空
+        UiObject waitMesg = new UiObject(new UiSelector().resourceId("android:id/message"));
+        Assert.assertEquals(true, waitMesg.exists());
+
+    }
+    /**
+     * 输入用户名，密码为空点击登录
+     * @throws UiObjectNotFoundException
+     */
+    public void blankPass() throws UiObjectNotFoundException{
+        UiObject userName = new UiObject(new UiSelector()
+                        .resourceId("com.mappn.gfan:id/et_gfan"));
+        userName.setText("imopan88");
+        UiObject clicklogin2 = new UiObject(new UiSelector()
+                        .resourceId("com.mappn.gfan:id/rl_login"));
+        clicklogin2.click();
+        //判断是否提示密码不能为空
+        UiObject waitMesg = new UiObject(new UiSelector().resourceId("android:id/message"));
+        Assert.assertEquals(true, waitMesg.exists());
+    }
+    
+
+    /**
+     * 注销-取消-确定,判断注销提示框信息是否正确
+     * @throws UiObjectNotFoundException
+     */
 	public void userLogout() throws UiObjectNotFoundException {
 		UiObject userHead = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/iv_user_head"));
 		userHead.click();
-		UiObject logout = new UiObject(new UiSelector().className(
+		UiObject confirm = new UiObject(new UiSelector().className(
 				"android.widget.TextView").text("注销"));
-		logout.click();
-		UiObject cancle = new UiObject(
-				new UiSelector().resourceId("com.mappn.gfan:id/button_left"));
+		confirm.click();
+		//判断注销提示框信息是否正确
+		UiObject tvTitle = new UiObject(new UiSelector()
+						.resourceId("com.mappn.gfan:id/textview_title"));//提示框标题
+		String titleMeg = tvTitle.getText();
+		Assert.assertEquals("温馨提示", titleMeg);
+		UiObject tvMesg = new UiObject(new UiSelector()
+						.resourceId("com.mappn.gfan:id/textview_middle"));//提示框内容
+		String tvMess = tvMesg.getText();
+		Assert.assertEquals("你要退出当前账号吗？", tvMess);
+		//点击取消-确定，判断按钮名称是否正确
+		UiObject cancle = new UiObject(new UiSelector()
+						.resourceId("com.mappn.gfan:id/button_left"));
+		String cancTex = cancle.getText();
+		Assert.assertEquals("取消", cancTex);
 		cancle.click();
-		logout.click();
+		confirm.click();
 		UiObject comfirm = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/button_right"));
+		String confTex = cancle.getText();
+		Assert.assertEquals("确定", confTex);
 		comfirm.click();
 
 	}
@@ -250,7 +321,7 @@ public class UiTestGfan extends UiAutomatorTestCase {
 	 * 
 	 * @throws UiObjectNotFoundException
 	 */
-	public void exit() throws UiObjectNotFoundException {
+	public void exitGfan() throws UiObjectNotFoundException {
 		UiDevice device = getUiDevice();
 		device.pressBack();
 		device.pressBack();
@@ -261,7 +332,7 @@ public class UiTestGfan extends UiAutomatorTestCase {
 	 * 
 	 * @throws UiObjectNotFoundException
 	 */
-	public void pull() throws UiObjectNotFoundException {
+	public void pullNOtyfied() throws UiObjectNotFoundException {
 		UiDevice device = getUiDevice();
 		device.openNotification();
 		sleep(1000);
