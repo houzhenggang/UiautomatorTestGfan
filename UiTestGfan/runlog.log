@@ -1,0 +1,911 @@
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for UiTestGfan...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 2 source files to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\UiTestGfan.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+1122 KB/s (9204 bytes in 0.008s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.UiTestGfan:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppGfan
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.UiTestGfan
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testAppGfan:
+
+junit.framework.ComparisonFailure: expected:<[分享]> but was:<[已签到]>
+
+	at com.txh.uitestgfan.UiTestGfan.share(UiTestGfan.java:458)
+
+	at com.txh.uitestgfan.UiTestGfan.testAppGfan(UiTestGfan.java:56)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppGfan
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.UiTestGfan
+
+INSTRUMENTATION_STATUS: stack=junit.framework.ComparisonFailure: expected:<[分享]> but was:<[已签到]>
+
+	at com.txh.uitestgfan.UiTestGfan.share(UiTestGfan.java:458)
+
+	at com.txh.uitestgfan.UiTestGfan.testAppGfan(UiTestGfan.java:56)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 1.193
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for UiTestGfan...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\UiTestGfan.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 1 second
+1122 KB/s (9204 bytes in 0.008s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.UiTestGfan:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppGfan
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.UiTestGfan
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testAppGfan:
+
+junit.framework.ComparisonFailure: expected:<[分享]> but was:<[已签到]>
+
+	at com.txh.uitestgfan.UiTestGfan.share(UiTestGfan.java:458)
+
+	at com.txh.uitestgfan.UiTestGfan.testAppGfan(UiTestGfan.java:56)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppGfan
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.UiTestGfan
+
+INSTRUMENTATION_STATUS: stack=junit.framework.ComparisonFailure: expected:<[分享]> but was:<[已签到]>
+
+	at com.txh.uitestgfan.UiTestGfan.share(UiTestGfan.java:458)
+
+	at com.txh.uitestgfan.UiTestGfan.testAppGfan(UiTestGfan.java:56)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 0.534
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for UiTestGfan...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\UiTestGfan.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+1292 KB/s (9272 bytes in 0.007s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.UiTestGfan:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppGfan
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.UiTestGfan
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testAppGfan:
+
+junit.framework.ComparisonFailure: expected:<[分享]> but was:<[已签到]>
+
+	at com.txh.uitestgfan.UiTestGfan.share(UiTestGfan.java:458)
+
+	at com.txh.uitestgfan.UiTestGfan.testAppGfan(UiTestGfan.java:56)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppGfan
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.UiTestGfan
+
+INSTRUMENTATION_STATUS: stack=junit.framework.ComparisonFailure: expected:<[分享]> but was:<[已签到]>
+
+	at com.txh.uitestgfan.UiTestGfan.share(UiTestGfan.java:458)
+
+	at com.txh.uitestgfan.UiTestGfan.testAppGfan(UiTestGfan.java:56)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 0.556
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for UiTestGfan...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\UiTestGfan.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 1 second
+1130 KB/s (9272 bytes in 0.008s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.UiTestGfan:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppGfan
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.UiTestGfan
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testAppGfan:
+
+junit.framework.ComparisonFailure: expected:<[分享]> but was:<[已签到]>
+
+	at com.txh.uitestgfan.UiTestGfan.share(UiTestGfan.java:458)
+
+	at com.txh.uitestgfan.UiTestGfan.testAppGfan(UiTestGfan.java:56)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppGfan
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.UiTestGfan
+
+INSTRUMENTATION_STATUS: stack=junit.framework.ComparisonFailure: expected:<[分享]> but was:<[已签到]>
+
+	at com.txh.uitestgfan.UiTestGfan.share(UiTestGfan.java:458)
+
+	at com.txh.uitestgfan.UiTestGfan.testAppGfan(UiTestGfan.java:56)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 0.55
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for UiTestGfan...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\UiTestGfan.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 1 second
+3016 KB/s (9272 bytes in 0.003s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.UiTestGfan:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppGfan
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.UiTestGfan
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testAppGfan:
+
+junit.framework.ComparisonFailure: expected:<[分享]> but was:<[已签到]>
+
+	at com.txh.uitestgfan.UiTestGfan.share(UiTestGfan.java:458)
+
+	at com.txh.uitestgfan.UiTestGfan.testAppGfan(UiTestGfan.java:56)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppGfan
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.UiTestGfan
+
+INSTRUMENTATION_STATUS: stack=junit.framework.ComparisonFailure: expected:<[分享]> but was:<[已签到]>
+
+	at com.txh.uitestgfan.UiTestGfan.share(UiTestGfan.java:458)
+
+	at com.txh.uitestgfan.UiTestGfan.testAppGfan(UiTestGfan.java:56)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 0.55
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for UiTestGfan...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\UiTestGfan.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+1130 KB/s (9272 bytes in 0.008s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.UiTestGfan:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppGfan
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.UiTestGfan
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testAppGfan:
+
+junit.framework.ComparisonFailure: expected:<[分享]> but was:<[已签到]>
+
+	at com.txh.uitestgfan.UiTestGfan.share(UiTestGfan.java:458)
+
+	at com.txh.uitestgfan.UiTestGfan.testAppGfan(UiTestGfan.java:56)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppGfan
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.UiTestGfan
+
+INSTRUMENTATION_STATUS: stack=junit.framework.ComparisonFailure: expected:<[分享]> but was:<[已签到]>
+
+	at com.txh.uitestgfan.UiTestGfan.share(UiTestGfan.java:458)
+
+	at com.txh.uitestgfan.UiTestGfan.testAppGfan(UiTestGfan.java:56)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 0.553
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for UiTestGfan...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\UiTestGfan.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 1 second
+4525 KB/s (9272 bytes in 0.002s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.UiTestGfan:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppGfan
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.UiTestGfan
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testAppGfan:
+
+junit.framework.ComparisonFailure: expected:<[分享]> but was:<[已签到]>
+
+	at com.txh.uitestgfan.UiTestGfan.share(UiTestGfan.java:458)
+
+	at com.txh.uitestgfan.UiTestGfan.testAppGfan(UiTestGfan.java:56)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppGfan
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.UiTestGfan
+
+INSTRUMENTATION_STATUS: stack=junit.framework.ComparisonFailure: expected:<[分享]> but was:<[已签到]>
+
+	at com.txh.uitestgfan.UiTestGfan.share(UiTestGfan.java:458)
+
+	at com.txh.uitestgfan.UiTestGfan.testAppGfan(UiTestGfan.java:56)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 0.543
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+

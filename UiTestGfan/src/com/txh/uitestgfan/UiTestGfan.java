@@ -6,6 +6,7 @@ import junit.framework.Assert;
 
 import android.os.RemoteException;
 
+
 import com.android.uiautomator.core.UiDevice;
 import com.android.uiautomator.core.UiObject;
 import com.android.uiautomator.core.UiObjectNotFoundException;
@@ -15,6 +16,13 @@ import com.android.uiautomator.core.UiWatcher;
 import com.android.uiautomator.testrunner.UiAutomatorTestCase;
 
 public class UiTestGfan extends UiAutomatorTestCase {
+	public static void main(String[] args){
+		String jarName = "UiTestGfan";
+		String testClass = "com.txh.uitestgfan.UiTestGfan";
+		String testName = "testAppGfan";
+		String androidId = "1";
+		new UiAutomatorHelper(jarName, testClass, testName, androidId);
+	}
 
 	/**
 	 * 执行方法
@@ -447,15 +455,15 @@ public class UiTestGfan extends UiAutomatorTestCase {
 		//判断分享是否为“分享”
 		UiObject sText = new UiObject(new UiSelector().resourceId("com.mappn.gfan:id/title"));
 		String sTex = sText.getText();
-		//Assert.assertEquals("分享", sTex);
+		Assert.assertEquals("分享", sTex);
 		sText.click();
-		
+
 		UiObject layout = new UiObject(new UiSelector().className("android.widget.RelativeLayout"));
 		Assert.assertEquals(true,layout.exists());
 		
 		UiObject shareTex = new UiObject(new UiSelector().className("android.widget.TextView"));
 		String shareText = shareTex.getText();
-		//Assert.assertEquals("分享至", shareText);
+		Assert.assertEquals("分享至", shareText);
 		//判断分享弹框是否有关闭按钮
 		UiObject shareBack = new UiObject(new UiSelector().resourceId("com.mappn.gfan:id/dialog_back"));
 		if(shareBack.exists()){
