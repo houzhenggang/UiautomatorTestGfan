@@ -13,7 +13,17 @@ import com.android.uiautomator.core.UiSelector;
 import com.android.uiautomator.core.UiWatcher;
 import com.android.uiautomator.testrunner.UiAutomatorTestCase;
 
+
+
 public class UiTestGfan extends UiAutomatorTestCase {
+	public static void main(String[] args) {
+		String jarName="UiTestGfan";
+		String testClass="com.txh.uitestgfan.UiTestGfan";
+		String testName="testAppGfan";
+		String androidId="1";
+		new UiAutomatorHelper(jarName, testClass, testName, androidId);
+		
+	}
 
 	/**
 	 * 执行方法
@@ -34,7 +44,7 @@ public class UiTestGfan extends UiAutomatorTestCase {
 		//clickLoginImedetely();
 		//blankUser();
 		//blankPass();
-		//userLogout();
+		userLogout();
 		// leftPage();
 		// exitGfan();
 		//pullNOtyfied();
@@ -42,7 +52,7 @@ public class UiTestGfan extends UiAutomatorTestCase {
 		//wakeUp();
 		//getScore();
 		//getTicket();
-		bookIn();
+		//bookIn();
 
 	}
 
@@ -345,7 +355,7 @@ public class UiTestGfan extends UiAutomatorTestCase {
 		UiObject tvMesg = new UiObject(new UiSelector()
 						.resourceId("com.mappn.gfan:id/textview_middle"));//提示框内容
 		String tvMess = tvMesg.getText();
-		Assert.assertEquals("你要退出当前账号吗？", tvMess);
+		Assert.assertEquals("你要退出当前账号吗?", tvMess);
 		//点击取消-确定，判断按钮名称是否正确
 		UiObject cancle = new UiObject(new UiSelector()
 						.resourceId("com.mappn.gfan:id/button_left"));
@@ -355,7 +365,7 @@ public class UiTestGfan extends UiAutomatorTestCase {
 		confirm.click();
 		UiObject comfirm = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/button_right"));
-		String confTex = cancle.getText();
+		String confTex = comfirm.getText();
 		Assert.assertEquals("确定", confTex);
 		comfirm.click();
 
