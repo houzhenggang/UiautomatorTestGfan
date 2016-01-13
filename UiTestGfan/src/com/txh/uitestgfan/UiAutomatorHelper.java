@@ -176,10 +176,6 @@ public class UiAutomatorHelper {
 	// 4---push jar
 	public void pushTestJar(String localPath) {
 		if (System.getProperty("os.name").equals("Linux")) {
-<<<<<<< HEAD
-			localPath = "/" + localPath + "/";
-=======
->>>>>>> 1c32a1521b680c5d3b2ef373bdaf170f1eb967f7
 			System.out.println("----jar包路径： " + localPath);
 			String pushCmd = "adb push " + localPath + " /data/local/tmp/";
 			System.out.println("----" + pushCmd);

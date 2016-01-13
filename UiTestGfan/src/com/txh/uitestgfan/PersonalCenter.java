@@ -31,15 +31,12 @@ public class PersonalCenter extends UiAutomatorTestCase {
 		// bookInNotLogin();
 		// succLogin();
 		// weixinLogin();
-<<<<<<< HEAD
 		// share();
 		//depositPage();
 		weixinPay();
-=======
 		share();
 		// depositPage();
 		//weixinPay();
->>>>>>> 1c32a1521b680c5d3b2ef373bdaf170f1eb967f7
 	}
 
 	/**
@@ -206,13 +203,10 @@ public class PersonalCenter extends UiAutomatorTestCase {
 	 * @throws UiObjectNotFoundException
 	 */
 	public void weixinLogin() throws UiObjectNotFoundException {
-<<<<<<< HEAD
 		UiObject weixinU = new UiObject(
 				new UiSelector().text("QQ号/微信号/Email"));
-=======
-		UiObject weixinU = new UiObject(new UiSelector().text("QQ号/微信号/Email"));
->>>>>>> 1c32a1521b680c5d3b2ef373bdaf170f1eb967f7
-		weixinU.setText("18519055006");
+		UiObject weixinU1 = new UiObject(new UiSelector().text("QQ号/微信号/Email"));
+		weixinU1.setText("18519055006");
 
 		UiObject weixinP = new UiObject(
 				new UiSelector().resourceId("com.tencent.mm:id/ayd"));
@@ -258,38 +252,28 @@ public class PersonalCenter extends UiAutomatorTestCase {
 		// 再次点击分享
 		sText.click();
 		// 点击分享到微信朋友圈
-<<<<<<< HEAD
 		UiObject weixinFriend = new UiObject(new UiSelector().text("微信朋友圈"));
-=======
-		UiObject weixinFriend = new UiObject(new UiSelector().resourceId("com.mappn.gfan:id/weixin_image"));
->>>>>>> 1c32a1521b680c5d3b2ef373bdaf170f1eb967f7
-		Assert.assertEquals(true, weixinFriend.exists());
-		weixinFriend.clickAndWaitForNewWindow();
+		UiObject weixinFriend1 = new UiObject(new UiSelector().resourceId("com.mappn.gfan:id/weixin_image"));
+		Assert.assertEquals(true, weixinFriend1.exists());
+		weixinFriend1.clickAndWaitForNewWindow();
 
 		// 检查分享页面是否存在
 		UiObject sharePage = new UiObject(
-<<<<<<< HEAD
-				new UiSelector().resourceId("com.tencent.mm:id/c3g"));
-=======
 				new UiSelector().resourceId("com.tencent.mm:id/c2q"));
->>>>>>> 1c32a1521b680c5d3b2ef373bdaf170f1eb967f7
 		if (!sharePage.exists()) {// 微信登录
 			UiObject loginPage = new UiObject(
 					new UiSelector().resourceId("com.tencent.mm:id/dm"));
 			Assert.assertEquals(true, loginPage.exists());// 判断微信登录页面是否存在
 			weixinLogin();
-<<<<<<< HEAD
 			return;
 		}
 		// 输入分享内容
 		UiObject shareEdit = new UiObject(
 				new UiSelector().resourceId("com.tencent.mm:id/c24"));
-=======
 		}
 		// 输入分享内容
 		UiObject shareEdit = new UiObject(
 				new UiSelector().resourceId("com.tencent.mm:id/c2q"));
->>>>>>> 1c32a1521b680c5d3b2ef373bdaf170f1eb967f7
 		shareEdit.setText("share gfanApp");
 		// 点击发送按钮
 		UiObject sendButton = new UiObject(
@@ -303,16 +287,12 @@ public class PersonalCenter extends UiAutomatorTestCase {
 
 	/**
 	 * 点击充值，未登录则先登录
-<<<<<<< HEAD
-=======
 	 * 
->>>>>>> 1c32a1521b680c5d3b2ef373bdaf170f1eb967f7
 	 * @throws UiObjectNotFoundException
 	 */
 	public void depositPage() throws UiObjectNotFoundException {
 		UiObject deposit = new UiObject(new UiSelector().text("充值"));
 		deposit.click();
-<<<<<<< HEAD
 		//判断登录界面是否存在
 		UiObject depsPage = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/tv_title").text("登录"));				
@@ -362,7 +342,6 @@ public class PersonalCenter extends UiAutomatorTestCase {
 		}
 		
 		
-=======
 		// 判断登录界面是否存在
 		UiObject depsPage = new UiObject(new UiSelector().resourceId(
 				"com.mappn.gfan:id/tv_title").text("登录"));
@@ -372,7 +351,7 @@ public class PersonalCenter extends UiAutomatorTestCase {
 		}
 	}
 
-	public void aliPay() throws UiObjectNotFoundException {
+	public void aliPay1() throws UiObjectNotFoundException {
 		// 点击“充值”
 		UiObject deposit = new UiObject(new UiSelector().text("充值"));
 		deposit.click();
@@ -400,7 +379,7 @@ public class PersonalCenter extends UiAutomatorTestCase {
 		confirmButn.clickAndWaitForNewWindow(10000);
 	}
 
-	public void weixinPay() throws UiObjectNotFoundException {
+	public void weixinPay1() throws UiObjectNotFoundException {
 		// 点击“充值”
 		UiObject deposit = new UiObject(new UiSelector().text("充值"));
 		deposit.click();
@@ -433,7 +412,7 @@ public class PersonalCenter extends UiAutomatorTestCase {
 			
 		}
 
->>>>>>> 1c32a1521b680c5d3b2ef373bdaf170f1eb967f7
+
 	}
 
 }
