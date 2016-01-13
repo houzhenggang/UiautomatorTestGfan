@@ -8,6 +8,7 @@ import com.android.uiautomator.core.UiObjectNotFoundException;
 import com.android.uiautomator.core.UiScrollable;
 import com.android.uiautomator.core.UiSelector;
 import com.android.uiautomator.testrunner.UiAutomatorTestCase;
+import com.sun.javafx.image.impl.ByteIndexed.Getter;
 
 public class PersonalCenter extends UiAutomatorTestCase {
 	public static void main(String[] args) {
@@ -34,10 +35,12 @@ public class PersonalCenter extends UiAutomatorTestCase {
 		// weixinLogin();
 		// share();
 		// depositPage();
-		// weixinPay();
+		//aliPay();
+		//weixinPay();
+		unionPay();
 		// shareFriendCircle();
-		//shareWeiXinFriend();
-		shareWeiBo();
+		// shareWeiXinFriend();
+		// shareWeiBo();
 		// depositPage();
 		// weixinPay();
 	}
@@ -353,12 +356,14 @@ public class PersonalCenter extends UiAutomatorTestCase {
 
 		// 判断是否成功返回个人中心页面
 		UiObject personCenterPage = new UiObject(
-				new UiSelector().resourceId("com.mappn.gfan:id/fragment_container"));			
+				new UiSelector()
+						.resourceId("com.mappn.gfan:id/fragment_container"));
 		Assert.assertEquals(true, personCenterPage.exists());
 	}
+
 	/**
-	 * 分享到新浪微博
-	 * 无法获取微博账号、密码输入框，只能测试到是否跳转到微博分享页面
+	 * 分享到新浪微博 无法获取微博账号、密码输入框，只能测试到是否跳转到微博分享页面
+	 * 
 	 * @throws UiObjectNotFoundException
 	 */
 	public void shareWeiBo() throws UiObjectNotFoundException {
@@ -366,18 +371,20 @@ public class PersonalCenter extends UiAutomatorTestCase {
 		UiObject shareBtn = new UiObject(new UiSelector().resourceId(
 				"com.mappn.gfan:id/title").text("分享"));
 		shareBtn.click();
-		//点击微博
-		UiObject weibo = new UiObject(new UiSelector().resourceId("com.mappn.gfan:id/weibo_image"));
+		// 点击微博
+		UiObject weibo = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/weibo_image"));
 		weibo.click();
-		
-		//判断微博页面是否存在
-		UiObject weiboView = new UiObject(new UiSelector().className("android.webkit.WebView"));
+
+		// 判断微博页面是否存在
+		UiObject weiboView = new UiObject(
+				new UiSelector().className("android.webkit.WebView"));
 		Assert.assertEquals(true, weiboView.exists());
-		//返回个人中心
+		// 返回个人中心
 		UiDevice device = getUiDevice();
 		device.pressBack();
 		device.pressBack();
-		
+
 	}
 
 	/**
@@ -396,11 +403,21 @@ public class PersonalCenter extends UiAutomatorTestCase {
 		}
 	}
 
+	/**
+	 * 支付宝支付-取消支付 手机已安装支付宝app
+	 * 
+	 * @throws UiObjectNotFoundException
+	 */
 	public void aliPay() throws UiObjectNotFoundException {
 		// 点击“充值”
 		UiObject deposit = new UiObject(new UiSelector().text("充值"));
 		deposit.click();
-
+		// 判断机锋市场登录界面是否存在
+		UiObject depsPage = new UiObject(new UiSelector().resourceId(
+				"com.mappn.gfan:id/tv_title").text("登录"));
+		if (depsPage.exists()) {// 如果登录页面存在，则登录
+			succLogin();
+		}
 		UiObject alipay = new UiObject(new UiSelector().text("支付宝充值"));
 		alipay.click();
 		UiObject alipayPage = new UiObject(
@@ -418,12 +435,47 @@ public class PersonalCenter extends UiAutomatorTestCase {
 		// String quan = jifengquan.getText();
 		// Assert.assertEquals("元  价值10机锋券", quan);
 
+		// 点击确认按钮，跳转到支付宝登录页面
 		UiObject confirmButn = new UiObject(
 				new UiSelector()
 						.resourceId("com.mappn.gfan:id/btn_charge_alipay"));
 		confirmButn.clickAndWaitForNewWindow(10000);
+		
+		// 点击手机返回按钮
+		UiDevice devi = getUiDevice();
+		devi.pressBack();
+
+		// 取消支付弹出提示信息
+		UiObject canclePayMess = new UiObject(
+				new UiSelector().resourceId("android:id/message"));
+		String mess = canclePayMess.getText();
+		Assert.assertEquals("确定要退出吗?", mess);
+
+		// 点击确定
+		UiObject confirmBtn = new UiObject(
+				new UiSelector().resourceId("android:id/button1"));
+		confirmBtn.click();
+
+		// 取消支付后返回支付页面提示信息
+		UiObject cancleMessBtn = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/button_right"));
+		cancleMessBtn.click();
+		// 取消后返回支付宝支付页面
+		UiObject payPage = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/tv_title"));
+		String payTitle = payPage.getText();
+		Assert.assertEquals("支付宝充值", payTitle);
+
+		// 点击手机返回按钮，返回个人中心
+		devi.pressBack();
+		devi.pressBack();
 	}
 
+	/**
+	 * 微信支付-取消支付
+	 * 
+	 * @throws UiObjectNotFoundException
+	 */
 	public void weixinPay() throws UiObjectNotFoundException {
 		// 点击“充值”
 		UiObject deposit = new UiObject(new UiSelector().text("充值"));
@@ -453,6 +505,88 @@ public class PersonalCenter extends UiAutomatorTestCase {
 		if (weixinPage.exists()) {
 			weixinLogin();
 		}
+		// 点击手机返回按钮
+		UiDevice devi = getUiDevice();
+		devi.pressBack();
+
+		// 判断是否弹出取消支付提示
+		UiObject canclePayMess = new UiObject(
+				new UiSelector().resourceId("android:id/message"));
+		String mess = canclePayMess.getText();
+		Assert.assertEquals("是否继续完成微信支付?", mess);
+
+		// 取消支付
+		UiObject cancleBtn = new UiObject(
+				new UiSelector().resourceId("android:id/button2"));
+		cancleBtn.click();
+
+		// 取消后返回微信支付页面
+		UiObject payPage = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/tv_title"));
+		String payTitle = payPage.getText();
+		Assert.assertEquals("微信支付充值", payTitle);
+		
+		// 点击手机返回按钮，返回个人中心
+		devi.pressBack();
+		devi.pressBack();
+	}
+
+	/**
+	 * 银联充值-取消支付
+	 * 
+	 * @throws UiObjectNotFoundException
+	 */
+	public void unionPay() throws UiObjectNotFoundException {
+		// 点击“充值”
+		UiObject deposit = new UiObject(new UiSelector().text("充值"));
+		deposit.click();
+		// 判断机锋市场登录界面是否存在
+		UiObject depsPage = new UiObject(new UiSelector().resourceId(
+				"com.mappn.gfan:id/tv_title").text("登录"));
+		if (depsPage.exists()) {// 如果登录页面存在，则登录
+			succLogin();
+		}
+		// 点击银联充值
+		UiObject unionPay = new UiObject(new UiSelector().text("银联充值"));
+		unionPay.click();
+		// 输入充值金额
+		UiObject edText = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/et_input"));
+		edText.clearTextField();
+		edText.setText("1");
+		// 点击确定按钮
+		UiObject confirmButn = new UiObject(
+				new UiSelector()
+						.resourceId("com.mappn.gfan:id/btn_charge_alipay"));
+		confirmButn.clickAndWaitForNewWindow(10000);
+		//检查银联支付页面是否存在
+		UiObject unionPayPage = new UiObject(
+				new UiSelector().resourceId("android:id/content"));
+		unionPayPage.waitForExists(100000);//等待跳转到银联支付页面
+		Assert.assertEquals(true, unionPayPage.exists());
+		//点击手机返回按钮
+		UiDevice device = getUiDevice();
+		//device.pressBack();
+		UiObject cancle = new UiObject(new UiSelector().className("android.widget.ImageView"));
+		Assert.assertEquals(true, cancle.exists());
+		cancle.click();
+		//弹出是否取消支付提示框
+		UiObject canclePayMess = new UiObject(new UiSelector().className(
+				"android.widget.TextView").index(1));
+		String mess = canclePayMess.getText();
+		Assert.assertEquals("交易尚未完成，确定放弃?", mess);
+		//点击确定
+		UiObject confirmBtn = new UiObject(new UiSelector().text("确定"));
+		confirmBtn.click();
+		//检查是否返回银联充值页面
+		UiObject payPage = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/tv_title"));
+		String payTitle = payPage.getText();
+		Assert.assertEquals("银联充值", payTitle);
+		//点击手机返回按钮，返回个人中心
+		device.pressBack();
+		device.pressBack();
 
 	}
+
 }
