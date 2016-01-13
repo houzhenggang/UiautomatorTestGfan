@@ -3,3 +3,5 @@
 /UiTestGfan/.settings
 /UiTestGfan/.classpath
 /UiTestGfan/*.properties
+/UiTestGfan/local.properties
+/UiTestGfan/project.properties
