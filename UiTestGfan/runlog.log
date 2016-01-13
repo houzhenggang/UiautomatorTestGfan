@@ -10925,3 +10925,1585 @@ OK (1 test)
 
 INSTRUMENTATION_STATUS_CODE: -1
 
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for LoginAndLogout...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 2 source files to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\LoginAndLogout.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+3544 KB/s (10897 bytes in 0.003s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.LoginAndLogout:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testLoginAndLogout
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.LoginAndLogout
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testLoginAndLogout:
+
+junit.framework.AssertionFailedError: expected:<true> but was:<false>
+
+	at com.txh.uitestgfan.LoginAndLogout.succLogin(LoginAndLogout.java:109)
+
+	at com.txh.uitestgfan.LoginAndLogout.testLoginAndLogout(LoginAndLogout.java:26)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:243)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testLoginAndLogout
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.LoginAndLogout
+
+INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: expected:<true> but was:<false>
+
+	at com.txh.uitestgfan.LoginAndLogout.succLogin(LoginAndLogout.java:109)
+
+	at com.txh.uitestgfan.LoginAndLogout.testLoginAndLogout(LoginAndLogout.java:26)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:243)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 11.232
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for LoginAndLogout...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\LoginAndLogout.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+2657 KB/s (10898 bytes in 0.004s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.LoginAndLogout:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testLoginAndLogout
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.LoginAndLogout
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testLoginAndLogout:
+
+junit.framework.AssertionFailedError: expected:<true> but was:<false>
+
+	at com.txh.uitestgfan.LoginAndLogout.succLogin(LoginAndLogout.java:110)
+
+	at com.txh.uitestgfan.LoginAndLogout.testLoginAndLogout(LoginAndLogout.java:26)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:243)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testLoginAndLogout
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.LoginAndLogout
+
+INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: expected:<true> but was:<false>
+
+	at com.txh.uitestgfan.LoginAndLogout.succLogin(LoginAndLogout.java:110)
+
+	at com.txh.uitestgfan.LoginAndLogout.testLoginAndLogout(LoginAndLogout.java:26)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:243)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 11.088
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for LoginAndLogout...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\LoginAndLogout.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 1 second
+2125 KB/s (10898 bytes in 0.005s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.LoginAndLogout:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testLoginAndLogout
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.LoginAndLogout
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testLoginAndLogout:
+
+com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/iv_user_head]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.LoginAndLogout.userLogout(LoginAndLogout.java:203)
+
+	at com.txh.uitestgfan.LoginAndLogout.testLoginAndLogout(LoginAndLogout.java:27)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:243)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testLoginAndLogout
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.LoginAndLogout
+
+INSTRUMENTATION_STATUS: stack=com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/iv_user_head]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.LoginAndLogout.userLogout(LoginAndLogout.java:203)
+
+	at com.txh.uitestgfan.LoginAndLogout.testLoginAndLogout(LoginAndLogout.java:27)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:243)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 24.723
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for LoginAndLogout...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\LoginAndLogout.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+5319 KB/s (10900 bytes in 0.002s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.LoginAndLogout:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testLoginAndLogout
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.LoginAndLogout
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testLoginAndLogout:
+
+junit.framework.AssertionFailedError: expected:<true> but was:<false>
+
+	at com.txh.uitestgfan.LoginAndLogout.succLogin(LoginAndLogout.java:110)
+
+	at com.txh.uitestgfan.LoginAndLogout.testLoginAndLogout(LoginAndLogout.java:26)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:243)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testLoginAndLogout
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.LoginAndLogout
+
+INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: expected:<true> but was:<false>
+
+	at com.txh.uitestgfan.LoginAndLogout.succLogin(LoginAndLogout.java:110)
+
+	at com.txh.uitestgfan.LoginAndLogout.testLoginAndLogout(LoginAndLogout.java:26)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:243)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 11.244
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for LoginAndLogout...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 2 source files to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\LoginAndLogout.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+2131 KB/s (10922 bytes in 0.005s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.LoginAndLogout:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testLoginAndLogout
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.LoginAndLogout
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testLoginAndLogout:
+
+junit.framework.AssertionFailedError: expected:<true> but was:<false>
+
+	at com.txh.uitestgfan.LoginAndLogout.succLogin(LoginAndLogout.java:110)
+
+	at com.txh.uitestgfan.LoginAndLogout.testLoginAndLogout(LoginAndLogout.java:26)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:243)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testLoginAndLogout
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.LoginAndLogout
+
+INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: expected:<true> but was:<false>
+
+	at com.txh.uitestgfan.LoginAndLogout.succLogin(LoginAndLogout.java:110)
+
+	at com.txh.uitestgfan.LoginAndLogout.testLoginAndLogout(LoginAndLogout.java:26)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:243)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 9.125
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for LoginAndLogout...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\LoginAndLogout.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+5326 KB/s (10919 bytes in 0.002s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.LoginAndLogout:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testLoginAndLogout
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.LoginAndLogout
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testLoginAndLogout:
+
+junit.framework.AssertionFailedError: expected:<true> but was:<false>
+
+	at com.txh.uitestgfan.LoginAndLogout.succLogin(LoginAndLogout.java:110)
+
+	at com.txh.uitestgfan.LoginAndLogout.testLoginAndLogout(LoginAndLogout.java:26)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:243)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testLoginAndLogout
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.LoginAndLogout
+
+INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: expected:<true> but was:<false>
+
+	at com.txh.uitestgfan.LoginAndLogout.succLogin(LoginAndLogout.java:110)
+
+	at com.txh.uitestgfan.LoginAndLogout.testLoginAndLogout(LoginAndLogout.java:26)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:243)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 9.572
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for LoginAndLogout...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\LoginAndLogout.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+5327 KB/s (10917 bytes in 0.002s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.LoginAndLogout:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testLoginAndLogout
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.LoginAndLogout
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testLoginAndLogout:
+
+junit.framework.ComparisonFailure: expected:<你要退出当前账号吗[？]> but was:<你要退出当前账号吗[?]>
+
+	at com.txh.uitestgfan.LoginAndLogout.userLogout(LoginAndLogout.java:222)
+
+	at com.txh.uitestgfan.LoginAndLogout.testLoginAndLogout(LoginAndLogout.java:27)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:243)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testLoginAndLogout
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.LoginAndLogout
+
+INSTRUMENTATION_STATUS: stack=junit.framework.ComparisonFailure: expected:<你要退出当前账号吗[？]> but was:<你要退出当前账号吗[?]>
+
+	at com.txh.uitestgfan.LoginAndLogout.userLogout(LoginAndLogout.java:222)
+
+	at com.txh.uitestgfan.LoginAndLogout.testLoginAndLogout(LoginAndLogout.java:27)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:243)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 15.853
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for LoginAndLogout...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\LoginAndLogout.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+3550 KB/s (10912 bytes in 0.003s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.LoginAndLogout:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testLoginAndLogout
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.LoginAndLogout
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testLoginAndLogout:
+
+junit.framework.ComparisonFailure: expected:<[确定]> but was:<[取消]>
+
+	at com.txh.uitestgfan.LoginAndLogout.userLogout(LoginAndLogout.java:233)
+
+	at com.txh.uitestgfan.LoginAndLogout.testLoginAndLogout(LoginAndLogout.java:27)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:243)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testLoginAndLogout
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.LoginAndLogout
+
+INSTRUMENTATION_STATUS: stack=junit.framework.ComparisonFailure: expected:<[确定]> but was:<[取消]>
+
+	at com.txh.uitestgfan.LoginAndLogout.userLogout(LoginAndLogout.java:233)
+
+	at com.txh.uitestgfan.LoginAndLogout.testLoginAndLogout(LoginAndLogout.java:27)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:243)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 24.245
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for LoginAndLogout...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\LoginAndLogout.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+2664 KB/s (10915 bytes in 0.004s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.LoginAndLogout:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testLoginAndLogout
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.LoginAndLogout
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testLoginAndLogout:
+
+junit.framework.AssertionFailedError: expected:<true> but was:<false>
+
+	at com.txh.uitestgfan.LoginAndLogout.succLogin(LoginAndLogout.java:111)
+
+	at com.txh.uitestgfan.LoginAndLogout.testLoginAndLogout(LoginAndLogout.java:26)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:243)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testLoginAndLogout
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.LoginAndLogout
+
+INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: expected:<true> but was:<false>
+
+	at com.txh.uitestgfan.LoginAndLogout.succLogin(LoginAndLogout.java:111)
+
+	at com.txh.uitestgfan.LoginAndLogout.testLoginAndLogout(LoginAndLogout.java:26)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:243)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 20.801
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for LoginAndLogout...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\LoginAndLogout.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 1 second
+5324 KB/s (10915 bytes in 0.002s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.LoginAndLogout:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testLoginAndLogout
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.LoginAndLogout
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Failure in testLoginAndLogout:
+
+junit.framework.AssertionFailedError: expected:<true> but was:<false>
+
+	at com.txh.uitestgfan.LoginAndLogout.succLogin(LoginAndLogout.java:111)
+
+	at com.txh.uitestgfan.LoginAndLogout.testLoginAndLogout(LoginAndLogout.java:26)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:243)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testLoginAndLogout
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.LoginAndLogout
+
+INSTRUMENTATION_STATUS: stack=junit.framework.AssertionFailedError: expected:<true> but was:<false>
+
+	at com.txh.uitestgfan.LoginAndLogout.succLogin(LoginAndLogout.java:111)
+
+	at com.txh.uitestgfan.LoginAndLogout.testLoginAndLogout(LoginAndLogout.java:26)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:243)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -2
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.F
+
+Time: 22.326
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 1,  Errors: 0
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for PersonalCenter...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 3 source files to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\PersonalCenter.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+2816 KB/s (11542 bytes in 0.004s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.PersonalCenter:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testPensonalCenter
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.PersonalCenter
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testPensonalCenter
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.PersonalCenter
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 2.688
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for PersonalCenter...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\PersonalCenter.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+2258 KB/s (11574 bytes in 0.005s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.PersonalCenter:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testPensonalCenter
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.PersonalCenter
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testPensonalCenter
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.PersonalCenter
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 5.221
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+

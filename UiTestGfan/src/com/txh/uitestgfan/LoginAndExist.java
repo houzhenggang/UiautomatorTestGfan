@@ -8,23 +8,33 @@ import com.android.uiautomator.core.UiObjectNotFoundException;
 import com.android.uiautomator.core.UiSelector;
 import com.android.uiautomator.testrunner.UiAutomatorTestCase;
 
-public class LoginAndLogout extends UiAutomatorTestCase{
+public class LoginAndExist extends UiAutomatorTestCase{
 	public static void main(String[] args) {
-		String jarName = "LoginAndLogout";
-		String testClass = "com.txh.uitestgfan.LoginAndLogout";
-		String testName = "testLoginAndLogout";
+		String jarName = "LoginAndExist";
+		String testClass = "com.txh.uitestgfan.LoginAndExist";
+		String testName = "testLoginExsit";
 		String androidId = "1";
 		new UiAutomatorHelper(jarName, testClass, testName, androidId);
 	}
 	/**
-	 * 测试执行注册，登录的方法
+	 * 测试执行登录的方法
 	 * @throws UiObjectNotFoundException
 	 */
-	public void testLoginAndLogout() throws UiObjectNotFoundException{
+	public void testLoginExsit() throws UiObjectNotFoundException{
 		clickHeadrImage();
 		//judgeDefaultTex();
-		//succLogin();	
-		blankUserNPw();
+		clickMy();
+		succLogin();	
+		Logout();
+		//blankUserNPw();
+	}
+	/**
+	 * 点击“我的”进入个人中心
+	 * @throws UiObjectNotFoundException
+	 */
+	public void clickMy()throws UiObjectNotFoundException{
+		UiObject my = new UiObject(new UiSelector().text("我的"));
+		my.click();
 	}
 	/**
 	 * 点击用户登录头像
@@ -54,40 +64,7 @@ public class LoginAndLogout extends UiAutomatorTestCase{
 		String edPass = password.getText();
 		Assert.assertEquals("", edPass);
 	}
-	/**
-	 * 使用未注册过的手机号注册,如何获取手机短信，自动填写验证码 密码大于6位小于15位
-	 * 
-	 * @throws UiObjectNotFoundException
-	 */
-	public void registerScuss() throws UiObjectNotFoundException {
-		// 点击注册机锋账号
-		UiObject tvReg = new UiObject(
-				new UiSelector().resourceId("com.mappn.gfan:id/tv_register"));
-		tvReg.click();
-		UiObject userN = new UiObject(
-				new UiSelector().resourceId("com.mappn.gfan:id/et_username"));
-		userN.setText("18701559910");
-		UiObject identifyCode = new UiObject(
-				new UiSelector()
-						.resourceId("com.mappn.gfan:id/rl_get_verify_code"));
-		identifyCode.clickAndWaitForNewWindow(5000);
-		UiObject idenCode = new UiObject(
-				new UiSelector().resourceId("com.mappn.gfan:id/et_email"));
-		idenCode.setText("845692");
-		UiObject Pw = new UiObject(
-				new UiSelector().resourceId("com.mappn.gfan:id/et_password"));
-		Pw.setText("1234567");
-		UiObject conPw = new UiObject(
-				new UiSelector()
-						.resourceId("com.mappn.gfan:id/et_confirm_password"));
-		conPw.setText("1234567");
-		// 获取键盘并收起键盘
-		UiDevice keybox = getUiDevice();
-		keybox.pressBack();
-		UiObject regeAndLog = new UiObject(
-				new UiSelector().resourceId("com.mappn.gfan:id/rl_register"));
-		regeAndLog.click();
-	}
+	
 	/**
 	 * 输入正确的用户名、密码点击登录
 	 * 
@@ -102,7 +79,13 @@ public class LoginAndLogout extends UiAutomatorTestCase{
 		password.setText("654321");
 		UiObject login = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/rl_login"));
-		login.clickAndWaitForNewWindow(5000);
+		login.click();
+		// 判断是否成功返回个人中心页面
+		UiObject personCenterPage = new UiObject(
+						new UiSelector().resourceId("com.mappn.gfan:id/fragment_container"));			
+		personCenterPage.waitForExists(10000);
+		Assert.assertEquals(true, personCenterPage.exists());
+		//获取登录后的用户名
 		UiObject afterLogin = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/tv_user_name"));
 		afterLogin.waitForExists(1000);// 等待登录
@@ -112,7 +95,7 @@ public class LoginAndLogout extends UiAutomatorTestCase{
 		String username = afterLogin.getText();
 		Assert.assertEquals("imopan88", username);
 		
-		exitGfan();
+		//exitGfan();
 	}
 	/**
 	 * 输入用户名&密码输入空格，点击登录
@@ -196,7 +179,7 @@ public class LoginAndLogout extends UiAutomatorTestCase{
 	 * 
 	 * @throws UiObjectNotFoundException
 	 */
-	public void userLogout() throws UiObjectNotFoundException {
+	public void Logout() throws UiObjectNotFoundException {
 		UiObject userHead = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/iv_user_head"));
 		userHead.click();
@@ -212,7 +195,7 @@ public class LoginAndLogout extends UiAutomatorTestCase{
 				new UiSelector()
 						.resourceId("com.mappn.gfan:id/textview_middle"));// 提示框内容
 		String tvMess = tvMesg.getText();
-		Assert.assertEquals("你要退出当前账号吗？", tvMess);
+		Assert.assertEquals("你要退出当前账号吗?", tvMess);
 		// 点击取消-确定，判断按钮名称是否正确
 		UiObject cancle = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/button_left"));
@@ -222,7 +205,7 @@ public class LoginAndLogout extends UiAutomatorTestCase{
 		confirm.click();
 		UiObject comfirm = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/button_right"));
-		String confTex = cancle.getText();
+		String confTex = comfirm.getText();
 		Assert.assertEquals("确定", confTex);
 		comfirm.click();
 

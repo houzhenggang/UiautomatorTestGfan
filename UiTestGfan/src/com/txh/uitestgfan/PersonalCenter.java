@@ -2,6 +2,7 @@ package com.txh.uitestgfan;
 
 import junit.framework.Assert;
 
+import com.android.uiautomator.core.UiDevice;
 import com.android.uiautomator.core.UiObject;
 import com.android.uiautomator.core.UiObjectNotFoundException;
 import com.android.uiautomator.core.UiScrollable;
@@ -34,8 +35,9 @@ public class PersonalCenter extends UiAutomatorTestCase {
 		// share();
 		// depositPage();
 		// weixinPay();
-		//shareFriendCircle();
-		shareWeiXinFriend();
+		// shareFriendCircle();
+		//shareWeiXinFriend();
+		shareWeiBo();
 		// depositPage();
 		// weixinPay();
 	}
@@ -295,12 +297,13 @@ public class PersonalCenter extends UiAutomatorTestCase {
 				"com.mappn.gfan:id/title").text("分享"));
 		shareBtn.click();
 		UiObject weixinFriend = new UiObject(
-				new UiSelector().resourceId("com.mappn.gfan:id/weixin_friend_image"));			
+				new UiSelector()
+						.resourceId("com.mappn.gfan:id/weixin_friend_image"));
 		weixinFriend.click();
 		// 检查选择分享好友页面是否存在
 		UiObject shareFriend = new UiObject(
 				new UiSelector().resourceId("com.tencent.mm:id/b94"));
-		Assert.assertEquals(true, shareFriend.exists());//判断选择好友页面是否存在
+		Assert.assertEquals(true, shareFriend.exists());// 判断选择好友页面是否存在
 		if (!shareFriend.exists()) {
 			UiObject loginPage = new UiObject(
 					new UiSelector().resourceId("com.tencent.mm:id/dm"));
@@ -322,35 +325,63 @@ public class PersonalCenter extends UiAutomatorTestCase {
 				new UiSelector().resourceId("com.tencent.mm:id/a4m"));
 		String fromMess = fromMessage.getText();
 		Assert.assertEquals("来自：机锋市场", fromMess);
-		
-		//输入分享信息
-		UiObject setShareTex = new UiObject(new UiSelector().resourceId("com.tencent.mm:id/a4j"));
+
+		// 输入分享信息
+		UiObject setShareTex = new UiObject(
+				new UiSelector().resourceId("com.tencent.mm:id/a4j"));
 		setShareTex.setText("share to weixin friend");
-		
-		//点击分享按钮
-		UiObject shareBttn = new UiObject(new UiSelector().resourceId("com.tencent.mm:id/b9g"));
+
+		// 点击分享按钮
+		UiObject shareBttn = new UiObject(
+				new UiSelector().resourceId("com.tencent.mm:id/b9g"));
 		shareBttn.clickAndWaitForNewWindow();
-		
-		//判断分享后的状态
-		UiObject sendStatus = new UiObject(new UiSelector().resourceId("com.tencent.mm:id/a4l"));
+
+		// 判断分享后的状态
+		UiObject sendStatus = new UiObject(
+				new UiSelector().resourceId("com.tencent.mm:id/a4l"));
 		String statusMess = sendStatus.getText();
 		Assert.assertEquals("已发送", statusMess);
-		
-		//检查“返回机锋市场”是否为“返回机锋市场”
-		UiObject btnTex = new UiObject(new UiSelector().resourceId("com.tencent.mm:id/a4g"));
+
+		// 检查“返回机锋市场”是否为“返回机锋市场”
+		UiObject btnTex = new UiObject(
+				new UiSelector().resourceId("com.tencent.mm:id/a4g"));
 		String btnText = btnTex.getText();
 		Assert.assertEquals("返回机锋市场", btnText);
-		
-		//点击返回机锋市场
+
+		// 点击返回机锋市场
 		btnTex.click();
-		
-		//判断是否成功返回个人中心页面
-		UiObject personCenterPage = new UiObject(new UiSelector().resourceId("com.mappn.gfan:id/fragment_container"));
+
+		// 判断是否成功返回个人中心页面
+		UiObject personCenterPage = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/fragment_container"));			
 		Assert.assertEquals(true, personCenterPage.exists());
+	}
+	/**
+	 * 分享到新浪微博
+	 * 无法获取微博账号、密码输入框，只能测试到是否跳转到微博分享页面
+	 * @throws UiObjectNotFoundException
+	 */
+	public void shareWeiBo() throws UiObjectNotFoundException {
+		// 点击分享
+		UiObject shareBtn = new UiObject(new UiSelector().resourceId(
+				"com.mappn.gfan:id/title").text("分享"));
+		shareBtn.click();
+		//点击微博
+		UiObject weibo = new UiObject(new UiSelector().resourceId("com.mappn.gfan:id/weibo_image"));
+		weibo.click();
+		
+		//判断微博页面是否存在
+		UiObject weiboView = new UiObject(new UiSelector().className("android.webkit.WebView"));
+		Assert.assertEquals(true, weiboView.exists());
+		//返回个人中心
+		UiDevice device = getUiDevice();
+		device.pressBack();
+		device.pressBack();
+		
 	}
 
 	/**
-	 * 点击充值，未登录则先登录
+	 * 点击充值，未登录机锋账号则先登录
 	 * 
 	 * @throws UiObjectNotFoundException
 	 */
