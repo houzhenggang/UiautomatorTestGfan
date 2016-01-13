@@ -31,9 +31,15 @@ public class PersonalCenter extends UiAutomatorTestCase {
 		// bookInNotLogin();
 		// succLogin();
 		// weixinLogin();
+<<<<<<< HEAD
 		// share();
 		//depositPage();
 		weixinPay();
+=======
+		share();
+		// depositPage();
+		//weixinPay();
+>>>>>>> 1c32a1521b680c5d3b2ef373bdaf170f1eb967f7
 	}
 
 	/**
@@ -200,8 +206,12 @@ public class PersonalCenter extends UiAutomatorTestCase {
 	 * @throws UiObjectNotFoundException
 	 */
 	public void weixinLogin() throws UiObjectNotFoundException {
+<<<<<<< HEAD
 		UiObject weixinU = new UiObject(
 				new UiSelector().text("QQ号/微信号/Email"));
+=======
+		UiObject weixinU = new UiObject(new UiSelector().text("QQ号/微信号/Email"));
+>>>>>>> 1c32a1521b680c5d3b2ef373bdaf170f1eb967f7
 		weixinU.setText("18519055006");
 
 		UiObject weixinP = new UiObject(
@@ -248,23 +258,38 @@ public class PersonalCenter extends UiAutomatorTestCase {
 		// 再次点击分享
 		sText.click();
 		// 点击分享到微信朋友圈
+<<<<<<< HEAD
 		UiObject weixinFriend = new UiObject(new UiSelector().text("微信朋友圈"));
+=======
+		UiObject weixinFriend = new UiObject(new UiSelector().resourceId("com.mappn.gfan:id/weixin_image"));
+>>>>>>> 1c32a1521b680c5d3b2ef373bdaf170f1eb967f7
 		Assert.assertEquals(true, weixinFriend.exists());
 		weixinFriend.clickAndWaitForNewWindow();
 
 		// 检查分享页面是否存在
 		UiObject sharePage = new UiObject(
+<<<<<<< HEAD
 				new UiSelector().resourceId("com.tencent.mm:id/c3g"));
+=======
+				new UiSelector().resourceId("com.tencent.mm:id/c2q"));
+>>>>>>> 1c32a1521b680c5d3b2ef373bdaf170f1eb967f7
 		if (!sharePage.exists()) {// 微信登录
 			UiObject loginPage = new UiObject(
 					new UiSelector().resourceId("com.tencent.mm:id/dm"));
 			Assert.assertEquals(true, loginPage.exists());// 判断微信登录页面是否存在
 			weixinLogin();
+<<<<<<< HEAD
 			return;
 		}
 		// 输入分享内容
 		UiObject shareEdit = new UiObject(
 				new UiSelector().resourceId("com.tencent.mm:id/c24"));
+=======
+		}
+		// 输入分享内容
+		UiObject shareEdit = new UiObject(
+				new UiSelector().resourceId("com.tencent.mm:id/c2q"));
+>>>>>>> 1c32a1521b680c5d3b2ef373bdaf170f1eb967f7
 		shareEdit.setText("share gfanApp");
 		// 点击发送按钮
 		UiObject sendButton = new UiObject(
@@ -278,11 +303,16 @@ public class PersonalCenter extends UiAutomatorTestCase {
 
 	/**
 	 * 点击充值，未登录则先登录
+<<<<<<< HEAD
+=======
+	 * 
+>>>>>>> 1c32a1521b680c5d3b2ef373bdaf170f1eb967f7
 	 * @throws UiObjectNotFoundException
 	 */
 	public void depositPage() throws UiObjectNotFoundException {
 		UiObject deposit = new UiObject(new UiSelector().text("充值"));
 		deposit.click();
+<<<<<<< HEAD
 		//判断登录界面是否存在
 		UiObject depsPage = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/tv_title").text("登录"));				
@@ -332,6 +362,78 @@ public class PersonalCenter extends UiAutomatorTestCase {
 		}
 		
 		
+=======
+		// 判断登录界面是否存在
+		UiObject depsPage = new UiObject(new UiSelector().resourceId(
+				"com.mappn.gfan:id/tv_title").text("登录"));
+		if (depsPage.exists()) {// 如果登录页面存在，则登录
+			succLogin();
+			
+		}
+	}
+
+	public void aliPay() throws UiObjectNotFoundException {
+		// 点击“充值”
+		UiObject deposit = new UiObject(new UiSelector().text("充值"));
+		deposit.click();
+
+		UiObject alipay = new UiObject(new UiSelector().text("支付宝充值"));
+		alipay.click();
+		UiObject alipayPage = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/tvContent"));
+		String alipayTex = alipayPage.getText();
+		// Assert.assertEquals("您好，哈喽，您有0机锋券。
+		// 请您输入充值金额。", alipayTex);
+		UiObject edText = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/et_input"));
+		edText.clearTextField();
+		edText.setText("1");
+		// 判断输入1元的时候，右侧显示的机锋券数量是否正确
+		// UiObject jifengquan = new UiObject(new
+		// UiSelector().resourceId("com.mappn.gfan:id/tv_info"));
+		// String quan = jifengquan.getText();
+		// Assert.assertEquals("元  价值10机锋券", quan);
+
+		UiObject confirmButn = new UiObject(
+				new UiSelector()
+						.resourceId("com.mappn.gfan:id/btn_charge_alipay"));
+		confirmButn.clickAndWaitForNewWindow(10000);
+	}
+
+	public void weixinPay() throws UiObjectNotFoundException {
+		// 点击“充值”
+		UiObject deposit = new UiObject(new UiSelector().text("充值"));
+		deposit.click();
+
+		// 判断登录界面是否存在
+		UiObject depsPage = new UiObject(new UiSelector().resourceId(
+				"com.mappn.gfan:id/tv_title").text("登录"));
+		if (depsPage.exists()) {// 如果登录页面存在，则登录
+			succLogin();
+			deposit.click();
+		}
+		
+		// 点击“微信支付充值”
+		UiObject weixinPay = new UiObject(new UiSelector().text("微信支付充值"));
+		weixinPay.click();
+		// 输入充值金额
+		UiObject edText = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/et_input"));
+		edText.clearTextField();
+		edText.setText("1");
+
+		UiObject confirmButn = new UiObject(
+				new UiSelector()
+						.resourceId("com.mappn.gfan:id/btn_charge_alipay"));
+		confirmButn.clickAndWaitForNewWindow(10000);
+
+		UiObject weixinPage = new UiObject(new UiSelector().text("登录微信"));
+		if (weixinPage.exists()) {
+			weixinLogin();
+			
+		}
+
+>>>>>>> 1c32a1521b680c5d3b2ef373bdaf170f1eb967f7
 	}
 
 }
