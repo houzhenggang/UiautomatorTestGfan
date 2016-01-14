@@ -4,6 +4,7 @@ import junit.framework.Assert;
 
 import android.app.backup.BackupManager;
 import android.bluetooth.BluetoothClass.Device;
+import android.text.style.ClickableSpan;
 import android.util.Log;
 
 import com.android.uiautomator.core.UiDevice;
@@ -41,12 +42,14 @@ public class PersonalCenter extends UiAutomatorTestCase {
 		// shareFriendCircle();
 		// shareWeiXinFriend();
 		// shareWeiBo();
-		depositPage();
+		// depositPage();
 		// aliPay();
 		// weixinPay();
 		// unionPay();
 		// tenPay();
 		// phonecardPay();
+		// exchangeMall();
+		storeBox();
 
 	}
 
@@ -393,7 +396,7 @@ public class PersonalCenter extends UiAutomatorTestCase {
 	}
 
 	/**
-	 * 点击充值，未登录机锋账号则先登录
+	 * 点击充值，未登录机锋账号则先登录 获取充值方式并一一点击最后返回个人中心页面
 	 * 
 	 * @throws UiObjectNotFoundException
 	 */
@@ -418,17 +421,24 @@ public class PersonalCenter extends UiAutomatorTestCase {
 				new UiSelector().resourceId("android:id/list"));
 		int count = listview.getChildCount();
 		for (int i = 0; i < count; i++) {
-			UiObject childObj = listview.getChild(new UiSelector().instance(i));
-			Log.i(titleTex, "i :" + i + "," + childObj.getBounds().toString());
-			childObj.click();
-			// 点击左上角返回按钮
-			UiObject backBttn = new UiObject(
-					new UiSelector().resourceId("com.mappn.gfan:id/iv_left"));
-			backBttn.click();
-			 /* UiDevice device = getUiDevice();
-			 *  device.pressBack();
-			 * device.pressBack();
+			UiObject childObj = listview.getChild(new UiSelector().clickable(
+					true).instance(i));
+			/*
+			 * //获取支付方式并在控制台打印出来 String strObj = childObj.getText();
+			 * System.out.println("payMethod: " +strObj.toString());
+			 * System.out.println("============");
 			 */
+			childObj.click();
+			/*
+			 * // 点击左上角返回按钮 UiObject backBttn = new UiObject( new
+			 * UiSelector().resourceId("com.mappn.gfan:id/iv_left"));
+			 * backBttn.click();
+			 */
+
+			// 点击手机返回按钮
+			UiDevice device = getUiDevice();
+			device.pressBack();// 收起输入法键盘
+			device.pressBack();// 返回到充值页面
 		}
 
 	}
@@ -734,6 +744,121 @@ public class PersonalCenter extends UiAutomatorTestCase {
 				new UiSelector().resourceId("com.mappn.gfan:id/iv_left"));
 		backBttn.click();
 
+	}
+
+	/**
+	 * 兑换商城 网页视图，获取不到相关控件
+	 * 
+	 * @throws UiObjectNotFoundException
+	 */
+	public void exchangeMall() throws UiObjectNotFoundException {
+		// 点击兑换商城
+		UiObject exMall = new UiObject(new UiSelector().text("兑换商城"));
+		exMall.click();
+		sleep(1000);
+		// 返回个人中心
+		UiObject back = new UiObject(
+				new UiSelector().className("android.widget.ImageView"));
+		back.click();
+	}
+
+	/**
+	 * 存卡箱
+	 * 
+	 * @throws UiObjectNotFoundException
+	 */
+	public void storeBox() throws UiObjectNotFoundException {
+		// 点击存卡箱
+		UiObject storeBox = new UiObject(new UiSelector().text("存卡箱"));
+		storeBox.click();
+		// 检查title是否为：存卡箱
+		UiObject title = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/tv_title"));
+		String titleName = title.getText();
+		Assert.assertEquals("存卡箱", titleName);
+		// 左上角返回按钮
+		UiObject backBtn = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/iv_left"));
+
+		// 点击“已领”-点击左上角返回按钮-再次点击“存卡箱”进入存卡箱页面
+		UiObject yiling = new UiObject(new UiSelector().resourceId(
+				"com.mappn.gfan:id/page_indicator").childSelector(
+				new UiSelector().text("已领")));
+		yiling.click();
+		backBtn.click();
+		storeBox.click();
+		// 点击“已淘”-点击左上角返回按钮-再次点击“存卡箱”进入存卡箱页面
+		UiObject yitao = new UiObject(new UiSelector().resourceId(
+				"com.mappn.gfan:id/page_indicator").childSelector(
+				new UiSelector().text("已淘")));
+		yitao.click();
+		backBtn.click();
+		storeBox.click();
+		// 垂直滚动
+		UiScrollable scrollable = new UiScrollable(
+				new UiSelector().scrollable(true));
+		scrollable.setAsVerticalList();
+		// 点击礼包名称，进入礼包详情页
+		UiObject presentName = new UiObject(
+				new UiSelector().description("《自由之战》 强化石礼包 Link"));
+		presentName.click();
+		// 获取title的名称是否与presentName的名称一致
+		UiObject presentTitle = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/tv_title"));
+		String name = presentTitle.getText();
+		Assert.assertEquals("《自由之战》 强化石礼包", name);
+
+		// 返回存卡箱页面
+		UiObject backBttn = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/iv_left"));
+		backBttn.click();
+
+		// 点击礼包图片进入礼包详情页-返回存卡箱
+		UiObject imageLink = new UiObject(new UiSelector().description("Link"));
+		imageLink.click();
+		// 点击“领号”
+		UiObject linghao = new UiObject(new UiSelector().description("领号 Link"));
+		linghao.click();
+		//判断任务是否在下载状态，如果不在下载中则点击下载按钮
+		UiObject downloadProcess = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/progress"));
+		if (!downloadProcess.exists()) {
+			// 点击下载
+			UiObject download = new UiObject(
+					new UiSelector()
+							.resourceId("com.mappn.gfan:id/info_action_1"));
+			download.click();
+		}
+
+		// 点击右上角存卡箱image-返回存卡箱页面
+		UiObject boxBtn = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/iv_right1"));
+		boxBtn.click();
+
+		// 点击“游戏详情”
+		UiObject detailsLink = new UiObject(
+				new UiSelector().description("游戏详情 Link"));
+		detailsLink.click();
+		// 获取app详情页app的名称
+		UiObject detailsPage = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/app_name"));
+		String appName = detailsPage.getText();
+		Assert.assertEquals("自由之战", appName);
+		// 返回存卡箱
+		UiDevice device = getUiDevice();
+		device.pressBack();
+		// 点击复制按钮
+		UiObject copyBtn = new UiObject(
+				new UiSelector().className("android.widget.Button"));
+		copyBtn.click();
+		// 点击“全选”-点击“全选”
+		UiObject seleAllBtn = new UiObject(new UiSelector().description("全选"));
+		seleAllBtn.click();// 选中
+		UiObject cancleeAllBtn = new UiObject(new UiSelector().description("全选"));
+		cancleeAllBtn.click();// 取消选中
+		// 点击删除按钮
+		UiObject deleBtn = new UiObject(new UiSelector().description("删除 Link"));
+		deleBtn.click();
 	}
 
 }
