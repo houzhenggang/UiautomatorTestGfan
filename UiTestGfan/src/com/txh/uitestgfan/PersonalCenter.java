@@ -49,7 +49,8 @@ public class PersonalCenter extends UiAutomatorTestCase {
 		// tenPay();
 		// phonecardPay();
 		// exchangeMall();
-		storeBox();
+		//storeBox();
+		fav();
 
 	}
 
@@ -83,12 +84,6 @@ public class PersonalCenter extends UiAutomatorTestCase {
 		UiObject ima = new UiObject(
 				new UiSelector().className("android.widget.ImageView"));
 		Assert.assertEquals(true, ima.exists());
-		/*
-		 * // 判断文字“积分”是否正确 UiObject scoTex = new UiObject( new
-		 * UiSelector().className("android.widget.TextView").childSelector(new
-		 * UiSelector().index(1)).text("积分：")); Assert.assertEquals(true,
-		 * scoTex.exists());
-		 */
 		// 判断文字积分数值是否正确
 		UiObject scoNum = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/tv_credit"));
@@ -756,6 +751,16 @@ public class PersonalCenter extends UiAutomatorTestCase {
 		UiObject exMall = new UiObject(new UiSelector().text("兑换商城"));
 		exMall.click();
 		sleep(1000);
+		//检查积分是否存在
+		UiObject scoreMall = new UiObject(new UiSelector().description("1203").clickable(false));
+		Assert.assertEquals(true, scoreMall.exists());
+		//点击“兑换记录”
+		UiObject exchange = new UiObject(new UiSelector().description("兑换记录 Link").clickable(true));
+		exchange.click();
+		//跳转到兑换记录页面
+		UiObject exRecord = new UiObject(new UiSelector().text("兑换记录"));
+		Assert.assertEquals(true, exRecord.exists());
+		exchange.click();
 		// 返回个人中心
 		UiObject back = new UiObject(
 				new UiSelector().className("android.widget.ImageView"));
@@ -794,6 +799,7 @@ public class PersonalCenter extends UiAutomatorTestCase {
 		yitao.click();
 		backBtn.click();
 		storeBox.click();
+		// 测试“已领”页面
 		// 垂直滚动
 		UiScrollable scrollable = new UiScrollable(
 				new UiSelector().scrollable(true));
@@ -819,7 +825,7 @@ public class PersonalCenter extends UiAutomatorTestCase {
 		// 点击“领号”
 		UiObject linghao = new UiObject(new UiSelector().description("领号 Link"));
 		linghao.click();
-		//判断任务是否在下载状态，如果不在下载中则点击下载按钮
+		// 判断任务是否在下载状态，如果不在下载中则点击下载按钮
 		UiObject downloadProcess = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/progress"));
 		if (!downloadProcess.exists()) {
@@ -838,10 +844,11 @@ public class PersonalCenter extends UiAutomatorTestCase {
 		// 点击“游戏详情”
 		UiObject detailsLink = new UiObject(
 				new UiSelector().description("游戏详情 Link"));
-		detailsLink.click();
+		detailsLink.clickAndWaitForNewWindow();
 		// 获取app详情页app的名称
 		UiObject detailsPage = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/app_name"));
+		detailsPage.waitForExists(5000);
 		String appName = detailsPage.getText();
 		Assert.assertEquals("自由之战", appName);
 		// 返回存卡箱
@@ -851,14 +858,96 @@ public class PersonalCenter extends UiAutomatorTestCase {
 		UiObject copyBtn = new UiObject(
 				new UiSelector().className("android.widget.Button"));
 		copyBtn.click();
-		// 点击“全选”-点击“全选”
-		UiObject seleAllBtn = new UiObject(new UiSelector().description("全选"));
-		seleAllBtn.click();// 选中
-		UiObject cancleeAllBtn = new UiObject(new UiSelector().description("全选"));
-		cancleeAllBtn.click();// 取消选中
-		// 点击删除按钮
-		UiObject deleBtn = new UiObject(new UiSelector().description("删除 Link"));
-		deleBtn.click();
+		/*
+		 * // 点击“全选”-点击“全选” UiObject seleAllBtn = new UiObject(new
+		 * UiSelector().description("全选")); seleAllBtn.click();// 选中 UiObject
+		 * cancleeAllBtn = new UiObject(new UiSelector().description("全选"));
+		 * cancleeAllBtn.click();// 取消选中 // 点击删除按钮 UiObject deleBtn = new
+		 * UiObject(new UiSelector().description("删除 Link")); deleBtn.click();
+		 */
+		// device.click(265, 1270);
+
+		// 点击“已淘”页面-测试已淘页面
+		yitao.click();
+		sleep(5000);
+		// 垂直滚动
+		//scrollable.setAsVerticalList();
+		// 点击礼包名称，进入礼包详情页
+		UiObject presentName1 = new UiObject(
+				new UiSelector().description("《酋长萨尔》公测钻石礼包 Link"));	
+		String name1 = presentName1.getText();
+		Assert.assertEquals("", name1);
+		presentName1.click();
+		// 获取title的名称是否与presentName的名称一致
+		UiObject presentTitle1 = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/tv_title"));
+		String name2 = presentTitle1.getText();
+		Assert.assertEquals("《酋长萨尔》公测钻石礼包 Link", name2);
+
+		// 返回存卡箱页面
+		backBttn.click();
+		// 点击礼包图片进入礼包详情页-返回存卡箱
+		UiObject imageLink1 = new UiObject(new UiSelector().description("Link"));
+		imageLink1.click();
+		// 点击“淘号 ”
+		UiObject taohao = new UiObject(new UiSelector().description("淘号 Link"));
+		taohao.click();
+		// 判断任务是否在下载状态，如果不在下载中则点击下载按钮
+		if (!downloadProcess.exists()) {
+			// 点击下载
+			UiObject download = new UiObject(
+					new UiSelector()
+							.resourceId("com.mappn.gfan:id/info_action_1"));
+			download.click();
+		}
+		// 点击右上角存卡箱image-返回存卡箱页面
+		boxBtn.click();
+		// 点击“游戏详情”
+		detailsLink.click();
+		// 获取app详情页app的名称
+		String appName1 = detailsPage.getText();
+		Assert.assertEquals("全民魔兽", appName1);
+		// 返回存卡箱
+		device.pressBack();
+		// 点击复制按钮
+		copyBtn.click();
+		backBtn.click();
+		storeBox.click();
 	}
+	/**
+	 * 收藏夹
+	 * @throws UiObjectNotFoundException
+	 */
+	public void fav()throws UiObjectNotFoundException{
+		//点击“收藏夹”
+		UiObject favBox = new UiObject(new UiSelector().text("收藏夹"));
+		favBox.click();	
+		//获取收藏app的名称
+		UiObject itemName = new UiObject(new UiSelector().resourceId("com.mappn.gfan:id/tv_item_name"));
+		String name = itemName.getText();
+		//点击右侧下拉三角形
+		UiObject itemDetails = new UiObject(new UiSelector().resourceId("com.mappn.gfan:id/iv_item_detail"));
+		itemDetails.click();
+		//取消收藏
+		UiObject cancleFav = new UiObject(new UiSelector().resourceId("com.mappn.gfan:id/tv_option_cancel_favorite"));
+		cancleFav.click();
+		//判断已经取消的app是否还存在-取消收藏第一个app
+		Assert.assertNotSame("烈火遮天", name);
+		//再次点击右侧下拉三角形
+		itemDetails.click();
+		UiObject details = new UiObject(new UiSelector().resourceId("com.mappn.gfan:id/tv_option_deatil"));
+		details.click();
+		//点击详情页的取消收藏
+		UiObject detailsCancle = new UiObject(new UiSelector().resourceId("com.mappn.gfan:id/iv_right2"));
+		detailsCancle.click();
+		//返回收藏夹
+		UiObject back = new UiObject(new UiSelector().resourceId("com.mappn.gfan:id/iv_left"));
+		back.click();
+		//判断在详情页中取消的app是否还在收藏夹-取消收藏第二个app
+		Assert.assertNotSame("去哪儿旅行-机票酒店.火车票.旅游团购.出租叫车.景点门票", name);
+		
+	}
+	
+	
 
 }
