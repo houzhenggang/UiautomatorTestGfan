@@ -49,8 +49,11 @@ public class PersonalCenter extends UiAutomatorTestCase {
 		// tenPay();
 		// phonecardPay();
 		// exchangeMall();
-		//storeBox();
-		fav();
+		// storeBox();
+		// fav();
+		// modifyUserImage();
+		// modifyNickName();
+		modifyPassWord();
 
 	}
 
@@ -122,11 +125,11 @@ public class PersonalCenter extends UiAutomatorTestCase {
 	 * @throws UiObjectNotFoundException
 	 */
 	public void succLogin() throws UiObjectNotFoundException {
-		/*
-		 * //点击用户登录头像 UiObject userLogin = new UiObject( new
-		 * UiSelector().resourceId("com.mappn.gfan:id/iv_user_head"));
-		 * userLogin.click();
-		 */
+		// 点击用户登录头像
+		UiObject userLogin = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/iv_user_head"));
+		userLogin.click();
+
 		// 输入用户名密码登录
 		UiObject userName = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/et_gfan"));
@@ -141,6 +144,28 @@ public class PersonalCenter extends UiAutomatorTestCase {
 				new UiSelector().resourceId("com.mappn.gfan:id/tv_user_name"));
 		afterLogin.waitForExists(1000);// 等待登录
 		Assert.assertEquals(true, afterLogin.exists()); // 如果成功登录，判断是否进入登录后的页面
+
+	}
+
+	/**
+	 * 注销-取消-确定,判断注销提示框信息是否正确
+	 * 
+	 * @throws UiObjectNotFoundException
+	 */
+	public void Logout() throws UiObjectNotFoundException {
+		UiDevice device = getUiDevice();
+		UiObject userHead = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/iv_user_head"));
+		userHead.click();
+		UiObject confirm = new UiObject(new UiSelector().className(
+				"android.widget.TextView").text("注销"));
+		confirm.click();
+		UiObject comfirm = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/button_right"));
+		String confTex = comfirm.getText();
+		Assert.assertEquals("确定", confTex);
+		comfirm.click();
+		// device.pressBack();
 
 	}
 
@@ -751,13 +776,15 @@ public class PersonalCenter extends UiAutomatorTestCase {
 		UiObject exMall = new UiObject(new UiSelector().text("兑换商城"));
 		exMall.click();
 		sleep(1000);
-		//检查积分是否存在
-		UiObject scoreMall = new UiObject(new UiSelector().description("1203").clickable(false));
+		// 检查积分是否存在
+		UiObject scoreMall = new UiObject(new UiSelector().description("1203")
+				.clickable(false));
 		Assert.assertEquals(true, scoreMall.exists());
-		//点击“兑换记录”
-		UiObject exchange = new UiObject(new UiSelector().description("兑换记录 Link").clickable(true));
+		// 点击“兑换记录”
+		UiObject exchange = new UiObject(new UiSelector().description(
+				"兑换记录 Link").clickable(true));
 		exchange.click();
-		//跳转到兑换记录页面
+		// 跳转到兑换记录页面
 		UiObject exRecord = new UiObject(new UiSelector().text("兑换记录"));
 		Assert.assertEquals(true, exRecord.exists());
 		exchange.click();
@@ -871,10 +898,10 @@ public class PersonalCenter extends UiAutomatorTestCase {
 		yitao.click();
 		sleep(5000);
 		// 垂直滚动
-		//scrollable.setAsVerticalList();
+		// scrollable.setAsVerticalList();
 		// 点击礼包名称，进入礼包详情页
 		UiObject presentName1 = new UiObject(
-				new UiSelector().description("《酋长萨尔》公测钻石礼包 Link"));	
+				new UiSelector().description("《酋长萨尔》公测钻石礼包 Link"));
 		String name1 = presentName1.getText();
 		Assert.assertEquals("", name1);
 		presentName1.click();
@@ -914,40 +941,165 @@ public class PersonalCenter extends UiAutomatorTestCase {
 		backBtn.click();
 		storeBox.click();
 	}
+
 	/**
 	 * 收藏夹
+	 * 
 	 * @throws UiObjectNotFoundException
 	 */
-	public void fav()throws UiObjectNotFoundException{
-		//点击“收藏夹”
+	public void fav() throws UiObjectNotFoundException {
+		// 点击“收藏夹”
 		UiObject favBox = new UiObject(new UiSelector().text("收藏夹"));
-		favBox.click();	
-		//获取收藏app的名称
-		UiObject itemName = new UiObject(new UiSelector().resourceId("com.mappn.gfan:id/tv_item_name"));
+		favBox.click();
+		// 获取收藏app的名称
+		UiObject itemName = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/tv_item_name"));
 		String name = itemName.getText();
-		//点击右侧下拉三角形
-		UiObject itemDetails = new UiObject(new UiSelector().resourceId("com.mappn.gfan:id/iv_item_detail"));
+		// 点击右侧下拉三角形
+		UiObject itemDetails = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/iv_item_detail"));
 		itemDetails.click();
-		//取消收藏
-		UiObject cancleFav = new UiObject(new UiSelector().resourceId("com.mappn.gfan:id/tv_option_cancel_favorite"));
+		// 取消收藏
+		UiObject cancleFav = new UiObject(
+				new UiSelector()
+						.resourceId("com.mappn.gfan:id/tv_option_cancel_favorite"));
 		cancleFav.click();
-		//判断已经取消的app是否还存在-取消收藏第一个app
+		// 判断已经取消的app是否还存在-取消收藏第一个app
 		Assert.assertNotSame("烈火遮天", name);
-		//再次点击右侧下拉三角形
+		// 再次点击右侧下拉三角形
 		itemDetails.click();
-		UiObject details = new UiObject(new UiSelector().resourceId("com.mappn.gfan:id/tv_option_deatil"));
+		UiObject details = new UiObject(
+				new UiSelector()
+						.resourceId("com.mappn.gfan:id/tv_option_deatil"));
 		details.click();
-		//点击详情页的取消收藏
-		UiObject detailsCancle = new UiObject(new UiSelector().resourceId("com.mappn.gfan:id/iv_right2"));
+		// 点击详情页的取消收藏
+		UiObject detailsCancle = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/iv_right2"));
 		detailsCancle.click();
-		//返回收藏夹
-		UiObject back = new UiObject(new UiSelector().resourceId("com.mappn.gfan:id/iv_left"));
+		// 返回收藏夹
+		UiObject back = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/iv_left"));
 		back.click();
-		//判断在详情页中取消的app是否还在收藏夹-取消收藏第二个app
+		// 判断在详情页中取消的app是否还在收藏夹-取消收藏第二个app
 		Assert.assertNotSame("去哪儿旅行-机票酒店.火车票.旅游团购.出租叫车.景点门票", name);
-		
+
 	}
-	
-	
+
+	/**
+	 * 修改个人信息-修改头像 拍照 从相册中选择修改
+	 * 
+	 * @throws UiObjectNotFoundException
+	 */
+	public void modifyUserImage() throws UiObjectNotFoundException {
+		UiDevice device = getUiDevice();
+		// 点击用户头像
+		UiObject headImage = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/iv_user_head"));
+		headImage.click();
+		// 个人中心-头像
+		UiObject userHead = new UiObject(new UiSelector().text("头像"));
+		userHead.click();
+		// 选择拍照
+		UiObject takePhoto = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/btn_take_photo"));
+		takePhoto.click();
+		// 拍照
+		UiObject photoBtn = new UiObject(
+				new UiSelector()
+						.resourceId("com.lenovo.scgmtk:id/shutter_button_photo"));
+		photoBtn.click();
+		// 拍照保存
+		UiObject btnDone = new UiObject(
+				new UiSelector().resourceId("com.lenovo.scgmtk:id/btn_done"));
+		btnDone.click();
+		// 再次点击头像
+		userHead.click();
+		// 从相册中选择
+		UiObject pickPhoto = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/btn_pick_photo"));
+		pickPhoto.click();
+		// 点击手机某个坐标选择图片
+		device.click(300, 500);
+		UiObject image = new UiObject(
+				new UiSelector()
+						.resourceId("com.lenovo.scgmtk:id/gl_root_view"));
+		image.click();
+		// 保存图片
+		UiObject photoSave = new UiObject(
+				new UiSelector().resourceId("com.lenovo.scgmtk:id/save"));
+		photoSave.click();
+
+	}
+
+	/**
+	 * 修改昵称
+	 * 
+	 * @throws UiObjectNotFoundException
+	 */
+	public void modifyNickName() throws UiObjectNotFoundException {
+		// 点击用户头像
+		UiObject headImage = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/iv_user_head"));
+		headImage.click();
+		// 获取昵称
+		UiObject NickName = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/tv_username"));
+		String name = NickName.getText();
+		// 点击昵称
+		UiObject clickNickName = new UiObject(new UiSelector().text("昵称"));
+		clickNickName.click();
+		// 输入新的昵称
+		UiObject inputNickName = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/et_user_name"));
+		inputNickName.setText("imopan2016");
+		// 点击提交
+		UiObject submit = new UiObject(new UiSelector().text("提交"));
+		submit.click();
+		// 检查修改昵称是否成功：与之前的昵称对比
+		Assert.assertNotSame("修改昵称成功", "imopan88", name);
+
+	}
+
+	/**
+	 * 修改密码
+	 * 注销登录-重新登录，验证修改的密码是否正确
+	 * @throws UiObjectNotFoundException
+	 */
+	public void modifyPassWord() throws UiObjectNotFoundException {
+		// 点击用户头像
+		UiObject headImage = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/iv_user_head"));
+		headImage.click();
+		//点击修改密码
+		UiObject clickPass = new UiObject(new UiSelector().text("修改密码"));
+		clickPass.click();
+		//输入旧密码
+		UiObject inputOldPass = new UiObject(
+				new UiSelector()
+						.resourceId("com.mappn.gfan:id/et_old_password"));
+		inputOldPass.setText("654321");
+		//输入新密码
+		UiObject inputNesPass1 = new UiObject(
+				new UiSelector()
+						.resourceId("com.mappn.gfan:id/et_new_password1"));
+		inputNesPass1.setText("987654");
+		//确认密码
+		UiObject inputNesPass2 = new UiObject(
+				new UiSelector()
+						.resourceId("com.mappn.gfan:id/et_new_password2"));
+		inputNesPass2.setText("987654");
+		//点击确认修改
+		UiObject confirmModify = new UiObject(new UiSelector().text("确认修改"));
+		confirmModify.click();
+
+		//返回个人中心page
+		UiObject backBtn = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/iv_left"));
+		backBtn.click();
+		//注销账户
+		Logout();
+		//登录，验证修改的密码是否正确
+		succLogin();
+	}
 
 }
