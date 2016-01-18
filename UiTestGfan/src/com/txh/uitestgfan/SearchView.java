@@ -16,6 +16,8 @@ public class SearchView  extends UiAutomatorTestCase{
 		new UiAutomatorHelper(jarName, testClass, testName, androidId);
 	}
 	public void testSearchView() throws UiObjectNotFoundException{
+		//excuteSearchDefaultTex();
+		setSearchWord();
 		
 	}
 	/**
@@ -49,8 +51,13 @@ public class SearchView  extends UiAutomatorTestCase{
 	 * @throws UiObjectNotFoundException
 	 */
 	public void setSearchWord() throws UiObjectNotFoundException {
+		//点击搜索框
+		UiObject textV = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/tv_search"));
+		textV.click();
+		//判断搜索框是否存在-输入QQ搜索
 		UiObject textVChild = new UiObject(
-				new UiSelector().resourceId("com.mappn.gfan:id/et_search"));
+				new UiSelector().resourceId("com.mappn.gfan:id/top_search_container"));
 		Assert.assertEquals(true, textVChild.exists());
 		textVChild.setText("QQ");
 		sleep(1000);
@@ -58,7 +65,8 @@ public class SearchView  extends UiAutomatorTestCase{
 		UiObject listViewOb = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/baselistview"));
 		// Assert.assertEquals(0, listViewOb.getChildCount());
-		UiObject childOb = listViewOb.getChild(new UiSelector().index(1));
+		//点击列表第一个搜索关键字
+		UiObject childOb = listViewOb.getChild(new UiSelector().index(6));
 		// childOb.click();
 		Assert.assertEquals(true, childOb.exists());
 		if (childOb.exists()) {
