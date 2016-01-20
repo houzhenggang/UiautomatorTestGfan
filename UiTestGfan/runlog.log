@@ -31720,3 +31720,3059 @@ Tests run: 1,  Failures: 0,  Errors: 1
 
 INSTRUMENTATION_STATUS_CODE: -1
 
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for AppManage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\AppManage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+2373 KB/s (17023 bytes in 0.007s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.AppManage:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+点击应用管理应该进入的是升级页面
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testAppManage:
+
+com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/iv_left]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:132)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:27)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: stack=com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/iv_left]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:132)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:27)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 21.241
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for AppManage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for AppManage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\AppManage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+1857 KB/s (17112 bytes in 0.008s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.AppManage:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+点击应用管理应该进入的是升级页面
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testAppManage:
+
+com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/tv_option_ignore]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:140)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: stack=com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/tv_option_ignore]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:140)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 27.256
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for AppManage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\AppManage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+2086 KB/s (17112 bytes in 0.008s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.AppManage:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+点击应用管理应该进入的是升级页面
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testAppManage:
+
+com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/tv_operation]
+
+	at com.android.uiautomator.core.UiObject.getText(UiObject.java:535)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:115)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: stack=com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/tv_operation]
+
+	at com.android.uiautomator.core.UiObject.getText(UiObject.java:535)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:115)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 22.565
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for AppManage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\AppManage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+2086 KB/s (17105 bytes in 0.008s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.AppManage:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+点击应用管理应该进入的是升级页面
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testAppManage:
+
+com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/progress]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:129)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: stack=com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/progress]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:129)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 20.933
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for AppManage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\AppManage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 1 second
+2085 KB/s (17105 bytes in 0.008s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.AppManage:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+点击应用管理应该进入的是升级页面
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testAppManage:
+
+java.lang.NullPointerException
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:176)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: stack=java.lang.NullPointerException
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:176)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 32.056
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for AppManage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\AppManage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+2396 KB/s (17198 bytes in 0.007s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.AppManage:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+点击应用管理应该进入的是升级页面
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testAppManage:
+
+com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/progress]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:129)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: stack=com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/progress]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:129)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 19.31
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for AppManage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\AppManage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 1 second
+1864 KB/s (17198 bytes in 0.009s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.AppManage:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+点击应用管理应该进入的是升级页面
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testAppManage:
+
+com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/progress]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:129)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: stack=com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/progress]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:129)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 19.796
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for AppManage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\AppManage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+3361 KB/s (17223 bytes in 0.005s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.AppManage:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+******点击应用管理应该进入的是升级页面******
+
+******找不到对应的app，无法打开应用******
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testAppManage:
+
+java.lang.NullPointerException
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:183)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: stack=java.lang.NullPointerException
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:183)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 131.055
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for AppManage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\AppManage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+2099 KB/s (17216 bytes in 0.008s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.AppManage:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+******点击应用管理应该进入的是升级页面******
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testAppManage:
+
+com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/progress]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:129)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: stack=com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/progress]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:129)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 20.306
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for AppManage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\AppManage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 1 second
+1866 KB/s (17216 bytes in 0.009s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.AppManage:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+******点击应用管理应该进入的是升级页面******
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testAppManage:
+
+com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/progress]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:129)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: stack=com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/progress]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:129)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 18.374
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for AppManage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\AppManage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 1 second
+1680 KB/s (17216 bytes in 0.010s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.AppManage:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+******点击应用管理应该进入的是升级页面******
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testAppManage:
+
+com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/iv_left]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:133)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: stack=com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/iv_left]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:133)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 28.133
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for AppManage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\AppManage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+1870 KB/s (17251 bytes in 0.009s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.AppManage:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+******点击应用管理应该进入的是升级页面******
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testAppManage:
+
+com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/progress]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:138)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: stack=com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/progress]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:138)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 24.806
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for AppManage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\AppManage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 1 second
+4208 KB/s (17251 bytes in 0.004s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.AppManage:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+******点击应用管理应该进入的是升级页面******
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testAppManage:
+
+com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/progress]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:138)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: stack=com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/progress]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:138)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 25.133
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for AppManage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\AppManage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 1 second
+2103 KB/s (17251 bytes in 0.008s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.AppManage:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+******点击应用管理应该进入的是升级页面******
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testAppManage:
+
+com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/progress]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:138)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: stack=com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/progress]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:138)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 20.312
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for AppManage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\AppManage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 1 second
+1870 KB/s (17251 bytes in 0.009s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.AppManage:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+******点击应用管理应该进入的是升级页面******
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for AppManage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\AppManage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 1 second
+1870 KB/s (17251 bytes in 0.009s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.AppManage:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+******点击应用管理应该进入的是升级页面******
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testAppManage:
+
+com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/progress]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:138)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: stack=com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/progress]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:138)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 18.83
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for AppManage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\AppManage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 1 second
+1683 KB/s (17251 bytes in 0.010s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.AppManage:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+******点击应用管理应该进入的是升级页面******
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testAppManage:
+
+com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/iv_left]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:142)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: stack=com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/iv_left]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:142)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:48)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:38)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 29.773
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for AppManage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\AppManage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+1867 KB/s (17224 bytes in 0.009s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.AppManage:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+******点击应用管理应该进入的是升级页面******
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testAppManage:
+
+com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/iv_left]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:138)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:50)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:40)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: stack=com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/iv_left]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:138)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:50)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:40)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 22.427
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for AppManage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\AppManage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+1869 KB/s (17223 bytes in 0.008s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.AppManage:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+******点击应用管理应该进入的是升级页面******
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testAppManage:
+
+com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/progress]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:134)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:50)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:40)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: stack=com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/progress]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:134)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:50)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:40)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 24.771
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for AppManage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\AppManage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+1870 KB/s (17248 bytes in 0.009s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.AppManage:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+******点击应用管理应该进入的是升级页面******
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testAppManage:
+
+com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/progress]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:135)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:50)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:40)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: stack=com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/progress]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:135)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:50)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:40)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 24.124
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for AppManage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\AppManage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+1869 KB/s (17242 bytes in 0.009s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.AppManage:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+******点击应用管理应该进入的是升级页面******
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testAppManage:
+
+com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/progress]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:135)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:50)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:40)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: stack=com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/progress]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.updatePage(AppManage.java:135)
+
+	at com.txh.uitestgfan.AppManage.appMangement(AppManage.java:50)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:40)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 24.342
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
