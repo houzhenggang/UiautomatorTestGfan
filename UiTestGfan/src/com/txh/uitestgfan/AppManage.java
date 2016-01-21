@@ -10,6 +10,7 @@ import com.android.uiautomator.core.UiObjectNotFoundException;
 import com.android.uiautomator.core.UiScrollable;
 import com.android.uiautomator.core.UiSelector;
 import com.android.uiautomator.testrunner.UiAutomatorTestCase;
+import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Text;
 
 public class AppManage extends UiAutomatorTestCase {
 	UiDevice device = getUiDevice();
@@ -37,8 +38,135 @@ public class AppManage extends UiAutomatorTestCase {
 	 * @throws UiObjectNotFoundException
 	 */
 	public void testAppManage() throws UiObjectNotFoundException {
-		appMangement();
-		// ignorePage();
+		// appMangement();
+		// installedPage();
+		nodataUpdate();
+		installPackage();
+
+	}
+
+	/**
+	 * 升级-没有应该用可以更新
+	 * 
+	 * @throws UiObjectNotFoundException
+	 */
+	public void nodataUpdate() throws UiObjectNotFoundException {
+		appManage.click();
+		UiObject nodataUpdate = new UiObject(new UiSelector().text("升级"));
+		nodataUpdate.click();
+		UiObject updatePageNoData = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/no_data"));
+		if (updatePageNoData.exists()) {
+			String nodataTex = updatePageNoData.getText();
+			System.out.println("***没有更新数据 ： " + nodataTex + "***");
+		}
+		UiObject updateSize = new UiObject(
+				new UiSelector()
+						.resourceId("com.mappn.gfan:id/manager_tv_total_update_size"));
+		String updatesize = updateSize.getText();
+		System.out.println("***没有更新数据 ： " + updatesize + "***");
+
+	}
+
+	/**
+	 * 安装包管理
+	 * 
+	 * @throws UiObjectNotFoundException
+	 */
+	public void installPackage() throws UiObjectNotFoundException {
+		UiDevice device = getUiDevice();
+		UiObject instaPackage = new UiObject(new UiSelector().text("安装包管理"));
+		instaPackage.click();
+		UiObject allSelector = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/all_delete_cb"));
+		allSelector.click();
+		allSelector.click();
+		UiObject oneDeleteCheckBox = new UiObject(
+				new UiSelector()
+						.resourceId("com.mappn.gfan:id/checkbox_package"));
+		oneDeleteCheckBox.click();
+		UiObject allDelete = new UiObject(
+				new UiSelector()
+						.resourceId("com.mappn.gfan:id/all_delete_button"));
+		allDelete.click();
+		oneDeleteCheckBox.click();
+		UiObject oneDelete = new UiObject(new UiSelector().text("删除"));
+		oneDelete.click();
+		UiObject confirmDelete = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/button_right"));
+		confirmDelete.click();
+
+	}
+	
+	/**
+	 * 已安装页面
+	 * 
+	 * @throws UiObjectNotFoundException
+	 */
+	public void installedPage() throws UiObjectNotFoundException {
+		UiDevice device = getUiDevice();
+		appManage.click();
+		UiObject installed = new UiObject(new UiSelector().text("已安装"));
+		installed.click();
+		UiObject open = new UiObject(new UiSelector().text("打开"));
+		open.click();
+		if (open.exists()) {
+			System.out.println("***对不起，无法打开此应用***");
+		}
+		device.pressBack();
+		device.pressBack();
+		UiObject item = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/iv_item_detail"));
+		item.click();
+		UiObject itemOpen = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/tv_option_open"));
+		itemOpen.click();
+		if (itemOpen.exists()) {
+			System.out.println("***对不起，无法打开此应用***");
+		}
+		device.pressBack();
+		device.pressBack();
+		UiObject details = new UiObject(
+				new UiSelector()
+						.resourceId("com.mappn.gfan:id/tv_option_deatil"));
+		details.clickAndWaitForNewWindow();
+		sleep(5000);
+		if (details.exists()) {
+			System.out.println("***没有找到对应的app***");
+		}
+		UiObject appName = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/app_name"));
+		String name = appName.getText();
+		System.out.println("**** app名称为 ：" + name + "****");
+		UiObject detailBtn = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/progress"));
+		detailBtn.click();
+		device.pressBack();
+		device.pressBack();
+		device.pressBack();
+		UiObject uninstall = new UiObject(
+				new UiSelector()
+						.resourceId("com.mappn.gfan:id/tv_option_uninstall"));
+		uninstall.click();
+		UiObject cancle = new UiObject(
+				new UiSelector()
+						.resourceId("com.android.packageinstaller:id/cancel_button"));
+		cancle.click();
+		uninstall.click();
+		UiObject confirm = new UiObject(
+				new UiSelector()
+						.resourceId("com.android.packageinstaller:id/ok_button"));
+		confirm.click();
+		UiObject uninstallMessage = new UiObject(
+				new UiSelector()
+						.resourceId("com.android.packageinstaller:id/center_text"));
+		String mess = uninstallMessage.getText();
+		if (mess == "卸载失败") {
+			System.out.println("******系统自带应用，不能卸载******");
+		} else {
+			System.out.println("******卸载成功******");
+		}
+		confirm.click();
 
 	}
 
@@ -53,20 +181,124 @@ public class AppManage extends UiAutomatorTestCase {
 			appManage.click();
 			UiObject taskPage = new UiObject(new UiSelector().text("任务"));
 			Assert.assertEquals(true, taskPage.exists());
+			taskPage();
 		}
 
 	}
-	//任务页面
-	public void taskPage()throws UiObjectNotFoundException{
-		
+
+	/** 任务列表不为空 */
+	public void taskPage() throws UiObjectNotFoundException {
+		UiDevice dev = getUiDevice();
+		/** 获取任务页面appname，获取详情页面appname，并比较这两个名称是否相同 */
+		UiObject appName = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/tv_name"));
+		String getName = appName.getText();
+		UiObject operation = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/iv_operation"));
+		operation.click();
+		UiObject details = new UiObject(
+				new UiSelector()
+						.resourceId("com.mappn.gfan:id/tv_option_detail"));
+		details.clickAndWaitForNewWindow();
+		UiObject detailsAppName = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/app_name"));
+		if (getName.equals(detailsAppName)) {
+			System.out.println("任务页面与详情页面appname相同");
+		} else {
+			System.out.println("任务页面与详情页面appname不相同");
+		}
+		dev.pressBack();
+		/** 如果“开始”按钮存在，判断详情页面按钮状态 */
+		UiObject startBtn = new UiObject(new UiSelector().text("开始"));
+		if (startBtn.exists()) {
+			details.click();
+			UiObject operationBtn = new UiObject(
+					new UiSelector()
+							.resourceId("com.mappn.gfan:id/status_info"));
+			String statusInfo = operationBtn.getText();
+			Assert.assertEquals("下载暂停，点击恢复", statusInfo);
+			System.out.println("***任务列表与详情页的状态对应正确***" + statusInfo);
+			dev.pressBack();
+		}
+		/** 如果“暂停”按钮存在，判断详情页面按钮状态 */
+		UiObject continueBtn = new UiObject(new UiSelector().text("暂停"));
+		if (continueBtn.exists()) {
+			details.click();
+			UiObject operationBtn = new UiObject(
+					new UiSelector()
+							.resourceId("com.mappn.gfan:id/status_info"));
+			String statusInfo = operationBtn.getText();
+			System.out.println("下载中....: " + statusInfo);
+			dev.pressBack();
+		}
+
+		/** 如果“安装”按钮 */
+		UiObject installBtn = new UiObject(new UiSelector().text("安装"));
+		installBtn.clickAndWaitForNewWindow();
+		UiObject cancle = new UiObject(
+				new UiSelector().resourceId("android:id/button2"));
+		if (cancle.exists()) {
+			System.out.println("***如果系統已經安裝過此應用-替换应用程序***");
+			cancle.click();
+			installBtn.click();
+			UiObject confirm = new UiObject(
+					new UiSelector().resourceId("android:id/button1"));
+			Assert.assertEquals(true, confirm.exists());
+			confirm.click();
+		}
+		System.out.println("***安装中***");
+		UiObject installBttn = new UiObject(
+				new UiSelector()
+						.resourceId("com.android.packageinstaller:id/ok_button"));
+		Assert.assertEquals(true, installBttn.exists());
+		installBttn.click();
+		UiObject installing = new UiObject(
+				new UiSelector()
+						.resourceId("com.android.packageinstaller:id/center_text"));
+		String text = installing.getClassName();
+		System.out.println("***正在安装....: " + text + "***");
+		sleep(5000);
+		UiObject finish = new UiObject(
+				new UiSelector()
+						.resourceId("com.android.packageinstaller:id/finish"));
+		finish.click();
+		/** 如果“删除”按钮 */
+		if (operation.exists()) {
+			operation.click();
+			UiObject deleteBtn = new UiObject(
+					new UiSelector()
+							.resourceId("com.mappn.gfan:id/tv_option_delete"));
+			deleteBtn.click();
+			UiObject checkbox = new UiObject(
+					new UiSelector().resourceId("android:id/checkbox"));
+			checkbox.click();
+			checkbox.click();
+			UiObject cancleBtn = new UiObject(
+					new UiSelector()
+							.resourceId("com.mappn.gfan:id/button_left"));
+			cancleBtn.click();
+			deleteBtn.click();
+			UiObject confirmBtn = new UiObject(
+					new UiSelector()
+							.resourceId("com.mappn.gfan:id/button_right"));
+			confirmBtn.click();
+
+		}
+		UiObject nodata = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/no_data"));
+		if (nodata.exists()) {
+			System.out.println("你怎么忍心让我空着呢，快去精品推荐看看吧~");
+		}
+
 	}
 
 	/**
-	 * 一键更新页面
+	 * 一键更新页面 详情页按钮-忽略-取消忽略
 	 * 
 	 * @throws UiObjectNotFoundException
 	 */
 	public void updatePage() throws UiObjectNotFoundException {
+		UiDevice device = getUiDevice();
 		// 点击应用管理-进入升级页面
 		appManage.click();
 		UiObject updatePage = new UiObject(new UiSelector().index(2));
@@ -89,7 +321,6 @@ public class AppManage extends UiAutomatorTestCase {
 		// 升级页面按钮的状态
 		UiObject buttonStatus = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/tv_operation"));
-		String btnupdatePage = buttonStatus.getText();// 升级页面按钮状态：更新
 		// 三角形按钮-详情
 		UiObject itemDetail = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/iv_item_detail"));
@@ -99,52 +330,32 @@ public class AppManage extends UiAutomatorTestCase {
 				new UiSelector()
 						.resourceId("com.mappn.gfan:id/tv_option_content"));
 		Assert.assertEquals(true, contentDetail.exists());
-
-		// 详情
-		// 点击详情-详情页面-点击按钮：更新/下载中/暂停下载/安装
+		/** 点击详情-详情页面-点击按钮：更新/下载中/暂停下载/安装 */
 		UiObject detailBtn = new UiObject(
 				new UiSelector()
 						.resourceId("com.mappn.gfan:id/tv_option_deatil"));
 		detailBtn.click();
-		// 等待加载出详情页
+		/** 等待加载出详情页 */
 		UiObject detailPage = new UiObject(
 				new UiSelector()
 						.resourceId("com.mappn.gfan:id/product_detail_layout"));
 		detailPage.waitForExists(100000);
-		// 详情页按钮状态:如果为更新/安装，则对比升级页面的状态
-		UiObject detailPageUpdateBtn = new UiObject(
-				new UiSelector()
-						.resourceId("com.mappn.gfan:id/info_action_1_tv"));
-		UiObject differentAuthod = new UiObject(
-				new UiSelector().resourceId("com.mappn.gfan:id/button_right"));
-		if (detailPageUpdateBtn.exists()) {
-			String btnStatus = detailPageUpdateBtn.getText();// 详情页面按钮状态
-			// 判断升级页面与详情页面按钮状态是否一致
-			Assert.assertEquals(btnupdatePage, btnStatus);
-			if (btnStatus == "安装") {
-				detailPageUpdateBtn.click();
-				sleep(10000);
-				device.click(270, 1800);
-				detailPageUpdateBtn.click();
-				device.click(850, 1800);
-				sleep(5000);
-			}
-			detailPageUpdateBtn.click();
-			if (differentAuthod.exists()) {// 如果软件作者不是同一个
-				differentAuthod.click();
-			}
-		}
-		// 按钮为下载/暂停下载/下载中/打开的状态时
+		/** 点击详情页按钮 */
 		UiObject progressBar = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/progress"));
+		UiObject differentAuthod = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/button_right"));
+		progressBar.click();
+		if (differentAuthod.exists()) {// 如果软件作者不是同一个
+			differentAuthod.click();
+		}
 		progressBar.click();
 		// 返回升级页面
 		UiObject backBtn = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/iv_left"));
 		backBtn.click();
 
-		// 忽略
-		// 查看忽略页面-返回升级页面
+		/** 查看忽略页面-返回升级页面 */
 		UiObject ignoreBtn = new UiObject(
 				new UiSelector()
 						.resourceId("com.mappn.gfan:id/tv_option_ignore"));
@@ -175,10 +386,7 @@ public class AppManage extends UiAutomatorTestCase {
 		updateAll.click();
 		// 再次点击右侧button
 		buttonStatus.click();
-
-		// 打开
-		// 三角形按钮-详情
-		// 如果还有软件更新-点击右侧三角形
+		/** 打开- 三角形按钮-详情 -如果还有软件更新-点击右侧三角形 */
 		if (itemDetail.exists()) {
 			itemDetail.click();
 			UiObject open = new UiObject(
@@ -191,13 +399,13 @@ public class AppManage extends UiAutomatorTestCase {
 				System.out.println("******找不到对应的app，无法打开应用******");
 				return;
 			}
-			sleep(100000);
+			sleep(5000);
 			device.pressBack();
 			device.pressBack();
 		}
-		// 卸载
+		/** 卸载 */
 		if (itemDetail.exists()) {
-			itemDetail.click();
+			// itemDetail.click();
 			UiObject uninstall = new UiObject(
 					new UiSelector()
 							.resourceId("com.mappn.gfan:id/tv_option_uninstall"));
@@ -206,11 +414,12 @@ public class AppManage extends UiAutomatorTestCase {
 					new UiSelector()
 							.resourceId("com.android.packageinstaller:id/cancel_button"));
 			cancleuninstall.click();
+			uninstall.click();
 			UiObject confirmuninstall = new UiObject(
 					new UiSelector()
 							.resourceId("com.android.packageinstaller:id/ok_button"));
 			confirmuninstall.clickAndWaitForNewWindow();
-			sleep(10000);
+			sleep(5000);
 			UiObject uninstallMessage = new UiObject(
 					new UiSelector()
 							.resourceId("com.android.packageinstaller:id/center_text"));
@@ -222,8 +431,14 @@ public class AppManage extends UiAutomatorTestCase {
 			}
 			confirmuninstall.click();
 		}
-		// 忽略页面
-		// 查看忽略
+		/** 没有更新数据 */
+		UiObject updatePageNoData = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/no_data"));
+		if (updatePageNoData.exists()) {
+			String nodataTex = updatePageNoData.getText();
+			System.out.println("***没有更新数据 ： " + nodataTex + "***");
+		}
+		/** 忽略页面-查看忽略 */
 		ignorePage();
 	}
 
@@ -248,7 +463,7 @@ public class AppManage extends UiAutomatorTestCase {
 		// 获取忽略的数量
 		UiObject ignoreInnerNum = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/tv_upgrade_num"));
-		String ignoreInnernumber = "0";
+		String ignoreInnernumber = null;
 		if (ignoreInnerNum.exists()) {
 			ignoreInnernumber = ignoreInnerNum.getText();
 		}
@@ -273,6 +488,7 @@ public class AppManage extends UiAutomatorTestCase {
 				new UiSelector().resourceId("com.mappn.gfan:id/no_data"));
 		String mess = nodateMessage.getText();
 		Assert.assertEquals("你很勤快嘛，继续保持哦~", mess);
+		System.out.println("忽略页面没有数据 ： " + mess);
 		UiObject clickIgnoreAll = new UiObject(
 				new UiSelector()
 						.resourceId("com.mappn.gfan:id/manager_cancel_ignore_all_button"));
@@ -281,6 +497,7 @@ public class AppManage extends UiAutomatorTestCase {
 		UiObject backBtn = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/iv_left"));
 		backBtn.click();
+
 	}
 
 }

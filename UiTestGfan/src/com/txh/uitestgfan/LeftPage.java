@@ -13,14 +13,14 @@ public class LeftPage extends UiAutomatorTestCase{
 		new UiAutomatorHelper(jarName, testClass, testName, androidId);
 	}
 	public void testLeftPage() throws UiObjectNotFoundException{
-		
+		swipeLeftPage();
 	}
 	/**
 	 * swipe打开收起侧拉菜单
 	 * 
 	 * @throws UiObjectNotFoundException
 	 */
-	public void leftPage() throws UiObjectNotFoundException {
+	public void swipeLeftPage() throws UiObjectNotFoundException {
 		UiDevice device = getUiDevice();
 		device.swipe(0, 650, 650, 650, 4);
 		sleep(2000);
