@@ -40342,3 +40342,1403 @@ events: prints out accessibility events until terminated
 
 
 
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for LeftPage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 3 source files to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] D:\UiautomatorTestGfan\UiTestGfan\src\com\txh\uitestgfan\AppManage.java:13: ����: �����com.sun.xml.internal.ws.policy.privateutil.PolicyUtils������
+    [javac] import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Text;
+    [javac]                                                              ^
+    [javac] 1 ������
+    [javac] 3 ������
+
+BUILD FAILED
+D:\adt-bundle-windows-x86_64-20130917\sdk\tools\ant\uibuild.xml:183: Compile failed; see the compiler error output for details.
+
+Total time: 3 seconds
+cannot stat 'D:\UiautomatorTestGfan\UiTestGfan\bin\LeftPage.jar': No such file or directory
+Error: /data/local/tmp/LeftPage.jar does not exist
+
+Usage: uiautomator <subcommand> [options]
+
+
+
+Available subcommands:
+
+
+
+help: displays help message
+
+
+
+runtest: executes UI automation tests
+
+    runtest <class spec> [options]
+
+    <class spec>: <JARS> < -c <CLASSES> | -e class <CLASSES> >
+
+      <JARS>: a list of jar files containing test classes and dependencies. If
+
+        the path is relative, it's assumed to be under /data/local/tmp. Use
+
+        absolute path if the file is elsewhere. Multiple files can be
+
+        specified, separated by space.
+
+      <CLASSES>: a list of test class names to run, separated by comma. To
+
+        a single method, use TestClass#testMethod format. The -e or -c option
+
+        may be repeated. This option is not required and if not provided then
+
+        all the tests in provided jars will be run automatically.
+
+    options:
+
+      --nohup: trap SIG_HUP, so test won't terminate even if parent process
+
+               is terminated, e.g. USB is disconnected.
+
+      -e debug [true|false]: wait for debugger to connect before starting.
+
+      -e runner [CLASS]: use specified test runner class instead. If
+
+        unspecified, framework default runner will be used.
+
+      -e <NAME> <VALUE>: other name-value pairs to be passed to test classes.
+
+        May be repeated.
+
+      -e outputFormat simple | -s: enabled less verbose JUnit style output.
+
+
+
+dump: creates an XML dump of current UI hierarchy
+
+    dump [--verbose][file]
+
+      [--compressed]: dumps compressed layout information.
+
+      [file]: the location where the dumped XML should be stored, default is
+
+      /storage/emulated/0/window_dump.xml
+
+
+
+events: prints out accessibility events until terminated
+
+
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for LeftPage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 3 source files to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] D:\UiautomatorTestGfan\UiTestGfan\src\com\txh\uitestgfan\AppManage.java:13: ����: �����com.sun.xml.internal.ws.policy.privateutil.PolicyUtils������
+    [javac] import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Text;
+    [javac]                                                              ^
+    [javac] 1 ������
+    [javac] 3 ������
+
+BUILD FAILED
+D:\adt-bundle-windows-x86_64-20130917\sdk\tools\ant\uibuild.xml:183: Compile failed; see the compiler error output for details.
+
+Total time: 1 second
+cannot stat 'D:\UiautomatorTestGfan\UiTestGfan\bin\LeftPage.jar': No such file or directory
+Error: /data/local/tmp/LeftPage.jar does not exist
+
+Usage: uiautomator <subcommand> [options]
+
+
+
+Available subcommands:
+
+
+
+help: displays help message
+
+
+
+runtest: executes UI automation tests
+
+    runtest <class spec> [options]
+
+    <class spec>: <JARS> < -c <CLASSES> | -e class <CLASSES> >
+
+      <JARS>: a list of jar files containing test classes and dependencies. If
+
+        the path is relative, it's assumed to be under /data/local/tmp. Use
+
+        absolute path if the file is elsewhere. Multiple files can be
+
+        specified, separated by space.
+
+      <CLASSES>: a list of test class names to run, separated by comma. To
+
+        a single method, use TestClass#testMethod format. The -e or -c option
+
+        may be repeated. This option is not required and if not provided then
+
+        all the tests in provided jars will be run automatically.
+
+    options:
+
+      --nohup: trap SIG_HUP, so test won't terminate even if parent process
+
+               is terminated, e.g. USB is disconnected.
+
+      -e debug [true|false]: wait for debugger to connect before starting.
+
+      -e runner [CLASS]: use specified test runner class instead. If
+
+        unspecified, framework default runner will be used.
+
+      -e <NAME> <VALUE>: other name-value pairs to be passed to test classes.
+
+        May be repeated.
+
+      -e outputFormat simple | -s: enabled less verbose JUnit style output.
+
+
+
+dump: creates an XML dump of current UI hierarchy
+
+    dump [--verbose][file]
+
+      [--compressed]: dumps compressed layout information.
+
+      [file]: the location where the dumped XML should be stored, default is
+
+      /storage/emulated/0/window_dump.xml
+
+
+
+events: prints out accessibility events until terminated
+
+
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for LeftPage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 3 source files to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] D:\UiautomatorTestGfan\UiTestGfan\src\com\txh\uitestgfan\AppManage.java:13: ����: �����com.sun.xml.internal.ws.policy.privateutil.PolicyUtils������
+    [javac] import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Text;
+    [javac]                                                              ^
+    [javac] 1 ������
+    [javac] 3 ������
+
+BUILD FAILED
+D:\adt-bundle-windows-x86_64-20130917\sdk\tools\ant\uibuild.xml:183: Compile failed; see the compiler error output for details.
+
+Total time: 1 second
+cannot stat 'D:\UiautomatorTestGfan\UiTestGfan\bin\LeftPage.jar': No such file or directory
+Error: /data/local/tmp/LeftPage.jar does not exist
+
+Usage: uiautomator <subcommand> [options]
+
+
+
+Available subcommands:
+
+
+
+help: displays help message
+
+
+
+runtest: executes UI automation tests
+
+    runtest <class spec> [options]
+
+    <class spec>: <JARS> < -c <CLASSES> | -e class <CLASSES> >
+
+      <JARS>: a list of jar files containing test classes and dependencies. If
+
+        the path is relative, it's assumed to be under /data/local/tmp. Use
+
+        absolute path if the file is elsewhere. Multiple files can be
+
+        specified, separated by space.
+
+      <CLASSES>: a list of test class names to run, separated by comma. To
+
+        a single method, use TestClass#testMethod format. The -e or -c option
+
+        may be repeated. This option is not required and if not provided then
+
+        all the tests in provided jars will be run automatically.
+
+    options:
+
+      --nohup: trap SIG_HUP, so test won't terminate even if parent process
+
+               is terminated, e.g. USB is disconnected.
+
+      -e debug [true|false]: wait for debugger to connect before starting.
+
+      -e runner [CLASS]: use specified test runner class instead. If
+
+        unspecified, framework default runner will be used.
+
+      -e <NAME> <VALUE>: other name-value pairs to be passed to test classes.
+
+        May be repeated.
+
+      -e outputFormat simple | -s: enabled less verbose JUnit style output.
+
+
+
+dump: creates an XML dump of current UI hierarchy
+
+    dump [--verbose][file]
+
+      [--compressed]: dumps compressed layout information.
+
+      [file]: the location where the dumped XML should be stored, default is
+
+      /storage/emulated/0/window_dump.xml
+
+
+
+events: prints out accessibility events until terminated
+
+
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for AppManage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 3 source files to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] D:\UiautomatorTestGfan\UiTestGfan\src\com\txh\uitestgfan\AppManage.java:13: ����: �����com.sun.xml.internal.ws.policy.privateutil.PolicyUtils������
+    [javac] import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Text;
+    [javac]                                                              ^
+    [javac] 1 ������
+    [javac] 3 ������
+
+BUILD FAILED
+D:\adt-bundle-windows-x86_64-20130917\sdk\tools\ant\uibuild.xml:183: Compile failed; see the compiler error output for details.
+
+Total time: 1 second
+274 KB/s (18836 bytes in 0.067s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.AppManage:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+***对不起，无法打开此应用***
+
+***对不起，无法打开此应用***
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testAppManage:
+
+com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/tv_option_deatil]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.installedPage(AppManage.java:84)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:42)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testAppManage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.AppManage
+
+INSTRUMENTATION_STATUS: stack=com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/tv_option_deatil]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.AppManage.installedPage(AppManage.java:84)
+
+	at com.txh.uitestgfan.AppManage.testAppManage(AppManage.java:42)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:249)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 42.556
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for LeftPage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 3 source files to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] D:\UiautomatorTestGfan\UiTestGfan\src\com\txh\uitestgfan\AppManage.java:13: ����: �����com.sun.xml.internal.ws.policy.privateutil.PolicyUtils������
+    [javac] import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Text;
+    [javac]                                                              ^
+    [javac] 1 ������
+    [javac] 3 ������
+
+BUILD FAILED
+D:\adt-bundle-windows-x86_64-20130917\sdk\tools\ant\uibuild.xml:183: Compile failed; see the compiler error output for details.
+
+Total time: 1 second
+cannot stat 'D:\UiautomatorTestGfan\UiTestGfan\bin\LeftPage.jar': No such file or directory
+Error: /data/local/tmp/LeftPage.jar does not exist
+
+Usage: uiautomator <subcommand> [options]
+
+
+
+Available subcommands:
+
+
+
+help: displays help message
+
+
+
+runtest: executes UI automation tests
+
+    runtest <class spec> [options]
+
+    <class spec>: <JARS> < -c <CLASSES> | -e class <CLASSES> >
+
+      <JARS>: a list of jar files containing test classes and dependencies. If
+
+        the path is relative, it's assumed to be under /data/local/tmp. Use
+
+        absolute path if the file is elsewhere. Multiple files can be
+
+        specified, separated by space.
+
+      <CLASSES>: a list of test class names to run, separated by comma. To
+
+        a single method, use TestClass#testMethod format. The -e or -c option
+
+        may be repeated. This option is not required and if not provided then
+
+        all the tests in provided jars will be run automatically.
+
+    options:
+
+      --nohup: trap SIG_HUP, so test won't terminate even if parent process
+
+               is terminated, e.g. USB is disconnected.
+
+      -e debug [true|false]: wait for debugger to connect before starting.
+
+      -e runner [CLASS]: use specified test runner class instead. If
+
+        unspecified, framework default runner will be used.
+
+      -e <NAME> <VALUE>: other name-value pairs to be passed to test classes.
+
+        May be repeated.
+
+      -e outputFormat simple | -s: enabled less verbose JUnit style output.
+
+
+
+dump: creates an XML dump of current UI hierarchy
+
+    dump [--verbose][file]
+
+      [--compressed]: dumps compressed layout information.
+
+      [file]: the location where the dumped XML should be stored, default is
+
+      /storage/emulated/0/window_dump.xml
+
+
+
+events: prints out accessibility events until terminated
+
+
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for LeftPage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 3 source files to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] D:\UiautomatorTestGfan\UiTestGfan\src\com\txh\uitestgfan\AppManage.java:13: ����: �����com.sun.xml.internal.ws.policy.privateutil.PolicyUtils������
+    [javac] import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Text;
+    [javac]                                                              ^
+    [javac] 1 ������
+    [javac] 3 ������
+
+BUILD FAILED
+D:\adt-bundle-windows-x86_64-20130917\sdk\tools\ant\uibuild.xml:183: Compile failed; see the compiler error output for details.
+
+Total time: 1 second
+cannot stat 'D:\UiautomatorTestGfan\UiTestGfan\bin\LeftPage.jar': No such file or directory
+Error: /data/local/tmp/LeftPage.jar does not exist
+
+Usage: uiautomator <subcommand> [options]
+
+
+
+Available subcommands:
+
+
+
+help: displays help message
+
+
+
+runtest: executes UI automation tests
+
+    runtest <class spec> [options]
+
+    <class spec>: <JARS> < -c <CLASSES> | -e class <CLASSES> >
+
+      <JARS>: a list of jar files containing test classes and dependencies. If
+
+        the path is relative, it's assumed to be under /data/local/tmp. Use
+
+        absolute path if the file is elsewhere. Multiple files can be
+
+        specified, separated by space.
+
+      <CLASSES>: a list of test class names to run, separated by comma. To
+
+        a single method, use TestClass#testMethod format. The -e or -c option
+
+        may be repeated. This option is not required and if not provided then
+
+        all the tests in provided jars will be run automatically.
+
+    options:
+
+      --nohup: trap SIG_HUP, so test won't terminate even if parent process
+
+               is terminated, e.g. USB is disconnected.
+
+      -e debug [true|false]: wait for debugger to connect before starting.
+
+      -e runner [CLASS]: use specified test runner class instead. If
+
+        unspecified, framework default runner will be used.
+
+      -e <NAME> <VALUE>: other name-value pairs to be passed to test classes.
+
+        May be repeated.
+
+      -e outputFormat simple | -s: enabled less verbose JUnit style output.
+
+
+
+dump: creates an XML dump of current UI hierarchy
+
+    dump [--verbose][file]
+
+      [--compressed]: dumps compressed layout information.
+
+      [file]: the location where the dumped XML should be stored, default is
+
+      /storage/emulated/0/window_dump.xml
+
+
+
+events: prints out accessibility events until terminated
+
+
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+BUILD FAILED
+D:\UiautomatorTestGfan\UiTestGfan\build.xml:90: Cannot find D:\adt-bundle-windows-x86_64-20130917\sdk\tools\ant\uibuild.xml imported from D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+Total time: 0 seconds
+cannot stat 'D:\UiautomatorTestGfan\UiTestGfan\bin\LeftPage.jar': No such file or directory
+Error: /data/local/tmp/LeftPage.jar does not exist
+
+Usage: uiautomator <subcommand> [options]
+
+
+
+Available subcommands:
+
+
+
+help: displays help message
+
+
+
+runtest: executes UI automation tests
+
+    runtest <class spec> [options]
+
+    <class spec>: <JARS> < -c <CLASSES> | -e class <CLASSES> >
+
+      <JARS>: a list of jar files containing test classes and dependencies. If
+
+        the path is relative, it's assumed to be under /data/local/tmp. Use
+
+        absolute path if the file is elsewhere. Multiple files can be
+
+        specified, separated by space.
+
+      <CLASSES>: a list of test class names to run, separated by comma. To
+
+        a single method, use TestClass#testMethod format. The -e or -c option
+
+        may be repeated. This option is not required and if not provided then
+
+        all the tests in provided jars will be run automatically.
+
+    options:
+
+      --nohup: trap SIG_HUP, so test won't terminate even if parent process
+
+               is terminated, e.g. USB is disconnected.
+
+      -e debug [true|false]: wait for debugger to connect before starting.
+
+      -e runner [CLASS]: use specified test runner class instead. If
+
+        unspecified, framework default runner will be used.
+
+      -e <NAME> <VALUE>: other name-value pairs to be passed to test classes.
+
+        May be repeated.
+
+      -e outputFormat simple | -s: enabled less verbose JUnit style output.
+
+
+
+dump: creates an XML dump of current UI hierarchy
+
+    dump [--verbose][file]
+
+      [--compressed]: dumps compressed layout information.
+
+      [file]: the location where the dumped XML should be stored, default is
+
+      /storage/emulated/0/window_dump.xml
+
+
+
+events: prints out accessibility events until terminated
+
+
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for LeftPage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 3 source files to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] D:\UiautomatorTestGfan\UiTestGfan\src\com\txh\uitestgfan\AppManage.java:13: ����: �����com.sun.xml.internal.ws.policy.privateutil.PolicyUtils������
+    [javac] import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Text;
+    [javac]                                                              ^
+    [javac] 1 ������
+    [javac] 3 ������
+
+BUILD FAILED
+D:\adt-bundle-windows-x86_64-20130917\sdk\tools\ant\uibuild.xml:183: Compile failed; see the compiler error output for details.
+
+Total time: 1 second
+cannot stat 'D:\UiautomatorTestGfan\UiTestGfan\bin\LeftPage.jar': No such file or directory
+Error: /data/local/tmp/LeftPage.jar does not exist
+
+Usage: uiautomator <subcommand> [options]
+
+
+
+Available subcommands:
+
+
+
+help: displays help message
+
+
+
+runtest: executes UI automation tests
+
+    runtest <class spec> [options]
+
+    <class spec>: <JARS> < -c <CLASSES> | -e class <CLASSES> >
+
+      <JARS>: a list of jar files containing test classes and dependencies. If
+
+        the path is relative, it's assumed to be under /data/local/tmp. Use
+
+        absolute path if the file is elsewhere. Multiple files can be
+
+        specified, separated by space.
+
+      <CLASSES>: a list of test class names to run, separated by comma. To
+
+        a single method, use TestClass#testMethod format. The -e or -c option
+
+        may be repeated. This option is not required and if not provided then
+
+        all the tests in provided jars will be run automatically.
+
+    options:
+
+      --nohup: trap SIG_HUP, so test won't terminate even if parent process
+
+               is terminated, e.g. USB is disconnected.
+
+      -e debug [true|false]: wait for debugger to connect before starting.
+
+      -e runner [CLASS]: use specified test runner class instead. If
+
+        unspecified, framework default runner will be used.
+
+      -e <NAME> <VALUE>: other name-value pairs to be passed to test classes.
+
+        May be repeated.
+
+      -e outputFormat simple | -s: enabled less verbose JUnit style output.
+
+
+
+dump: creates an XML dump of current UI hierarchy
+
+    dump [--verbose][file]
+
+      [--compressed]: dumps compressed layout information.
+
+      [file]: the location where the dumped XML should be stored, default is
+
+      /storage/emulated/0/window_dump.xml
+
+
+
+events: prints out accessibility events until terminated
+
+
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for LeftPage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 3 source files to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] D:\UiautomatorTestGfan\UiTestGfan\src\com\txh\uitestgfan\AppManage.java:13: ����: �����com.sun.xml.internal.ws.policy.privateutil.PolicyUtils������
+    [javac] import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Text;
+    [javac]                                                              ^
+    [javac] 1 ������
+    [javac] 3 ������
+
+BUILD FAILED
+D:\adt-bundle-windows-x86_64-20130917\sdk\tools\ant\uibuild.xml:183: Compile failed; see the compiler error output for details.
+
+Total time: 1 second
+cannot stat 'D:\UiautomatorTestGfan\UiTestGfan\bin\LeftPage.jar': No such file or directory
+Error: /data/local/tmp/LeftPage.jar does not exist
+
+Usage: uiautomator <subcommand> [options]
+
+
+
+Available subcommands:
+
+
+
+help: displays help message
+
+
+
+runtest: executes UI automation tests
+
+    runtest <class spec> [options]
+
+    <class spec>: <JARS> < -c <CLASSES> | -e class <CLASSES> >
+
+      <JARS>: a list of jar files containing test classes and dependencies. If
+
+        the path is relative, it's assumed to be under /data/local/tmp. Use
+
+        absolute path if the file is elsewhere. Multiple files can be
+
+        specified, separated by space.
+
+      <CLASSES>: a list of test class names to run, separated by comma. To
+
+        a single method, use TestClass#testMethod format. The -e or -c option
+
+        may be repeated. This option is not required and if not provided then
+
+        all the tests in provided jars will be run automatically.
+
+    options:
+
+      --nohup: trap SIG_HUP, so test won't terminate even if parent process
+
+               is terminated, e.g. USB is disconnected.
+
+      -e debug [true|false]: wait for debugger to connect before starting.
+
+      -e runner [CLASS]: use specified test runner class instead. If
+
+        unspecified, framework default runner will be used.
+
+      -e <NAME> <VALUE>: other name-value pairs to be passed to test classes.
+
+        May be repeated.
+
+      -e outputFormat simple | -s: enabled less verbose JUnit style output.
+
+
+
+dump: creates an XML dump of current UI hierarchy
+
+    dump [--verbose][file]
+
+      [--compressed]: dumps compressed layout information.
+
+      [file]: the location where the dumped XML should be stored, default is
+
+      /storage/emulated/0/window_dump.xml
+
+
+
+events: prints out accessibility events until terminated
+
+
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for LeftPage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 3 source files to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] D:\UiautomatorTestGfan\UiTestGfan\src\com\txh\uitestgfan\AppManage.java:13: ����: �����com.sun.xml.internal.ws.policy.privateutil.PolicyUtils������
+    [javac] import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Text;
+    [javac]                                                              ^
+    [javac] 1 ������
+    [javac] 3 ������
+
+BUILD FAILED
+D:\adt-bundle-windows-x86_64-20130917\sdk\tools\ant\uibuild.xml:183: Compile failed; see the compiler error output for details.
+
+Total time: 1 second
+cannot stat 'D:\UiautomatorTestGfan\UiTestGfan\bin\LeftPage.jar': No such file or directory
+Error: /data/local/tmp/LeftPage.jar does not exist
+
+Usage: uiautomator <subcommand> [options]
+
+
+
+Available subcommands:
+
+
+
+help: displays help message
+
+
+
+runtest: executes UI automation tests
+
+    runtest <class spec> [options]
+
+    <class spec>: <JARS> < -c <CLASSES> | -e class <CLASSES> >
+
+      <JARS>: a list of jar files containing test classes and dependencies. If
+
+        the path is relative, it's assumed to be under /data/local/tmp. Use
+
+        absolute path if the file is elsewhere. Multiple files can be
+
+        specified, separated by space.
+
+      <CLASSES>: a list of test class names to run, separated by comma. To
+
+        a single method, use TestClass#testMethod format. The -e or -c option
+
+        may be repeated. This option is not required and if not provided then
+
+        all the tests in provided jars will be run automatically.
+
+    options:
+
+      --nohup: trap SIG_HUP, so test won't terminate even if parent process
+
+               is terminated, e.g. USB is disconnected.
+
+      -e debug [true|false]: wait for debugger to connect before starting.
+
+      -e runner [CLASS]: use specified test runner class instead. If
+
+        unspecified, framework default runner will be used.
+
+      -e <NAME> <VALUE>: other name-value pairs to be passed to test classes.
+
+        May be repeated.
+
+      -e outputFormat simple | -s: enabled less verbose JUnit style output.
+
+
+
+dump: creates an XML dump of current UI hierarchy
+
+    dump [--verbose][file]
+
+      [--compressed]: dumps compressed layout information.
+
+      [file]: the location where the dumped XML should be stored, default is
+
+      /storage/emulated/0/window_dump.xml
+
+
+
+events: prints out accessibility events until terminated
+
+
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for LeftPage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 3 source files to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] D:\UiautomatorTestGfan\UiTestGfan\src\com\txh\uitestgfan\AppManage.java:13: ����: �����com.sun.xml.internal.ws.policy.privateutil.PolicyUtils������
+    [javac] import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Text;
+    [javac]                                                              ^
+    [javac] 1 ������
+    [javac] 3 ������
+
+BUILD FAILED
+D:\adt-bundle-windows-x86_64-20130917\sdk\tools\ant\uibuild.xml:183: Compile failed; see the compiler error output for details.
+
+Total time: 1 second
+cannot stat 'D:\UiautomatorTestGfan\UiTestGfan\bin\LeftPage.jar': No such file or directory
+Error: /data/local/tmp/LeftPage.jar does not exist
+
+Usage: uiautomator <subcommand> [options]
+
+
+
+Available subcommands:
+
+
+
+help: displays help message
+
+
+
+runtest: executes UI automation tests
+
+    runtest <class spec> [options]
+
+    <class spec>: <JARS> < -c <CLASSES> | -e class <CLASSES> >
+
+      <JARS>: a list of jar files containing test classes and dependencies. If
+
+        the path is relative, it's assumed to be under /data/local/tmp. Use
+
+        absolute path if the file is elsewhere. Multiple files can be
+
+        specified, separated by space.
+
+      <CLASSES>: a list of test class names to run, separated by comma. To
+
+        a single method, use TestClass#testMethod format. The -e or -c option
+
+        may be repeated. This option is not required and if not provided then
+
+        all the tests in provided jars will be run automatically.
+
+    options:
+
+      --nohup: trap SIG_HUP, so test won't terminate even if parent process
+
+               is terminated, e.g. USB is disconnected.
+
+      -e debug [true|false]: wait for debugger to connect before starting.
+
+      -e runner [CLASS]: use specified test runner class instead. If
+
+        unspecified, framework default runner will be used.
+
+      -e <NAME> <VALUE>: other name-value pairs to be passed to test classes.
+
+        May be repeated.
+
+      -e outputFormat simple | -s: enabled less verbose JUnit style output.
+
+
+
+dump: creates an XML dump of current UI hierarchy
+
+    dump [--verbose][file]
+
+      [--compressed]: dumps compressed layout information.
+
+      [file]: the location where the dumped XML should be stored, default is
+
+      /storage/emulated/0/window_dump.xml
+
+
+
+events: prints out accessibility events until terminated
+
+
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for LeftPage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 3 source files to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] D:\UiautomatorTestGfan\UiTestGfan\src\com\txh\uitestgfan\AppManage.java:13: ����: �����com.sun.xml.internal.ws.policy.privateutil.PolicyUtils������
+    [javac] import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Text;
+    [javac]                                                              ^
+    [javac] 1 ������
+    [javac] 3 ������
+
+BUILD FAILED
+D:\adt-bundle-windows-x86_64-20130917\sdk\tools\ant\uibuild.xml:183: Compile failed; see the compiler error output for details.
+
+Total time: 1 second
+cannot stat 'D:\UiautomatorTestGfan\UiTestGfan\bin\LeftPage.jar': No such file or directory
+Error: /data/local/tmp/LeftPage.jar does not exist
+
+Usage: uiautomator <subcommand> [options]
+
+
+
+Available subcommands:
+
+
+
+help: displays help message
+
+
+
+runtest: executes UI automation tests
+
+    runtest <class spec> [options]
+
+    <class spec>: <JARS> < -c <CLASSES> | -e class <CLASSES> >
+
+      <JARS>: a list of jar files containing test classes and dependencies. If
+
+        the path is relative, it's assumed to be under /data/local/tmp. Use
+
+        absolute path if the file is elsewhere. Multiple files can be
+
+        specified, separated by space.
+
+      <CLASSES>: a list of test class names to run, separated by comma. To
+
+        a single method, use TestClass#testMethod format. The -e or -c option
+
+        may be repeated. This option is not required and if not provided then
+
+        all the tests in provided jars will be run automatically.
+
+    options:
+
+      --nohup: trap SIG_HUP, so test won't terminate even if parent process
+
+               is terminated, e.g. USB is disconnected.
+
+      -e debug [true|false]: wait for debugger to connect before starting.
+
+      -e runner [CLASS]: use specified test runner class instead. If
+
+        unspecified, framework default runner will be used.
+
+      -e <NAME> <VALUE>: other name-value pairs to be passed to test classes.
+
+        May be repeated.
+
+      -e outputFormat simple | -s: enabled less verbose JUnit style output.
+
+
+
+dump: creates an XML dump of current UI hierarchy
+
+    dump [--verbose][file]
+
+      [--compressed]: dumps compressed layout information.
+
+      [file]: the location where the dumped XML should be stored, default is
+
+      /storage/emulated/legacy/window_dump.xml
+
+
+
+events: prints out accessibility events until terminated
+
+
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for LeftPage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 3 source files to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] D:\UiautomatorTestGfan\UiTestGfan\src\com\txh\uitestgfan\AppManage.java:13: ����: �����com.sun.xml.internal.ws.policy.privateutil.PolicyUtils������
+    [javac] import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Text;
+    [javac]                                                              ^
+    [javac] 1 ������
+    [javac] 3 ������
+
+BUILD FAILED
+D:\adt-bundle-windows-x86_64-20130917\sdk\tools\ant\uibuild.xml:183: Compile failed; see the compiler error output for details.
+
+Total time: 1 second
+error: device not found
+error: device not found
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for LeftPage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 3 source files to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] D:\UiautomatorTestGfan\UiTestGfan\src\com\txh\uitestgfan\AppManage.java:13: ����: �����com.sun.xml.internal.ws.policy.privateutil.PolicyUtils������
+    [javac] import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Text;
+    [javac]                                                              ^
+    [javac] 1 ������
+    [javac] 3 ������
+
+BUILD FAILED
+D:\adt-bundle-windows-x86_64-20130917\sdk\tools\ant\uibuild.xml:183: Compile failed; see the compiler error output for details.
+
+Total time: 1 second
+cannot stat 'D:\UiautomatorTestGfan\UiTestGfan\bin\LeftPage.jar': No such file or directory
+Error: /data/local/tmp/LeftPage.jar does not exist
+
+Usage: uiautomator <subcommand> [options]
+
+
+
+Available subcommands:
+
+
+
+help: displays help message
+
+
+
+runtest: executes UI automation tests
+
+    runtest <class spec> [options]
+
+    <class spec>: <JARS> < -c <CLASSES> | -e class <CLASSES> >
+
+      <JARS>: a list of jar files containing test classes and dependencies. If
+
+        the path is relative, it's assumed to be under /data/local/tmp. Use
+
+        absolute path if the file is elsewhere. Multiple files can be
+
+        specified, separated by space.
+
+      <CLASSES>: a list of test class names to run, separated by comma. To
+
+        a single method, use TestClass#testMethod format. The -e or -c option
+
+        may be repeated. This option is not required and if not provided then
+
+        all the tests in provided jars will be run automatically.
+
+    options:
+
+      --nohup: trap SIG_HUP, so test won't terminate even if parent process
+
+               is terminated, e.g. USB is disconnected.
+
+      -e debug [true|false]: wait for debugger to connect before starting.
+
+      -e runner [CLASS]: use specified test runner class instead. If
+
+        unspecified, framework default runner will be used.
+
+      -e <NAME> <VALUE>: other name-value pairs to be passed to test classes.
+
+        May be repeated.
+
+      -e outputFormat simple | -s: enabled less verbose JUnit style output.
+
+
+
+dump: creates an XML dump of current UI hierarchy
+
+    dump [--verbose][file]
+
+      [--compressed]: dumps compressed layout information.
+
+      [file]: the location where the dumped XML should be stored, default is
+
+      /storage/emulated/legacy/window_dump.xml
+
+
+
+events: prints out accessibility events until terminated
+
+
+
