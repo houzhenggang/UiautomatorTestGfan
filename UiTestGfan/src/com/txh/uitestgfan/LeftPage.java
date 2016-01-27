@@ -1,5 +1,7 @@
 package com.txh.uitestgfan;
 
+import java.util.ArrayList;
+
 import com.android.uiautomator.core.UiCollection;
 import com.android.uiautomator.core.UiDevice;
 import com.android.uiautomator.core.UiObject;
@@ -11,37 +13,42 @@ public class LeftPage extends UiAutomatorTestCase {
 	public static void main(String[] args) {
 		String jarName = "LeftPage";
 		String testClass = "com.txh.uitestgfan.LeftPage";
-		String testName = "testHomeMenu";
+		String testName = "testLeftPage";
 		String androidId = "1";
 		new UiAutomatorHelper(jarName, testClass, testName, androidId);
 	}
 
 	/**
 	 * 测试执行入口
-	 * 
 	 * @throws UiObjectNotFoundException
 	 */
-	public void testHomeMenu() throws UiObjectNotFoundException {
-		// swipeLeftPage();
+	public void testLeftPage() throws UiObjectNotFoundException {
+		swipeLeftPage();
 		homeMenu();
+		goSpeed();
+		clickSetup();
+		setupPage();
+		feedBack();
+		evaluate();
+		checkUpdate();
+		community();
 	}
 
 	/**
 	 * swipe打开收起侧拉菜单
-	 * 
 	 * @throws UiObjectNotFoundException
 	 */
 	public void swipeLeftPage() throws UiObjectNotFoundException {
 		UiDevice device = getUiDevice();
 		device.swipe(0, 650, 650, 650, 4);
 		sleep(2000);
-		device.click(1000, 1800);
+		device.click(710, 1080);
+		sleep(2000);
 
 	}
 
 	/**
 	 * 点击menu打开侧拉菜单
-	 * 
 	 * @throws UiObjectNotFoundException
 	 */
 	public void homeMenu() throws UiObjectNotFoundException {
@@ -74,7 +81,6 @@ public class LeftPage extends UiAutomatorTestCase {
 
 	/**
 	 * 打开设置
-	 * 
 	 * @throws UiObjectNotFoundException
 	 */
 	public void clickSetup() throws UiObjectNotFoundException {
@@ -83,47 +89,120 @@ public class LeftPage extends UiAutomatorTestCase {
 	}
 
 	/**
-	 * 设置页面
+	 * 设置页面 使用ArrayList取出listviews的子控件，挨个点击子控件
 	 * 
 	 * @throws UiObjectNotFoundException
 	 */
-	public String[] setupPage() throws UiObjectNotFoundException {
-		clickSetup();
+	public void setupPage() throws UiObjectNotFoundException {
+		UiDevice device = getUiDevice();
+		UiObject cancleRoot = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/btn_negative"));
 		UiCollection listview = new UiCollection(
 				new UiSelector().resourceId("android:id/list"));
-		int count = 0;
-		String[] lists = { "a", "a", "a", "a", "a" };
+		ArrayList<String> lists = new ArrayList<String>();
 		if (listview.exists()) {
-			/*
-			 * int framecount = listview.getChildCount(new UiSelector()
-			 * .className("android.widget.FrameLayout")); int linearcount =
-			 * listview.getChildCount(new UiSelector()
-			 * .className("android.widget.LinearLayout")); int relativecount =
-			 * listview.getChildCount(new UiSelector()
-			 * .className("android.widget.RelativeLayout"));
-			 */
 			int tvnamecount = listview.getChildCount(new UiSelector()
 					.resourceId("com.mappn.gfan:id/tv_name"));
-			int summarycount = listview.getChildCount(new UiSelector()
-					.resourceId("android:id/summary"));
-			int boxcount = listview.getChildCount(new UiSelector()
-					.resourceId("android:id/checkbox"));
-			count = tvnamecount;
-		}
-		for (int j = 0; j < 10; j++) {
-			UiObject tvname = new UiObject(new UiSelector().resourceId(
-					"com.mappn.gfan:id/tv_name").instance(j));
-			if (tvname.exists()) {
-				lists[j] = tvname.getText();
-			} else {
-				break;
+			System.out.println("设置页面子控件个数 = " + tvnamecount);
+			for (int j = 0; j < tvnamecount; j++) {
+				UiObject tvname = new UiObject(new UiSelector().resourceId(
+						"com.mappn.gfan:id/tv_name").instance(j));
+				if (tvname.exists()) {
+					lists.add(tvname.getText());// 取出子控件放入集合中
+					tvname.click();// 挨个点击子控件
+					if (cancleRoot.exists()) {
+						cancleRoot.click();
+					}
+				} else {
+					break;
+				}
 			}
-
 		}
-		String[] change = { String.valueOf(count), lists[0], lists[1],
-				lists[2], lists[3], lists[4] };
-		return change;
-
+		System.out.println("list页面子控件名称为 ：" + lists);
+		device.pressBack();
 	}
+
+	/**
+	 * 反馈
+	 * 
+	 * @throws UiObjectNotFoundException
+	 */
+	public void feedBack() throws UiObjectNotFoundException {
+		UiDevice device = getUiDevice();
+		homeMenu();
+		UiObject feddback = new UiObject(new UiSelector().text("反馈"));
+		feddback.click();
+		UiObject submit = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/bt_submit"));
+		submit.click();
+		System.out.println("直接点击提交按钮，提示：内容不能为空");
+		UiObject contentTex = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/et_content"));
+		System.out.println("编辑栏默认文本为： " + contentTex.getText());
+		UiObject contactTex = new UiObject(
+				new UiSelector().resourceId("com.mappn.gfan:id/et_contact"));
+		System.out.println("联系方式栏默认文本为： " + contactTex.getText());
+		contentTex.click();
+		contentTex.setText("123456789");
+		contactTex.click();
+		contactTex.setText("1234567@163.com");
+		device.pressBack();
+		submit.click();
+		device.pressBack();
+	}
+
+	/**
+	 * 评价
+	 * @throws UiObjectNotFoundException
+	 */
+	public void evaluate() throws UiObjectNotFoundException {
+		homeMenu();
+		UiObject evaluate = new UiObject(new UiSelector().text("评价"));
+		evaluate.click();
+		UiCollection collection = new UiCollection(
+				new UiSelector().resourceId("android:id/resolver_grid"));
+		ArrayList<String> lists = new ArrayList<>();
+		if (collection.exists()) {
+			int textviewCount = collection.getChildCount(new UiSelector()
+					.resourceId("android:id/text1"));
+			System.out.println("应用商店个数 = " + textviewCount);
+			for (int i = 0; i < textviewCount; i++) {
+				UiObject textview = new UiObject(
+						new UiSelector().resourceId("android:id/text1"));
+				if (textview.exists()) {
+					lists.add(textview.getText());
+					textview.click();
+				}
+				UiObject button1 = new UiObject(
+						new UiSelector().resourceId("android:id/button1"));
+				button1.click();
+			}
+			System.out.println("应用商店名称为 ： " + lists);
+		}
+	}
+	/**
+	 * 检查更新
+	 * @throws UiObjectNotFoundException
+	 */
+	public void checkUpdate()throws UiObjectNotFoundException{
+		homeMenu();
+		UiObject update = new UiObject(new UiSelector().text("检查更新"));
+		update.click();
+		sleep(2000);
+		System.out.println("检查更新：正在更新，请稍等片刻....已经是最新版本了");
+	}
+	/**
+	 * 论坛
+	 * @throws UiObjectNotFoundException
+	 */
+	public void community()throws UiObjectNotFoundException{
+		homeMenu();
+		UiObject community = new UiObject(new UiSelector().text("论坛"));
+		community.click();
+		sleep(2000);
+		System.out.println("进入论坛啦");
+		
+	}
+	
 
 }

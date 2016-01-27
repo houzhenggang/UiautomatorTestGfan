@@ -2,7 +2,6 @@ package com.txh.uitestgfan;
 
 import junit.framework.Assert;
 
-import android.view.animation.DecelerateInterpolator;
 
 import com.android.uiautomator.core.UiDevice;
 import com.android.uiautomator.core.UiObject;
@@ -10,7 +9,6 @@ import com.android.uiautomator.core.UiObjectNotFoundException;
 import com.android.uiautomator.core.UiScrollable;
 import com.android.uiautomator.core.UiSelector;
 import com.android.uiautomator.testrunner.UiAutomatorTestCase;
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Text;
 
 public class AppManage extends UiAutomatorTestCase {
 	UiDevice device = getUiDevice();
