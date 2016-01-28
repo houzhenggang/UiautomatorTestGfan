@@ -1,7 +1,6 @@
 package com.txh.uitestgfan;
 
 import java.util.ArrayList;
-
 import com.android.uiautomator.core.UiCollection;
 import com.android.uiautomator.core.UiDevice;
 import com.android.uiautomator.core.UiObject;
@@ -156,19 +155,20 @@ public class LeftPage extends UiAutomatorTestCase {
 	 * @throws UiObjectNotFoundException
 	 */
 	public void evaluate() throws UiObjectNotFoundException {
+		UiDevice device = getUiDevice();
 		homeMenu();
 		UiObject evaluate = new UiObject(new UiSelector().text("评价"));
 		evaluate.click();
 		UiCollection collection = new UiCollection(
 				new UiSelector().resourceId("android:id/resolver_grid"));
-		ArrayList<String> lists = new ArrayList<>();
+		ArrayList<String> lists = new ArrayList<String>();
 		if (collection.exists()) {
 			int textviewCount = collection.getChildCount(new UiSelector()
 					.resourceId("android:id/text1"));
 			System.out.println("应用商店个数 = " + textviewCount);
 			for (int i = 0; i < textviewCount; i++) {
 				UiObject textview = new UiObject(
-						new UiSelector().resourceId("android:id/text1"));
+						new UiSelector().resourceId("android:id/text1").instance(i));
 				if (textview.exists()) {
 					lists.add(textview.getText());
 					textview.click();
@@ -176,6 +176,7 @@ public class LeftPage extends UiAutomatorTestCase {
 				UiObject button1 = new UiObject(
 						new UiSelector().resourceId("android:id/button1"));
 				button1.click();
+				device.pressBack();
 			}
 			System.out.println("应用商店名称为 ： " + lists);
 		}
