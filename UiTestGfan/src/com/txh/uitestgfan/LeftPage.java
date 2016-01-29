@@ -1,5 +1,6 @@
 package com.txh.uitestgfan;
 
+import java.rmi.server.UID;
 import java.util.ArrayList;
 import com.android.uiautomator.core.UiCollection;
 import com.android.uiautomator.core.UiDevice;
@@ -19,6 +20,7 @@ public class LeftPage extends UiAutomatorTestCase {
 
 	/**
 	 * 测试执行入口
+	 * 
 	 * @throws UiObjectNotFoundException
 	 */
 	public void testLeftPage() throws UiObjectNotFoundException {
@@ -35,6 +37,7 @@ public class LeftPage extends UiAutomatorTestCase {
 
 	/**
 	 * swipe打开收起侧拉菜单
+	 * 
 	 * @throws UiObjectNotFoundException
 	 */
 	public void swipeLeftPage() throws UiObjectNotFoundException {
@@ -48,6 +51,7 @@ public class LeftPage extends UiAutomatorTestCase {
 
 	/**
 	 * 点击menu打开侧拉菜单
+	 * 
 	 * @throws UiObjectNotFoundException
 	 */
 	public void homeMenu() throws UiObjectNotFoundException {
@@ -80,6 +84,7 @@ public class LeftPage extends UiAutomatorTestCase {
 
 	/**
 	 * 打开设置
+	 * 
 	 * @throws UiObjectNotFoundException
 	 */
 	public void clickSetup() throws UiObjectNotFoundException {
@@ -152,6 +157,7 @@ public class LeftPage extends UiAutomatorTestCase {
 
 	/**
 	 * 评价
+	 * 
 	 * @throws UiObjectNotFoundException
 	 */
 	public void evaluate() throws UiObjectNotFoundException {
@@ -164,46 +170,48 @@ public class LeftPage extends UiAutomatorTestCase {
 		ArrayList<String> lists = new ArrayList<String>();
 		if (collection.exists()) {
 			int textviewCount = collection.getChildCount(new UiSelector()
-					.resourceId("android:id/text1"));
+					.className("android.widget.LinearLayout").childSelector(
+							new UiSelector().resourceId("android:id/text1")));
 			System.out.println("应用商店个数 = " + textviewCount);
 			for (int i = 0; i < textviewCount; i++) {
-				UiObject textview = new UiObject(
-						new UiSelector().resourceId("android:id/text1").instance(i));
+				UiObject textview = new UiObject(new UiSelector().resourceId(
+						"android:id/text1").instance(i));
 				if (textview.exists()) {
 					lists.add(textview.getText());
 					textview.click();
 				}
-				UiObject button1 = new UiObject(
-						new UiSelector().resourceId("android:id/button1"));
-				button1.click();
 				device.pressBack();
 			}
-			System.out.println("应用商店名称为 ： " + lists);
 		}
+		System.out.println("应用商店名称为 ： " + lists);
 	}
+
 	/**
 	 * 检查更新
+	 * 
 	 * @throws UiObjectNotFoundException
 	 */
-	public void checkUpdate()throws UiObjectNotFoundException{
+	public void checkUpdate() throws UiObjectNotFoundException {
 		homeMenu();
 		UiObject update = new UiObject(new UiSelector().text("检查更新"));
 		update.click();
 		sleep(2000);
 		System.out.println("检查更新：正在更新，请稍等片刻....已经是最新版本了");
 	}
+
 	/**
 	 * 论坛
+	 * 
 	 * @throws UiObjectNotFoundException
 	 */
-	public void community()throws UiObjectNotFoundException{
+	public void community() throws UiObjectNotFoundException {
+		UiDevice device = getUiDevice();
 		homeMenu();
 		UiObject community = new UiObject(new UiSelector().text("论坛"));
 		community.click();
 		sleep(2000);
 		System.out.println("进入论坛啦");
-		
+		device.pressBack();
 	}
-	
 
 }
