@@ -50,6 +50,7 @@ public class UiAutomatorHelper {
 		test_class = testClass;
 		test_name = testName;
 		android_id = androidId;
+		execCmd("echo $PATH");
 		runUiautomator();
 		System.out.println("*******************");
 		System.out.println("---FINISH DEBUG----");
@@ -88,7 +89,8 @@ public class UiAutomatorHelper {
 		creatBuildXml();
 		modfileBuild();
 		buildWithAnt();
-		if (System.getProperty("os.name").equals("Linux")) {
+		if (System.getProperty("os.name").equals("Linux")
+				|| System.getProperty("os.name").equals("Mac OS X")) {
 			pushTestJar(workspace_path + "/bin/" + jar_name + ".jar");
 		} else {
 			pushTestJar(workspace_path + "\\bin\\" + jar_name + ".jar");
@@ -108,20 +110,22 @@ public class UiAutomatorHelper {
 			return true;
 		}
 		// 创建build.xml
-		if (System.getProperty("os.name").equals("Linux")) {
+		if (System.getProperty("os.name").equals("Linux")
+				|| System.getProperty("os.name").equals("Mac OS X")) {
 			execCmd("android create uitest-project -n " + jar_name + " -t "
 					+ android_id + " -p " + workspace_path);
-		}else{
-		execCmd("cmd /c android create uitest-project -n " + jar_name + " -t "
-				+ android_id + " -p " + workspace_path);
+		} else {
+			execCmd("cmd /c android create uitest-project -n " + jar_name
+					+ " -t " + android_id + " -p " + workspace_path);
 		}
 		return false;
-		
+
 	}
 
 	// 创建build.xml
 	public void creatBuildXml() {
-		if (System.getProperty("os.name").equals("Linux")) {
+		if (System.getProperty("os.name").equals("Linux")
+				|| System.getProperty("os.name").equals("Mac OS X")) {
 			execCmd("android create uitest-project -n " + jar_name + " -t "
 					+ android_id + " -p " + workspace_path);
 			return;
@@ -166,7 +170,8 @@ public class UiAutomatorHelper {
 
 	// 3---ant 执行build
 	public void buildWithAnt() {
-		if (System.getProperty("os.name").equals("Linux")) {
+		if (System.getProperty("os.name").equals("Linux")
+				|| System.getProperty("os.name").equals("Mac OS X")) {
 			execCmd("ant");
 			return;
 		}
@@ -175,7 +180,8 @@ public class UiAutomatorHelper {
 
 	// 4---push jar
 	public void pushTestJar(String localPath) {
-		if (System.getProperty("os.name").equals("Linux")) {
+		if (System.getProperty("os.name").equals("Linux")
+				|| System.getProperty("os.name").equals("Mac OS X")) {
 			System.out.println("----jar包路径： " + localPath);
 			String pushCmd = "adb push " + localPath + " /data/local/tmp/";
 			System.out.println("----" + pushCmd);
@@ -211,6 +217,18 @@ public class UiAutomatorHelper {
 	public void execCmd(String cmd) {
 		System.out.println("----execCmd:  " + cmd);
 		try {
+			if (System.getProperty("os.name").equals("Mac OS X")) {
+
+				if (cmd.startsWith("adb")) {
+					cmd = cmd.replaceFirst("adb",
+							"/Users/klisly/soft/adt/sdk/platform-tools/adb");
+				} else if (cmd.startsWith("ant")) {
+					cmd = cmd.replaceFirst("ant", "/usr/local/bin/ant");
+				} else if (cmd.startsWith("android")) {
+					cmd = cmd.replaceFirst("android",
+							"/Users/klisly/soft/adt/sdk/tools/android");
+				}
+			}
 			Process p = Runtime.getRuntime().exec(cmd);
 			// 正确输出流
 			InputStream input = p.getInputStream();

@@ -1,6 +1,5 @@
 package com.txh.uitestgfan;
 
-import java.rmi.server.UID;
 import java.util.ArrayList;
 import com.android.uiautomator.core.UiCollection;
 import com.android.uiautomator.core.UiDevice;

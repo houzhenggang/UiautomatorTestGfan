@@ -48736,3 +48736,111 @@ OK (1 test)
 
 INSTRUMENTATION_STATUS_CODE: -1
 
+llll
+$PATH
+$PATH
+$PATH
+$PATH
+$PATH
+$PATH
+$PATH
+$PATH
+* daemon not running. starting it now on port 5037 *
+* daemon started successfully *
+error: device not found
+error: device not found
+error: device not found
+error: device not found
+$PATH
+Buildfile: /Users/klisly/git/UiautomatorTestGfan/UiTestGfan/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 23.0.2
+ [checkenv] Installed at /Users/klisly/soft/adt/sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 20.0.0
+     [echo] Resolving Build Target for LeftPage...
+[getuitarget] Project Target:   Android 4.4W
+[getuitarget] API level:        20
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: /Users/klisly/git/UiautomatorTestGfan/UiTestGfan/bin/classes
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 9 source files to /Users/klisly/git/UiautomatorTestGfan/UiTestGfan/bin/classes
+    [javac] warning: [options] source value 1.5 is obsolete and will be removed in a future release
+    [javac] warning: [options] target value 1.5 is obsolete and will be removed in a future release
+    [javac] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+    [javac] 3 warnings
+
+-post-compile:
+
+-dex:
+      [dex] input: /Users/klisly/git/UiautomatorTestGfan/UiTestGfan/bin/classes
+      [dex] Converting compiled files and external libraries into /Users/klisly/git/UiautomatorTestGfan/UiTestGfan/bin/classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: /Users/klisly/git/UiautomatorTestGfan/UiTestGfan/bin/LeftPage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+error: device not found
+error: device not found
+error: device not found
+error: device not found
+$PATH
+Updated file /Users/klisly/git/UiautomatorTestGfan/UiTestGfan/build.xml
+Buildfile: /Users/klisly/git/UiautomatorTestGfan/UiTestGfan/build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 23.0.2
+ [checkenv] Installed at /Users/klisly/soft/adt/sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 20.0.0
+     [echo] Resolving Build Target for LeftPage...
+[getuitarget] Project Target:   Android 4.4W
+[getuitarget] API level:        20
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to /Users/klisly/git/UiautomatorTestGfan/UiTestGfan/bin/classes
+    [javac] warning: [options] source value 1.5 is obsolete and will be removed in a future release
+    [javac] warning: [options] target value 1.5 is obsolete and will be removed in a future release
+    [javac] warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+    [javac] 3 warnings
+
+-post-compile:
+
+-dex:
+      [dex] input: /Users/klisly/git/UiautomatorTestGfan/UiTestGfan/bin/classes
+      [dex] Found modified input file
+      [dex] Converting compiled files and external libraries into /Users/klisly/git/UiautomatorTestGfan/UiTestGfan/bin/classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: /Users/klisly/git/UiautomatorTestGfan/UiTestGfan/bin/LeftPage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+error: device not found
+error: device not found
+error: device not found
+error: device not found
