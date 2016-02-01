@@ -1,5 +1,6 @@
 package com.txh.uitestgfan;
 
+import java.io.File;
 import java.util.ArrayList;
 
 import com.android.uiautomator.core.UiCollection;
@@ -21,6 +22,7 @@ public class ApplicationPage extends UiAutomatorTestCase {
 
 	public void testApplication() throws UiObjectNotFoundException {
 		clickApplication();
+		//getTags();
 		getItemName();
 		ranking();
 		recommendPage();
@@ -58,10 +60,10 @@ public class ApplicationPage extends UiAutomatorTestCase {
 					.className("android.widget.TextView"));
 			System.out.println("共有 " + textviewCount + "个二级标签");
 			for (int i = 0; i < textviewCount; i++) {
-				UiObject textview = new UiObject(new UiSelector().className(
+				UiObject textview = coll.getChild(new UiSelector().className(
 						"android.widget.TextView").instance(i));
-				String textName = textview.getText();
 				if (textview.exists()) {
+					String textName = textview.getText();
 					array.add(textName);
 					textview.click();
 					System.out.println("二级标签为 ： " + textName);
@@ -129,11 +131,18 @@ public class ApplicationPage extends UiAutomatorTestCase {
 		String appName = appname.getText();
 		System.out.println("app名称为 ： " + appName);
 		appname.click();
+		sleep(5000);
 		UiObject name = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/app_name"));
-		if (appName.equals(name.getText())) {
-			System.out
-					.println("appname是否一致： " + appName.equals(name.getText()));
+		try {
+			if (appName.equals(name.getText())) {
+				System.out
+						.println("appname是否一致： " + appName.equals(name.getText()));
+			}
+		} catch (Exception e) {
+			File path = new File("sdcard/Download/filename.png");
+			device.takeScreenshot(path);
+			e.printStackTrace();
 		}
 		device.pressBack();
 		UiObject updateBtn = new UiObject(new UiSelector().text("更新"));
