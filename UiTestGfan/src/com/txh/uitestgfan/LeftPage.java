@@ -149,8 +149,14 @@ public class LeftPage extends UiAutomatorTestCase {
 		contentTex.setText("123456789");
 		contactTex.click();
 		contactTex.setText("1234567@163.com");
-		device.pressBack();
-		submit.click();
+		sleep(1000);
+		if (submit.exists()) {
+			submit.click();
+		} else {
+			device.pressBack();
+			submit.click();
+		}
+
 		device.pressBack();
 	}
 
@@ -181,8 +187,10 @@ public class LeftPage extends UiAutomatorTestCase {
 				}
 				device.pressBack();
 			}
+			System.out.println("应用商店名称为 ： " + lists);
 		}
-		System.out.println("应用商店名称为 ： " + lists);
+		sleep(1000);
+		device.pressBack();
 	}
 
 	/**
