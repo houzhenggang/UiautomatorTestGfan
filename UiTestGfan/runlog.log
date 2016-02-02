@@ -56067,3 +56067,1425 @@ Tests run: 1,  Failures: 0,  Errors: 1
 
 INSTRUMENTATION_STATUS_CODE: -1
 
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for ApplicationPage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\ApplicationPage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+4446 KB/s (22779 bytes in 0.005s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.ApplicationPage:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testApplication
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.ApplicationPage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+======获取[应用]列表二级标签-并依次点击========
+
+共有 5个二级标签
+
+二级标签为 ： 应用
+
+二级标签为 ： 分类
+
+二级标签为 ： 排行
+
+二级标签为 ： 推荐
+
+二级标签为 ： 新品
+
+======获取列表app========
+
+列表中的app为 ： [双开助手（微信双开）, 多功能提取器, 阅友, 激情交友, 设计君]
+
+======获取appname名称-点击某个app进入详情========
+
+app名称为 ： 双开助手（微信双开）
+
+appname是否一致： true
+
+======[排行]========
+
+======获取列表app========
+
+列表中的app为 ： [微信, 手机QQ, 淘宝, 爱奇艺, 优酷视频播放器]
+
+======获取appname名称-点击某个app进入详情========
+
+app名称为 ： 微信
+
+appname是否一致： true
+
+======[推荐]========
+
+======获取列表app========
+
+列表中的app为 ： [美团-团购美食电影酒店优惠, 咪咕铃声, 海狸TV, 阅友, 百度糯米-电影,美食,酒店,外卖,团购]
+
+======获取appname名称-点击某个app进入详情========
+
+app名称为 ： 美团-团购美食电影酒店优惠
+
+appname是否一致： true
+
+======[新品]========
+
+======获取列表app========
+
+列表中的app为 ： [双开助手（微信双开）, 多功能提取器, 阅友, 激情交友, 设计君]
+
+======获取appname名称-点击某个app进入详情========
+
+app名称为 ： 双开助手（微信双开）
+
+appname是否一致： true
+
+======[锋神榜]========
+
+======获取[分类]并且挨个点击进入分类页面========
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testApplication:
+
+com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[TEXT=分类]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.ApplicationPage.classify(ApplicationPage.java:233)
+
+	at com.txh.uitestgfan.ApplicationPage.testApplication(ApplicationPage.java:29)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testApplication
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.ApplicationPage
+
+INSTRUMENTATION_STATUS: stack=com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[TEXT=分类]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.ApplicationPage.classify(ApplicationPage.java:233)
+
+	at com.txh.uitestgfan.ApplicationPage.testApplication(ApplicationPage.java:29)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 79.546
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for ApplicationPage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\ApplicationPage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+3182 KB/s (22833 bytes in 0.007s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.ApplicationPage:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testApplication
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.ApplicationPage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+======获取[应用]列表二级标签-并依次点击========
+
+共有 5个二级标签
+
+二级标签为 ： 应用
+
+二级标签为 ： 分类
+
+二级标签为 ： 排行
+
+二级标签为 ： 推荐
+
+二级标签为 ： 新品
+
+======获取列表app========
+
+列表中的app为 ： [双开助手（微信双开）, 多功能提取器, 阅友, 激情交友, 设计君]
+
+======获取appname名称-点击某个app进入详情========
+
+app名称为 ： 双开助手（微信双开）
+
+appname是否一致： true
+
+======[排行]========
+
+======获取列表app========
+
+列表中的app为 ： [微信, 手机QQ, 淘宝, 爱奇艺, 优酷视频播放器]
+
+======获取appname名称-点击某个app进入详情========
+
+app名称为 ： 微信
+
+appname是否一致： true
+
+======[推荐]========
+
+======获取列表app========
+
+列表中的app为 ： [美团-团购美食电影酒店优惠, 咪咕铃声, 海狸TV, 阅友, 百度糯米-电影,美食,酒店,外卖,团购]
+
+======获取appname名称-点击某个app进入详情========
+
+app名称为 ： 美团-团购美食电影酒店优惠
+
+appname是否一致： true
+
+======[新品]========
+
+======获取列表app========
+
+列表中的app为 ： [双开助手（微信双开）, 多功能提取器, 阅友, 激情交友, 设计君]
+
+======获取appname名称-点击某个app进入详情========
+
+app名称为 ： 双开助手（微信双开）
+
+appname是否一致： true
+
+======[锋神榜]========
+
+锋神榜appname：鲜城
+
+======获取[分类]并且挨个点击进入分类页面========
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testApplication:
+
+com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[TEXT=分类]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.ApplicationPage.classify(ApplicationPage.java:237)
+
+	at com.txh.uitestgfan.ApplicationPage.testApplication(ApplicationPage.java:29)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testApplication
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.ApplicationPage
+
+INSTRUMENTATION_STATUS: stack=com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[TEXT=分类]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.ApplicationPage.classify(ApplicationPage.java:237)
+
+	at com.txh.uitestgfan.ApplicationPage.testApplication(ApplicationPage.java:29)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 76.648
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for ApplicationPage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+    [javac] Compiling 1 source file to D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+    [javac] ����: [options] Դֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ŀ��ֵ1.5�ѹ�ʱ, ����δ�����з��а���ɾ��
+    [javac] ����: [options] Ҫ�����й��ѹ�ʱѡ��ľ���, ��ʹ�� -Xlint:-options��
+    [javac] 3 ������
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\ApplicationPage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+4455 KB/s (22828 bytes in 0.005s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.ApplicationPage:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testApplication
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.ApplicationPage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+======获取[应用]列表二级标签-并依次点击========
+
+共有 5个二级标签
+
+二级标签为 ： 应用
+
+二级标签为 ： 分类
+
+二级标签为 ： 排行
+
+二级标签为 ： 推荐
+
+二级标签为 ： 新品
+
+======获取列表app========
+
+列表中的app为 ： [双开助手（微信双开）, 多功能提取器, 阅友, 激情交友, 设计君]
+
+======获取appname名称-点击某个app进入详情========
+
+app名称为 ： 双开助手（微信双开）
+
+appname是否一致： true
+
+======[排行]========
+
+======获取列表app========
+
+列表中的app为 ： [微信, 手机QQ, 淘宝, 爱奇艺, 优酷视频播放器]
+
+======获取appname名称-点击某个app进入详情========
+
+app名称为 ： 微信
+
+appname是否一致： true
+
+======[推荐]========
+
+======获取列表app========
+
+列表中的app为 ： [美团-团购美食电影酒店优惠, 咪咕铃声, 海狸TV, 阅友, 百度糯米-电影,美食,酒店,外卖,团购]
+
+======获取appname名称-点击某个app进入详情========
+
+app名称为 ： 美团-团购美食电影酒店优惠
+
+appname是否一致： true
+
+======[新品]========
+
+======获取列表app========
+
+列表中的app为 ： [双开助手（微信双开）, 多功能提取器, 阅友, 激情交友, 设计君]
+
+======获取appname名称-点击某个app进入详情========
+
+app名称为 ： 双开助手（微信双开）
+
+appname是否一致： true
+
+======[锋神榜]========
+
+锋神榜appname：鲜城
+
+======获取[分类]并且挨个点击进入分类页面========
+
+======分类子类-二级标签========
+
+======获取[应用]列表二级标签-并依次点击========
+
+共有 4个二级标签
+
+二级标签为 ： 实用工具
+
+二级标签为 ： 推荐
+
+二级标签为 ： 排行
+
+二级标签为 ： 新品
+
+======获取appname名称-点击某个app进入详情========
+
+app名称为 ： 上海健身
+
+appname是否一致： true
+
+======分类子类-[上升最快]========
+
+======获取列表app========
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testApplication:
+
+com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[CLASS=android.widget.FrameLayout, CHILD=UiSelector[CLASS=android.widget.RelativeLayout, CHILD=UiSelector[INSTANCE=0, RESOURCE_ID=com.mappn.gfan:id/common_list_item_name]]]
+
+	at com.android.uiautomator.core.UiObject.getText(UiObject.java:535)
+
+	at com.txh.uitestgfan.ApplicationPage.listPage(ApplicationPage.java:111)
+
+	at com.txh.uitestgfan.ApplicationPage.riseQuick(ApplicationPage.java:293)
+
+	at com.txh.uitestgfan.ApplicationPage.getclassifyTag(ApplicationPage.java:278)
+
+	at com.txh.uitestgfan.ApplicationPage.classify(ApplicationPage.java:261)
+
+	at com.txh.uitestgfan.ApplicationPage.testApplication(ApplicationPage.java:29)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testApplication
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.ApplicationPage
+
+INSTRUMENTATION_STATUS: stack=com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[CLASS=android.widget.FrameLayout, CHILD=UiSelector[CLASS=android.widget.RelativeLayout, CHILD=UiSelector[INSTANCE=0, RESOURCE_ID=com.mappn.gfan:id/common_list_item_name]]]
+
+	at com.android.uiautomator.core.UiObject.getText(UiObject.java:535)
+
+	at com.txh.uitestgfan.ApplicationPage.listPage(ApplicationPage.java:111)
+
+	at com.txh.uitestgfan.ApplicationPage.riseQuick(ApplicationPage.java:293)
+
+	at com.txh.uitestgfan.ApplicationPage.getclassifyTag(ApplicationPage.java:278)
+
+	at com.txh.uitestgfan.ApplicationPage.classify(ApplicationPage.java:261)
+
+	at com.txh.uitestgfan.ApplicationPage.testApplication(ApplicationPage.java:29)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 108.855
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for LeftPage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\LeftPage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+3713 KB/s (22828 bytes in 0.006s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.LeftPage:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testLeftPage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.LeftPage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+*****执行清理中  =  执行清理中 *****
+
+*****您的手机已经达到最佳状态  =  您的手机已经达到最佳状态 *****
+
+list页面子控件名称为 ：[]
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testLeftPage:
+
+com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/home_menu]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.LeftPage.homeMenu(LeftPage.java:59)
+
+	at com.txh.uitestgfan.LeftPage.feedBack(LeftPage.java:135)
+
+	at com.txh.uitestgfan.LeftPage.testLeftPage(LeftPage.java:31)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testLeftPage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.LeftPage
+
+INSTRUMENTATION_STATUS: stack=com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/home_menu]
+
+	at com.android.uiautomator.core.UiObject.click(UiObject.java:392)
+
+	at com.txh.uitestgfan.LeftPage.homeMenu(LeftPage.java:59)
+
+	at com.txh.uitestgfan.LeftPage.feedBack(LeftPage.java:135)
+
+	at com.txh.uitestgfan.LeftPage.testLeftPage(LeftPage.java:31)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 32.021
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for LeftPage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\LeftPage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+2475 KB/s (22828 bytes in 0.009s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.LeftPage:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testLeftPage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.LeftPage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+*****执行清理中  =  执行清理中 *****
+
+*****您的手机已经达到最佳状态  =  您的手机已经达到最佳状态 *****
+
+设置页面子控件个数 = 9
+
+list页面子控件名称为 ：[省流量设置, 提示安装, 2G/3G/4G下载提示, 安装后删除安装包, 自动安装应用, 零流量更新, 一键Root, 检查更新, 版本2.1.3]
+
+直接点击提交按钮，提示：内容不能为空
+
+编辑栏默认文本为： 机锋君随时求吐槽,吐槽别忘写个联系方式,否则机锋君无法回复您呢~
+
+联系方式栏默认文本为： 求联系方式,QQ/邮箱/电话,机锋君第一时间联系你！
+
+java.io.FileNotFoundException: /data/system/theme_config/theme_compatibility.xml: open failed: ENOENT (No such file or directory)
+
+	at libcore.io.IoBridge.open(IoBridge.java:409)
+
+	at java.io.FileInputStream.<init>(FileInputStream.java:78)
+
+	at java.io.FileInputStream.<init>(FileInputStream.java:105)
+
+	at java.io.FileReader.<init>(FileReader.java:66)
+
+	at miui.content.res.ThemeCompatibilityLoader.getVersion(ThemeCompatibilityLoader.java:109)
+
+	at miui.content.res.ThemeCompatibilityLoader.getConfigDocumentTree(ThemeCompatibilityLoader.java:127)
+
+	at miui.content.res.ThemeCompatibilityLoader.loadConfig(ThemeCompatibilityLoader.java:60)
+
+	at miui.content.res.ThemeCompatibility.<clinit>(ThemeCompatibility.java:31)
+
+	at android.content.res.MiuiResources.<clinit>(MiuiResources.java:32)
+
+	at android.content.res.Resources.getSystem(Resources.java:221)
+
+	at android.database.CursorWindow.<clinit>(CursorWindow.java:47)
+
+	at android.database.BulkCursorDescriptor.readFromParcel(BulkCursorDescriptor.java:75)
+
+	at android.database.BulkCursorDescriptor$1.createFromParcel(BulkCursorDescriptor.java:34)
+
+	at android.database.BulkCursorDescriptor$1.createFromParcel(BulkCursorDescriptor.java:30)
+
+	at android.content.ContentProviderProxy.query(ContentProviderNative.java:416)
+
+	at com.android.uiautomator.core.ShellUiAutomatorBridge.getSystemLongPressTime(ShellUiAutomatorBridge.java:69)
+
+	at com.android.uiautomator.core.InteractionController.longTapNoSync(InteractionController.java:296)
+
+	at com.android.uiautomator.core.UiObject.clearTextField(UiObject.java:626)
+
+	at com.android.uiautomator.core.UiObject.setText(UiObject.java:595)
+
+	at com.txh.uitestgfan.LeftPage.feedBack(LeftPage.java:149)
+
+	at com.txh.uitestgfan.LeftPage.testLeftPage(LeftPage.java:31)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at java.lang.reflect.Method.invoke(Method.java:515)
+
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+
+	at junit.framework.TestResult$1.protect(TestResult.java:115)
+
+	at junit.framework.TestResult.runProtected(TestResult.java:133)
+
+	at junit.framework.TestResult.run(TestResult.java:118)
+
+	at junit.framework.TestCase.run(TestCase.java:124)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+Caused by: libcore.io.ErrnoException: open failed: ENOENT (No such file or directory)
+
+	at libcore.io.Posix.open(Native Method)
+
+	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:110)
+
+	at libcore.io.IoBridge.open(IoBridge.java:393)
+
+	... 35 more
+
+检查更新：正在更新，请稍等片刻....已经是最新版本了
+
+进入论坛啦
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=.
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testLeftPage
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.LeftPage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 0
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.
+
+Time: 83.67
+
+
+
+OK (1 test)
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for ApplicationPage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\ApplicationPage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 1 second
+4455 KB/s (22828 bytes in 0.005s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.ApplicationPage:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testApplication
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.ApplicationPage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+======获取[应用]列表二级标签-并依次点击========
+
+共有 5个二级标签
+
+二级标签为 ： 应用
+
+二级标签为 ： 分类
+
+二级标签为 ： 排行
+
+二级标签为 ： 推荐
+
+二级标签为 ： 新品
+
+======获取列表app========
+
+列表中的app为 ： [双开助手（微信双开）, 多功能提取器, 阅友, 激情交友, 设计君]
+
+======获取appname名称-点击某个app进入详情========
+
+app名称为 ： 双开助手（微信双开）
+
+appname是否一致： true
+
+======[排行]========
+
+======获取列表app========
+
+列表中的app为 ： [微信, 手机QQ, 淘宝, 爱奇艺, 优酷视频播放器]
+
+======获取appname名称-点击某个app进入详情========
+
+app名称为 ： 微信
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testApplication:
+
+com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/app_name]
+
+	at com.android.uiautomator.core.UiObject.getText(UiObject.java:535)
+
+	at com.txh.uitestgfan.ApplicationPage.getItemName(ApplicationPage.java:134)
+
+	at com.txh.uitestgfan.ApplicationPage.ranking(ApplicationPage.java:176)
+
+	at com.txh.uitestgfan.ApplicationPage.testApplication(ApplicationPage.java:25)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testApplication
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.ApplicationPage
+
+INSTRUMENTATION_STATUS: stack=com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/app_name]
+
+	at com.android.uiautomator.core.UiObject.getText(UiObject.java:535)
+
+	at com.txh.uitestgfan.ApplicationPage.getItemName(ApplicationPage.java:134)
+
+	at com.txh.uitestgfan.ApplicationPage.ranking(ApplicationPage.java:176)
+
+	at com.txh.uitestgfan.ApplicationPage.testApplication(ApplicationPage.java:25)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 43.477
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+Updated file D:\UiautomatorTestGfan\UiTestGfan\build.xml
+Buildfile: D:\UiautomatorTestGfan\UiTestGfan\build.xml
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.2.1
+ [checkenv] Installed at D:\adt-bundle-windows-x86_64-20130917\sdk
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 18.1.0
+     [echo] Resolving Build Target for ApplicationPage...
+[getuitarget] Project Target:   Android 4.3
+[getuitarget] API level:        18
+     [echo] ----------
+     [echo] Creating output directories if needed...
+
+-pre-compile:
+
+compile:
+
+-post-compile:
+
+-dex:
+      [dex] input: D:\UiautomatorTestGfan\UiTestGfan\bin\classes
+      [dex] Found Deleted Target File
+      [dex] Converting compiled files and external libraries into D:\UiautomatorTestGfan\UiTestGfan\bin\classes.dex...
+
+-post-dex:
+
+-jar:
+      [jar] Building jar: D:\UiautomatorTestGfan\UiTestGfan\bin\ApplicationPage.jar
+
+-post-jar:
+
+build:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+2784 KB/s (22828 bytes in 0.008s)
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+com.txh.uitestgfan.ApplicationPage:
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testApplication
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.ApplicationPage
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: 1
+
+======获取[应用]列表二级标签-并依次点击========
+
+共有 5个二级标签
+
+二级标签为 ： 应用
+
+二级标签为 ： 分类
+
+二级标签为 ： 排行
+
+二级标签为 ： 推荐
+
+二级标签为 ： 新品
+
+======获取列表app========
+
+列表中的app为 ： [双开助手（微信双开）, 多功能提取器, 阅友, 激情交友, 设计君]
+
+======获取appname名称-点击某个app进入详情========
+
+app名称为 ： 双开助手（微信双开）
+
+appname是否一致： true
+
+======[排行]========
+
+======获取列表app========
+
+列表中的app为 ： [微信, 手机QQ, 淘宝, 爱奇艺, 优酷视频播放器]
+
+======获取appname名称-点击某个app进入详情========
+
+app名称为 ： 微信
+
+appname是否一致： true
+
+======[推荐]========
+
+======获取列表app========
+
+列表中的app为 ： [美团-团购美食电影酒店优惠, 咪咕铃声, 海狸TV, 阅友, 百度糯米-电影,美食,酒店,外卖,团购]
+
+======获取appname名称-点击某个app进入详情========
+
+app名称为 ： 美团-团购美食电影酒店优惠
+
+appname是否一致： true
+
+======[新品]========
+
+======获取列表app========
+
+列表中的app为 ： [双开助手（微信双开）, 多功能提取器, 阅友, 激情交友, 设计君]
+
+======获取appname名称-点击某个app进入详情========
+
+app名称为 ： 双开助手（微信双开）
+
+appname是否一致： true
+
+======[锋神榜]========
+
+锋神榜appname：鲜城
+
+======获取[分类]并且挨个点击进入分类页面========
+
+======分类子类-二级标签========
+
+======获取[应用]列表二级标签-并依次点击========
+
+共有 4个二级标签
+
+二级标签为 ： 实用工具
+
+二级标签为 ： 推荐
+
+二级标签为 ： 排行
+
+二级标签为 ： 新品
+
+======获取appname名称-点击某个app进入详情========
+
+app名称为 ： 上海健身
+
+appname是否一致： true
+
+======分类子类-[上升最快]========
+
+======获取列表app========
+
+列表中的app为 ： []
+
+======获取appname名称-点击某个app进入详情========
+
+INSTRUMENTATION_STATUS: numtests=1
+
+INSTRUMENTATION_STATUS: stream=
+
+Error in testApplication:
+
+com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/common_list_item_name]
+
+	at com.android.uiautomator.core.UiObject.getText(UiObject.java:535)
+
+	at com.txh.uitestgfan.ApplicationPage.getItemName(ApplicationPage.java:129)
+
+	at com.txh.uitestgfan.ApplicationPage.riseQuick(ApplicationPage.java:294)
+
+	at com.txh.uitestgfan.ApplicationPage.getclassifyTag(ApplicationPage.java:278)
+
+	at com.txh.uitestgfan.ApplicationPage.classify(ApplicationPage.java:261)
+
+	at com.txh.uitestgfan.ApplicationPage.testApplication(ApplicationPage.java:29)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+
+INSTRUMENTATION_STATUS: test=testApplication
+
+INSTRUMENTATION_STATUS: class=com.txh.uitestgfan.ApplicationPage
+
+INSTRUMENTATION_STATUS: stack=com.android.uiautomator.core.UiObjectNotFoundException: UiSelector[RESOURCE_ID=com.mappn.gfan:id/common_list_item_name]
+
+	at com.android.uiautomator.core.UiObject.getText(UiObject.java:535)
+
+	at com.txh.uitestgfan.ApplicationPage.getItemName(ApplicationPage.java:129)
+
+	at com.txh.uitestgfan.ApplicationPage.riseQuick(ApplicationPage.java:294)
+
+	at com.txh.uitestgfan.ApplicationPage.getclassifyTag(ApplicationPage.java:278)
+
+	at com.txh.uitestgfan.ApplicationPage.classify(ApplicationPage.java:261)
+
+	at com.txh.uitestgfan.ApplicationPage.testApplication(ApplicationPage.java:29)
+
+	at java.lang.reflect.Method.invokeNative(Native Method)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.start(UiAutomatorTestRunner.java:160)
+
+	at com.android.uiautomator.testrunner.UiAutomatorTestRunner.run(UiAutomatorTestRunner.java:96)
+
+	at com.android.commands.uiautomator.RunTestCommand.run(RunTestCommand.java:91)
+
+	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:245)
+
+	at dalvik.system.NativeStart.main(Native Method)
+
+
+
+INSTRUMENTATION_STATUS: current=1
+
+INSTRUMENTATION_STATUS_CODE: -1
+
+INSTRUMENTATION_STATUS: stream=
+
+Test results for WatcherResultPrinter=.E
+
+Time: 106.361
+
+
+
+FAILURES!!!
+
+Tests run: 1,  Failures: 0,  Errors: 1
+
+
+
+
+
+INSTRUMENTATION_STATUS_CODE: -1
+

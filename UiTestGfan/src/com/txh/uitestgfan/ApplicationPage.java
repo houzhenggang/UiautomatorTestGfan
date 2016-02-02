@@ -212,12 +212,16 @@ public class ApplicationPage extends UiAutomatorTestCase {
 		UiDevice device = getUiDevice();
 		UiObject fsb = new UiObject(new UiSelector().text("锋神榜"));
 		fsb.click();
+		UiObject fs = new UiObject(
+				new UiSelector()
+						.resourceId("com.mappn.gfan:id/common_list_item_name"));
+		System.out.println("锋神榜appname：" + fs.getText());
 		UiScrollable scrollable = new UiScrollable(
 				new UiSelector().scrollable(true));
 		scrollable.setAsVerticalList();
 		sleep(1000);
 		device.click(300, 500);
-		sleep(1000);
+		sleep(5000);
 		device.pressBack();
 	}
 
