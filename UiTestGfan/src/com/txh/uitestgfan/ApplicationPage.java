@@ -1,6 +1,7 @@
 package com.txh.uitestgfan;
 
 import java.io.File;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 import com.android.uiautomator.core.UiCollection;
@@ -22,7 +23,6 @@ public class ApplicationPage extends UiAutomatorTestCase {
 
 	public void testApplication() throws UiObjectNotFoundException {
 		clickApplication();
-		//getTags();
 		getItemName();
 		ranking();
 		recommendPage();
@@ -35,19 +35,18 @@ public class ApplicationPage extends UiAutomatorTestCase {
 
 	/**
 	 * 点击应用管理-进入应用管理页面
-	 * 
+	 * ①getTags()获取二级标签
 	 * @throws UiObjectNotFoundException
 	 */
 	public void clickApplication() throws UiObjectNotFoundException {
 		UiObject application = new UiObject(new UiSelector().text("应用"));
 		application.click();
 		getTags();
-		listPage();
 	}
 
 	/**
 	 * 通过arraylist数组取出[应用]中的二级标签 并依次点击
-	 * 
+	 * 输出到控制台
 	 * @throws UiObjectNotFoundException
 	 */
 	public void getTags() throws UiObjectNotFoundException {
@@ -74,7 +73,7 @@ public class ApplicationPage extends UiAutomatorTestCase {
 
 	/**
 	 * 通过arraylist获取列表页面的app
-	 * 
+	 * 输出到控制台
 	 * @throws UiObjectNotFoundException
 	 */
 	public void listPage() throws UiObjectNotFoundException {
@@ -118,8 +117,8 @@ public class ApplicationPage extends UiAutomatorTestCase {
 	}
 
 	/**
-	 * 获取app名称 点击app进入应用详情 返回，点击更新/下载按钮
-	 * 
+	 * getItemName()获取app名称 点击app进入应用详情--返回
+	 * 如果更新/安装/暂停/继续打开存在==点击
 	 * @throws UiObjectNotFoundException
 	 */
 	public void getItemName() throws UiObjectNotFoundException {
@@ -129,9 +128,10 @@ public class ApplicationPage extends UiAutomatorTestCase {
 				new UiSelector()
 						.resourceId("com.mappn.gfan:id/common_list_item_name"));
 		String appName = appname.getText();
+		sleep(5000);
 		System.out.println("app名称为 ： " + appName);
 		appname.click();
-		sleep(5000);
+		sleep(2000);
 		UiObject name = new UiObject(
 				new UiSelector().resourceId("com.mappn.gfan:id/app_name"));
 		try {
@@ -146,7 +146,7 @@ public class ApplicationPage extends UiAutomatorTestCase {
 		}
 		device.pressBack();
 		UiObject updateBtn = new UiObject(new UiSelector().text("更新"));
-		UiObject downloadBtn = new UiObject(new UiSelector().text("下载"));
+		//UiObject downloadBtn = new UiObject(new UiSelector().text("下载"));
 		UiObject install = new UiObject(new UiSelector().text("安装"));
 		UiObject open = new UiObject(new UiSelector().text("打开"));
 		UiObject contin = new UiObject(new UiSelector().text("暂停"));
@@ -161,9 +161,9 @@ public class ApplicationPage extends UiAutomatorTestCase {
 			cancleinstall.click();
 		} else if (contin.exists()) {
 			contin.click();
-		} else if (downloadBtn.exists()) {
+		} /*else if (downloadBtn.exists()) {
 			downloadBtn.click();
-		} else if (stop.exists()) {
+		}*/ else if (stop.exists()) {
 			stop.click();
 		} else if (open.exists()) {
 			open.click();
@@ -173,8 +173,8 @@ public class ApplicationPage extends UiAutomatorTestCase {
 	}
 
 	/**
-	 * 排行页面 通过listPage()方法获取列表页面的app名称 通过getItemName()方法点击进入应用详情并返回
-	 * 
+	 * 排行页面 
+	 * 通过listPage()方法获取列表页面的app名称 通过getItemName()方法点击进入应用详情并返回
 	 * @throws UiObjectNotFoundException
 	 */
 	public void ranking() throws UiObjectNotFoundException {
@@ -186,8 +186,8 @@ public class ApplicationPage extends UiAutomatorTestCase {
 	}
 
 	/**
-	 * 推荐页面 通过listPage()方法获取列表页面的app名称 通过getItemName()方法点击进入应用详情并返回
-	 * 
+	 * 推荐页面 
+	 * 通过listPage()方法获取列表页面的app名称 通过getItemName()方法点击进入应用详情并返回
 	 * @throws UiObjectNotFoundException
 	 */
 	public void recommendPage() throws UiObjectNotFoundException {
@@ -199,8 +199,8 @@ public class ApplicationPage extends UiAutomatorTestCase {
 	}
 
 	/**
-	 * 新品页面 通过listPage()方法获取列表页面的app名称 通过getItemName()方法点击进入应用详情并返回
-	 * 
+	 * 新品页面 
+	 * 通过listPage()方法获取列表页面的app名称 通过getItemName()方法点击进入应用详情并返回
 	 * @throws UiObjectNotFoundException
 	 */
 	public void newApp() throws UiObjectNotFoundException {
@@ -213,7 +213,7 @@ public class ApplicationPage extends UiAutomatorTestCase {
 
 	/**
 	 * 锋神榜 通过device点击进入应用详情
-	 * 
+	 * 获取appname
 	 * @throws UiObjectNotFoundException
 	 */
 	public void fsBang() throws UiObjectNotFoundException {

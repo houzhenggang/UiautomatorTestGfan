@@ -29,29 +29,29 @@ public class PersonalCenter extends UiAutomatorTestCase {
 	 * @throws UiObjectNotFoundException
 	 */
 	public void testPensonalCenter() throws UiObjectNotFoundException {
-		// openMyPage();
-		// personCenterScroll();
-		// getScore();
-		// getTicket();
-		// bookIn();
-		// bookInNotLogin();
-		// succLogin();
-		// weixinLogin();
-		// popShareBox();
-		// shareFriendCircle();
-		// shareWeiXinFriend();
-		// shareWeiBo();
-		// depositPage();
-		// aliPay();
-		// weixinPay();
-		// unionPay();
-		// tenPay();
-		// phonecardPay();
-		// exchangeMall();
-		// storeBox();
-		// fav();
-		// modifyUserImage();
-		// modifyNickName();
+		openMyPage();
+		personCenterScroll();
+		succLogin();
+		getScore();
+		getTicket();
+		bookIn();
+		bookInNotLogin();
+		weixinLogin();
+		popShareBox();
+		shareFriendCircle();
+		shareWeiXinFriend();
+		shareWeiBo();
+		depositPage();
+		aliPay();
+		weixinPay();
+		unionPay();
+		tenPay();
+		phonecardPay();
+		exchangeMall();
+		storeBox();
+		fav();
+		modifyUserImage();
+		modifyNickName();
 		modifyPassWord();
 
 	}

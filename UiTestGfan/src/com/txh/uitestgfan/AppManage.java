@@ -36,10 +36,14 @@ public class AppManage extends UiAutomatorTestCase {
 	 * @throws UiObjectNotFoundException
 	 */
 	public void testAppManage() throws UiObjectNotFoundException {
-		// appMangement();
-		// installedPage();
+		appMangement();
+		installedPage();
 		nodataUpdate();
 		installPackage();
+		installedPage();
+		taskPage();
+		updatePage();
+		ignorePage();
 
 	}
 

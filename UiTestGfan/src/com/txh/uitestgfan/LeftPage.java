@@ -35,8 +35,9 @@ public class LeftPage extends UiAutomatorTestCase {
 	}
 
 	/**
-	 * swipe打开收起侧拉菜单
-	 * 
+	 * swipe()方法向左向右滑动
+	 * 步骤：①向右滑动打开侧拉菜单
+	 * ②向左滑动关闭侧拉菜单
 	 * @throws UiObjectNotFoundException
 	 */
 	public void swipeLeftPage() throws UiObjectNotFoundException {
@@ -50,7 +51,7 @@ public class LeftPage extends UiAutomatorTestCase {
 
 	/**
 	 * 点击menu打开侧拉菜单
-	 * 
+	 *步骤：通过UiObject获取对象，点击对象打开侧拉菜单
 	 * @throws UiObjectNotFoundException
 	 */
 	public void homeMenu() throws UiObjectNotFoundException {
@@ -62,7 +63,8 @@ public class LeftPage extends UiAutomatorTestCase {
 
 	/**
 	 * 点击加速
-	 * 
+	 * 步骤：①点击加速-获取加速中的文本
+	 * ②加速完成后，获取加速后的文本
 	 * @throws UiObjectNotFoundException
 	 */
 	public void goSpeed() throws UiObjectNotFoundException {
@@ -83,7 +85,7 @@ public class LeftPage extends UiAutomatorTestCase {
 
 	/**
 	 * 打开设置
-	 * 
+	 * 步骤：①点击[设置]-进入设置page
 	 * @throws UiObjectNotFoundException
 	 */
 	public void clickSetup() throws UiObjectNotFoundException {
@@ -93,7 +95,11 @@ public class LeftPage extends UiAutomatorTestCase {
 
 	/**
 	 * 设置页面 使用ArrayList取出listviews的子控件，挨个点击子控件
-	 * 
+	 * 步骤：①UiCollection获取父控件
+	 * ②如果父控件存在，获取父控件下的子控件数量getChildCount()
+	 * ③如果子控件存在，将子控件取出放入lists并依次点击子控件
+	 * ④将子控件在控制台打印出来
+	 * ⑤device退出设置page
 	 * @throws UiObjectNotFoundException
 	 */
 	public void setupPage() throws UiObjectNotFoundException {
@@ -127,7 +133,13 @@ public class LeftPage extends UiAutomatorTestCase {
 
 	/**
 	 * 反馈
-	 * 
+	 * 步骤：①进入反馈page
+	 * ②直接点击submit按钮
+	 * ③点击输入反馈内容
+	 * ④输入联系方式
+	 * ⑤判断页面是否查找到submit
+	 * ⑥如果查找到submit直接点击
+	 * ⑦如果未查找到submit，pressback()后再点击submit
 	 * @throws UiObjectNotFoundException
 	 */
 	public void feedBack() throws UiObjectNotFoundException {
@@ -156,13 +168,17 @@ public class LeftPage extends UiAutomatorTestCase {
 			device.pressBack();
 			submit.click();
 		}
-
 		device.pressBack();
 	}
 
 	/**
 	 * 评价
-	 * 
+	 * 步骤：①点击[评价]
+	 * ②获取应用商店列表父控件
+	 * ③如果父控件存在，获取子控件数量getChildCount()
+	 * ④如果子控件存在，instance()遍历子控件
+	 * ⑤将取出的子控件放入lists中并依次点击控件后返回列表
+	 * ⑥将所有控件打印在控制台
 	 * @throws UiObjectNotFoundException
 	 */
 	public void evaluate() throws UiObjectNotFoundException {
