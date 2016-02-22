@@ -34,22 +34,22 @@ public class ApplicationPage extends UiAutomatorTestCase {
 	}
 
 	/**
-	 * 点击应用管理-进入应用管理页面
-	 * ①getTags()获取二级标签
+	 * 点击应用管理-进入应用管理页面 ①getTags()获取二级标签
+	 * 
 	 * @throws UiObjectNotFoundException
 	 */
 	public void clickApplication() throws UiObjectNotFoundException {
 		UiObject application = new UiObject(new UiSelector().text("应用"));
 		application.click();
-		getTags();
+		testGetTags();
 	}
 
 	/**
-	 * 通过arraylist数组取出[应用]中的二级标签 并依次点击
-	 * 输出到控制台
+	 * 通过arraylist数组取出[应用]中的二级标签 并依次点击 输出到控制台
+	 * 
 	 * @throws UiObjectNotFoundException
 	 */
-	public void getTags() throws UiObjectNotFoundException {
+	public void testGetTags() throws UiObjectNotFoundException {
 		System.out.println("======获取[应用]列表二级标签-并依次点击========");
 		UiCollection coll = new UiCollection(
 				new UiSelector().resourceId("com.mappn.gfan:id/page_indicator"));
@@ -72,11 +72,11 @@ public class ApplicationPage extends UiAutomatorTestCase {
 	}
 
 	/**
-	 * 通过arraylist获取列表页面的app
-	 * 输出到控制台
+	 * 通过arraylist获取列表页面的app 输出到控制台
+	 * 
 	 * @throws UiObjectNotFoundException
 	 */
-	public void listPage() throws UiObjectNotFoundException {
+	public void testPageLists() throws UiObjectNotFoundException {
 		System.out.println("======获取列表app========");
 		UiScrollable scrollable = new UiScrollable(
 				new UiSelector().scrollable(true));
@@ -85,29 +85,11 @@ public class ApplicationPage extends UiAutomatorTestCase {
 				new UiSelector().resourceId("com.mappn.gfan:id/baselistview"));
 		ArrayList<String> arraylist = new ArrayList<String>();
 		if (collection.exists()) {
-			int framCount = collection
-					.getChildCount(new UiSelector()
-							.className("android.widget.FrameLayout")
-							.childSelector(
-									new UiSelector()
-											.className(
-													"android.widget.RelativeLayout")
-											.childSelector(
-													new UiSelector()
-															.resourceId("com.mappn.gfan:id/common_list_item_name"))));
+			int framCount = collection.getChildCount(new UiSelector()
+					.resourceId("com.mappn.gfan:id/common_list_item_name"));
 			for (int i = 0; i < framCount; i++) {
-				UiObject textview = new UiObject(
-						new UiSelector()
-								.className("android.widget.FrameLayout")
-								.childSelector(
-										new UiSelector()
-												.className(
-														"android.widget.RelativeLayout")
-												.childSelector(
-														new UiSelector()
-																.resourceId(
-																		"com.mappn.gfan:id/common_list_item_name")
-																.instance(i))));
+				UiObject textview = new UiObject(new UiSelector().resourceId(
+						"com.mappn.gfan:id/common_list_item_name").instance(i));
 				if (textview.exists()) {
 					arraylist.add(textview.getText());
 				}
@@ -117,8 +99,8 @@ public class ApplicationPage extends UiAutomatorTestCase {
 	}
 
 	/**
-	 * getItemName()获取app名称 点击app进入应用详情--返回
-	 * 如果更新/安装/暂停/继续打开存在==点击
+	 * getItemName()获取app名称 点击app进入应用详情--返回 如果更新/安装/暂停/继续打开存在==点击
+	 * 
 	 * @throws UiObjectNotFoundException
 	 */
 	public void getItemName() throws UiObjectNotFoundException {
@@ -136,8 +118,8 @@ public class ApplicationPage extends UiAutomatorTestCase {
 				new UiSelector().resourceId("com.mappn.gfan:id/app_name"));
 		try {
 			if (appName.equals(name.getText())) {
-				System.out
-						.println("appname是否一致： " + appName.equals(name.getText()));
+				System.out.println("appname是否一致： "
+						+ appName.equals(name.getText()));
 			}
 		} catch (Exception e) {
 			File path = new File("sdcard/Download/filename.png");
@@ -146,7 +128,7 @@ public class ApplicationPage extends UiAutomatorTestCase {
 		}
 		device.pressBack();
 		UiObject updateBtn = new UiObject(new UiSelector().text("更新"));
-		//UiObject downloadBtn = new UiObject(new UiSelector().text("下载"));
+		// UiObject downloadBtn = new UiObject(new UiSelector().text("下载"));
 		UiObject install = new UiObject(new UiSelector().text("安装"));
 		UiObject open = new UiObject(new UiSelector().text("打开"));
 		UiObject contin = new UiObject(new UiSelector().text("暂停"));
@@ -161,9 +143,9 @@ public class ApplicationPage extends UiAutomatorTestCase {
 			cancleinstall.click();
 		} else if (contin.exists()) {
 			contin.click();
-		} /*else if (downloadBtn.exists()) {
-			downloadBtn.click();
-		}*/ else if (stop.exists()) {
+		} /*
+		 * else if (downloadBtn.exists()) { downloadBtn.click(); }
+		 */else if (stop.exists()) {
 			stop.click();
 		} else if (open.exists()) {
 			open.click();
@@ -173,47 +155,47 @@ public class ApplicationPage extends UiAutomatorTestCase {
 	}
 
 	/**
-	 * 排行页面 
-	 * 通过listPage()方法获取列表页面的app名称 通过getItemName()方法点击进入应用详情并返回
+	 * 排行页面 通过listPage()方法获取列表页面的app名称 通过getItemName()方法点击进入应用详情并返回
+	 * 
 	 * @throws UiObjectNotFoundException
 	 */
 	public void ranking() throws UiObjectNotFoundException {
 		System.out.println("======[排行]========");
 		UiObject ranking = new UiObject(new UiSelector().text("排行"));
 		ranking.click();
-		listPage();
+		testPageLists();
 		getItemName();
 	}
 
 	/**
-	 * 推荐页面 
-	 * 通过listPage()方法获取列表页面的app名称 通过getItemName()方法点击进入应用详情并返回
+	 * 推荐页面 通过listPage()方法获取列表页面的app名称 通过getItemName()方法点击进入应用详情并返回
+	 * 
 	 * @throws UiObjectNotFoundException
 	 */
 	public void recommendPage() throws UiObjectNotFoundException {
 		System.out.println("======[推荐]========");
 		UiObject recom = new UiObject(new UiSelector().text("推荐"));
 		recom.click();
-		listPage();
+		testPageLists();
 		getItemName();
 	}
 
 	/**
-	 * 新品页面 
-	 * 通过listPage()方法获取列表页面的app名称 通过getItemName()方法点击进入应用详情并返回
+	 * 新品页面 通过listPage()方法获取列表页面的app名称 通过getItemName()方法点击进入应用详情并返回
+	 * 
 	 * @throws UiObjectNotFoundException
 	 */
 	public void newApp() throws UiObjectNotFoundException {
 		System.out.println("======[新品]========");
 		UiObject newApp = new UiObject(new UiSelector().text("新品"));
 		newApp.click();
-		listPage();
+		testPageLists();
 		getItemName();
 	}
 
 	/**
-	 * 锋神榜 通过device点击进入应用详情
-	 * 获取appname
+	 * 锋神榜 通过device点击进入应用详情 获取appname
+	 * 
 	 * @throws UiObjectNotFoundException
 	 */
 	public void fsBang() throws UiObjectNotFoundException {
@@ -282,7 +264,7 @@ public class ApplicationPage extends UiAutomatorTestCase {
 	 */
 	public void getclassifyTag() throws UiObjectNotFoundException {
 		System.out.println("======分类子类-二级标签========");
-		getTags();
+		testGetTags();
 		getItemName();
 		riseQuick();
 		newApp();
@@ -299,7 +281,7 @@ public class ApplicationPage extends UiAutomatorTestCase {
 		System.out.println("======分类子类-[上升最快]========");
 		UiObject riseQuick = new UiObject(new UiSelector().text("上升最快"));
 		riseQuick.click();
-		listPage();
+		testPageLists();
 		getItemName();
 	}
 }
